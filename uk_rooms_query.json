@@ -1,0 +1,31 @@
+{
+  "structuredQuery": {
+    "select": {
+      "fields": [
+        { "fieldPath": "name" },
+        { "fieldPath": "englishName" },
+        { "fieldPath": "company" },
+        { "fieldPath": "city" },
+        { "fieldPath": "state" },
+        { "fieldPath": "country" },
+        { "fieldPath": "link" },
+        { "fieldPath": "category" },
+        { "fieldPath": "isApproved" },
+        { "fieldPath": "isNominee" },
+        { "fieldPath": "isFinalist" },
+        { "fieldPath": "isWinner" }
+      ]
+    },
+    "from": [
+      { "collectionId": "rooms" }
+    ],
+    "where": {
+      "fieldFilter": {
+        "field": { "fieldPath": "country" },
+        "op": "EQUAL",
+        "value": { "stringValue": "United Kingdom" }
+      }
+    },
+    "limit": 1000
+  }
+}
