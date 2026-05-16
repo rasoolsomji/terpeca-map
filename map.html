@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TERPECA UK Rooms Map</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    >
+    <style>
+      :root {
+        --ink: #17212b;
+        --muted: #62717f;
+        --line: #d7dde3;
+        --panel: #ffffff;
+        --bg: #f4f6f8;
+        --accent: #0f766e;
+        --winner: #c2410c;
+        --finalist: #b7791f;
+        --nominee: #2563eb;
+        --approved: #0f766e;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        color: var(--ink);
+        background: var(--bg);
+        font: 14px/1.45 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      .app {
+        display: grid;
+        grid-template-columns: minmax(320px, 390px) minmax(0, 1fr);
+        height: 100vh;
+        min-height: 620px;
+      }
+
+      .sidebar {
+        display: grid;
+        grid-template-rows: auto auto minmax(0, 1fr);
+        min-width: 0;
+        border-right: 1px solid var(--line);
+        background: var(--panel);
+      }
+
+      .header {
+        padding: 20px 20px 16px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      h1 {
+        margin: 0 0 10px;
+        font-size: 22px;
+        line-height: 1.1;
+        letter-spacing: 0;
+      }
+
+      .meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        color: var(--muted);
+      }
+
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        min-height: 26px;
+        padding: 3px 8px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: #f9fafb;
+        font-size: 12px;
+        white-space: nowrap;
+      }
+
+      .controls {
+        display: grid;
+        gap: 10px;
+        padding: 14px 20px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .control-row {
+        display: grid;
+        grid-template-columns: 1fr 132px;
+        gap: 10px;
+      }
+
+      input,
+      select {
+        width: 100%;
+        min-height: 38px;
+        border: 1px solid #cbd5df;
+        border-radius: 6px;
+        padding: 8px 10px;
+        color: var(--ink);
+        background: #fff;
+        font: inherit;
+      }
+
+      .toggle {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: #334155;
+        font-size: 13px;
+      }
+
+      .toggle input {
+        width: 16px;
+        min-height: 16px;
+        accent-color: var(--accent);
+      }
+
+      .city-list {
+        overflow: auto;
+        padding: 10px;
+      }
+
+      .city-button {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr auto;
+        gap: 8px;
+        margin: 0 0 6px;
+        padding: 10px;
+        border: 1px solid transparent;
+        border-radius: 6px;
+        color: inherit;
+        background: transparent;
+        text-align: left;
+        cursor: pointer;
+      }
+
+      .city-button:hover,
+      .city-button.is-selected {
+        border-color: #b6c4d0;
+        background: #eef5f4;
+      }
+
+      .city-name {
+        display: block;
+        font-weight: 700;
+      }
+
+      .city-region {
+        display: block;
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      .count {
+        align-self: start;
+        min-width: 34px;
+        border-radius: 999px;
+        padding: 3px 8px;
+        color: #fff;
+        background: var(--accent);
+        font-size: 12px;
+        font-weight: 700;
+        text-align: center;
+      }
+
+      .map-wrap {
+        position: relative;
+        min-width: 0;
+      }
+
+      #map {
+        width: 100%;
+        height: 100%;
+      }
+
+      .selected {
+        position: absolute;
+        right: 18px;
+        top: 18px;
+        z-index: 600;
+        width: min(420px, calc(100% - 36px));
+        max-height: calc(100% - 36px);
+        overflow: auto;
+        border: 1px solid rgba(15, 23, 42, 0.14);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.96);
+        box-shadow: 0 18px 48px rgba(15, 23, 42, 0.18);
+      }
+
+      .selected[hidden] {
+        display: none;
+      }
+
+      .selected-head {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 12px;
+        padding: 14px 16px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .selected-title {
+        margin: 0;
+        font-size: 18px;
+        line-height: 1.2;
+      }
+
+      .selected-subtitle {
+        margin-top: 3px;
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      .close {
+        width: 34px;
+        height: 34px;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        background: #fff;
+        color: var(--ink);
+        cursor: pointer;
+        font-size: 22px;
+        line-height: 1;
+      }
+
+      .room-list {
+        display: grid;
+        gap: 8px;
+        padding: 12px;
+      }
+
+      .room {
+        display: grid;
+        gap: 4px;
+        padding: 10px;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        background: #fff;
+      }
+
+      .room a {
+        color: #0f5f83;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .room a:hover {
+        text-decoration: underline;
+      }
+
+      .room-company,
+      .room-flags {
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      .legend {
+        padding: 8px 10px;
+        border: 1px solid rgba(15, 23, 42, 0.12);
+        border-radius: 6px;
+        background: rgba(255, 255, 255, 0.94);
+        color: #334155;
+        box-shadow: 0 8px 24px rgba(15, 23, 42, 0.13);
+      }
+
+      .legend-row {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        margin: 4px 0;
+        font-size: 12px;
+      }
+
+      .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+      }
+
+      .empty {
+        padding: 18px 10px;
+        color: var(--muted);
+        text-align: center;
+      }
+
+      .leaflet-popup-content {
+        margin: 10px 12px;
+        min-width: 190px;
+      }
+
+      .popup-title {
+        margin-bottom: 4px;
+        font-weight: 800;
+      }
+
+      .popup-meta {
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      @media (max-width: 820px) {
+        .app {
+          grid-template-columns: 1fr;
+          grid-template-rows: minmax(300px, 58vh) minmax(320px, 42vh);
+          height: auto;
+          min-height: 100vh;
+        }
+
+        .sidebar {
+          grid-row: 2;
+          border-top: 1px solid var(--line);
+          border-right: 0;
+          min-height: 320px;
+        }
+
+        .map-wrap {
+          grid-row: 1;
+        }
+
+        .selected {
+          left: 10px;
+          right: 10px;
+          top: auto;
+          bottom: 10px;
+          width: auto;
+          max-height: 56%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="app">
+      <aside class="sidebar">
+        <section class="header">
+          <h1>TERPECA UK Rooms</h1>
+          <div class="meta">
+            <span class="pill" id="cityTotal">0 cities</span>
+            <span class="pill" id="roomTotal">0 room entries</span>
+            <span class="pill">city-level pins</span>
+          </div>
+        </section>
+
+        <section class="controls" aria-label="Filters">
+          <div class="control-row">
+            <input id="search" type="search" autocomplete="off" placeholder="Search city, room, company">
+            <select id="category">
+              <option value="all">All records</option>
+              <option value="in-person room">In-person rooms</option>
+              <option value="company">Companies</option>
+              <option value="online room">Online rooms</option>
+            </select>
+          </div>
+          <label class="toggle">
+            <input id="awardOnly" type="checkbox">
+            Show only nominee, finalist, or winner entries
+          </label>
+        </section>
+
+        <section class="city-list" id="cityList" aria-label="Cities"></section>
+      </aside>
+
+      <section class="map-wrap">
+        <div id="map"></div>
+        <aside class="selected" id="selected" hidden></aside>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="uk_rooms_map_data.js"></script>
+    <script>
+      const mapData = window.UK_ROOM_MAP_DATA;
+      const search = document.querySelector("#search");
+      const category = document.querySelector("#category");
+      const awardOnly = document.querySelector("#awardOnly");
+      const cityList = document.querySelector("#cityList");
+      const selected = document.querySelector("#selected");
+      const markers = new Map();
+
+      document.querySelector("#cityTotal").textContent = `${mapData.totalCities} cities`;
+      document.querySelector("#roomTotal").textContent = `${mapData.totalRooms} room entries`;
+
+      const map = L.map("map", { zoomControl: false }).setView([53.2, -2.6], 6);
+      L.control.zoom({ position: "bottomright" }).addTo(map);
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 18,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      }).addTo(map);
+
+      const legend = L.control({ position: "bottomleft" });
+      legend.onAdd = () => {
+        const node = L.DomUtil.create("div", "legend");
+        node.innerHTML = `
+          <div class="legend-row"><span class="dot" style="background: var(--winner)"></span> Winner</div>
+          <div class="legend-row"><span class="dot" style="background: var(--finalist)"></span> Finalist</div>
+          <div class="legend-row"><span class="dot" style="background: var(--nominee)"></span> Nominee</div>
+          <div class="legend-row"><span class="dot" style="background: var(--approved)"></span> Approved</div>
+        `;
+        return node;
+      };
+      legend.addTo(map);
+
+      function years(values) {
+        return Array.isArray(values) ? values.filter(Boolean).map(String) : [];
+      }
+
+      function bestAward(rooms) {
+        if (rooms.some((room) => years(room.isWinner).length)) return "winner";
+        if (rooms.some((room) => years(room.isFinalist).length)) return "finalist";
+        if (rooms.some((room) => years(room.isNominee).length)) return "nominee";
+        return "approved";
+      }
+
+      function colorForAward(award) {
+        return {
+          winner: "#c2410c",
+          finalist: "#b7791f",
+          nominee: "#2563eb",
+          approved: "#0f766e",
+        }[award];
+      }
+
+      function filteredRooms(city) {
+        const term = search.value.trim().toLowerCase();
+        return city.rooms.filter((room) => {
+          const categoryMatch = category.value === "all" || room.categoryLabel === category.value;
+          const awardMatch =
+            !awardOnly.checked ||
+            years(room.isNominee).length ||
+            years(room.isFinalist).length ||
+            years(room.isWinner).length;
+          const text = [
+            city.city,
+            city.county,
+            city.constituentCountry,
+            room.displayName,
+            room.company,
+            room.categoryLabel,
+          ]
+            .join(" ")
+            .toLowerCase();
+          return categoryMatch && awardMatch && (!term || text.includes(term));
+        });
+      }
+
+      function filteredCities() {
+        return mapData.cities
+          .map((city) => ({ ...city, visibleRooms: filteredRooms(city) }))
+          .filter((city) => city.visibleRooms.length)
+          .sort((a, b) => b.visibleRooms.length - a.visibleRooms.length || a.city.localeCompare(b.city));
+      }
+
+      function roomFlags(room) {
+        const flags = [];
+        if (years(room.isWinner).length) flags.push(`Winner ${years(room.isWinner).join(", ")}`);
+        if (years(room.isFinalist).length) flags.push(`Finalist ${years(room.isFinalist).join(", ")}`);
+        if (years(room.isNominee).length) flags.push(`Nominee ${years(room.isNominee).join(", ")}`);
+        if (room.multiLocation) flags.push(`Multi-location: ${room.sourceCity}`);
+        return flags.join(" · ");
+      }
+
+      function roomMarkup(room) {
+        const title = room.link
+          ? `<a href="${escapeAttr(room.link)}" target="_blank" rel="noreferrer">${escapeHtml(room.displayName)}</a>`
+          : `<strong>${escapeHtml(room.displayName)}</strong>`;
+        const company = room.company ? escapeHtml(room.company) : "Unknown company";
+        const flags = roomFlags(room);
+        return `
+          <article class="room">
+            <div>${title}</div>
+            <div class="room-company">${company} · ${escapeHtml(room.categoryLabel)}</div>
+            ${flags ? `<div class="room-flags">${escapeHtml(flags)}</div>` : ""}
+          </article>
+        `;
+      }
+
+      function selectCity(city, rooms = filteredRooms(city), focusMap = true) {
+        selected.hidden = false;
+        selected.innerHTML = `
+          <div class="selected-head">
+            <div>
+              <h2 class="selected-title">${escapeHtml(city.city)}</h2>
+              <div class="selected-subtitle">${escapeHtml(city.county)}, ${escapeHtml(city.constituentCountry)} · ${rooms.length} shown of ${city.roomCount}</div>
+            </div>
+            <button class="close" type="button" aria-label="Close selected city">×</button>
+          </div>
+          <div class="room-list">
+            ${rooms.map(roomMarkup).join("")}
+          </div>
+        `;
+        selected.querySelector(".close").addEventListener("click", () => {
+          selected.hidden = true;
+          document.querySelectorAll(".city-button").forEach((button) => button.classList.remove("is-selected"));
+        });
+
+        document.querySelectorAll(".city-button").forEach((button) => {
+          button.classList.toggle("is-selected", button.dataset.cityId === city.id);
+        });
+
+        if (focusMap) {
+          map.flyTo([city.lat, city.lon], Math.max(map.getZoom(), 8), { duration: 0.55 });
+        }
+      }
+
+      function render() {
+        const cities = filteredCities();
+        const visibleIds = new Set(cities.map((city) => city.id));
+
+        for (const city of mapData.cities) {
+          const visible = visibleIds.has(city.id);
+          let marker = markers.get(city.id);
+          if (!marker) {
+            const award = bestAward(city.rooms);
+            const color = colorForAward(award);
+            marker = L.circleMarker([city.lat, city.lon], {
+              radius: Math.max(7, Math.min(22, 6 + Math.sqrt(city.roomCount) * 2.6)),
+              color,
+              weight: 2,
+              fillColor: color,
+              fillOpacity: 0.74,
+            }).addTo(map);
+            marker.on("click", () => selectCity(city, filteredRooms(city), false));
+            markers.set(city.id, marker);
+          }
+
+          if (visible && !map.hasLayer(marker)) marker.addTo(map);
+          if (!visible && map.hasLayer(marker)) marker.removeFrom(map);
+        }
+
+        cityList.innerHTML = cities.length
+          ? cities
+              .map(
+                (city) => `
+                  <button class="city-button" type="button" data-city-id="${escapeAttr(city.id)}">
+                    <span>
+                      <span class="city-name">${escapeHtml(city.city)}</span>
+                      <span class="city-region">${escapeHtml(city.county)}, ${escapeHtml(city.constituentCountry)}</span>
+                    </span>
+                    <span class="count">${city.visibleRooms.length}</span>
+                  </button>
+                `
+              )
+              .join("")
+          : '<div class="empty">No matching rooms</div>';
+
+        cityList.querySelectorAll(".city-button").forEach((button) => {
+          button.addEventListener("click", () => {
+            const city = cities.find((item) => item.id === button.dataset.cityId);
+            selectCity(city, city.visibleRooms, true);
+          });
+        });
+
+        for (const city of cities) {
+          const marker = markers.get(city.id);
+          marker.bindPopup(`
+            <div class="popup-title">${escapeHtml(city.city)}</div>
+            <div class="popup-meta">${city.visibleRooms.length} shown of ${city.roomCount} · ${escapeHtml(city.county)}</div>
+          `);
+        }
+      }
+
+      function escapeHtml(value) {
+        return String(value ?? "")
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;")
+          .replace(/'/g, "&#39;");
+      }
+
+      function escapeAttr(value) {
+        return escapeHtml(value);
+      }
+
+      search.addEventListener("input", render);
+      category.addEventListener("change", render);
+      awardOnly.addEventListener("change", render);
+      render();
+    </script>
+  </body>
+</html>
