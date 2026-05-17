@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TERPECA UK Rooms Map</title>
+    <title>Unofficial TERPECA UK Rooms Map</title>
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -78,6 +78,22 @@
         background: #f9fafb;
         font-size: 12px;
         white-space: nowrap;
+      }
+
+      .attribution {
+        margin: 12px 0 0;
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      .attribution a {
+        color: #0f5f83;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .attribution a:hover {
+        text-decoration: underline;
       }
 
       .controls {
@@ -337,12 +353,19 @@
     <main class="app">
       <aside class="sidebar">
         <section class="header">
-          <h1>TERPECA UK Rooms</h1>
+          <h1>Unofficial TERPECA UK Rooms Map</h1>
           <div class="meta">
             <span class="pill" id="cityTotal">0 cities</span>
             <span class="pill" id="roomTotal">0 room entries</span>
             <span class="pill">city-level pins</span>
           </div>
+          <p class="attribution">
+            Data is from
+            <a href="https://terpeca.com/2025/" target="_blank" rel="noreferrer">TERPECA 2025</a>
+            and the
+            <a href="https://roomfinder.terpeca.com/" target="_blank" rel="noreferrer">TERPECA Room Finder</a>.
+            This map is unofficial, approximate, and not affiliated with or endorsed by TERPECA.
+          </p>
         </section>
 
         <section class="controls" aria-label="Filters">
