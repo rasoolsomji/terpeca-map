@@ -2,6 +2,7 @@ const fs = require("fs");
 
 const inputPath = process.argv[2] || "/tmp/uk_rooms_raw.json";
 const outputPath = process.argv[3] || "uk_rooms_by_location.json";
+const overridesPath = process.argv[4] || "manual_room_overrides.json";
 const csvOutputPath = outputPath.replace(/\.json$/i, ".csv");
 
 const categoryLabels = {
@@ -154,6 +155,10 @@ function cleanDoc(result) {
     isNominee: data.isNominee || [],
     isFinalist: data.isFinalist || [],
     isWinner: data.isWinner || [],
+    isConfirmedOpen: data.isConfirmedOpen || [],
+    isIneligible: data.isIneligible || [],
+    isPermanentlyIneligible: data.isPermanentlyIneligible || [],
+    ineligibilityReason: data.ineligibilityReason || "",
     createTime: result.document.createTime,
     updateTime: result.document.updateTime,
   };
@@ -171,8 +176,77 @@ function sortByName(a, b) {
   return a.displayName.localeCompare(b.displayName) || a.company.localeCompare(b.company);
 }
 
+function loadOverrides(path) {
+  if (!fs.existsSync(path)) return { rooms: {} };
+
+  const data = JSON.parse(fs.readFileSync(path, "utf8"));
+  if (data.rooms && typeof data.rooms !== "object") {
+    throw new Error(`${path}: rooms must be an object keyed by docId`);
+  }
+
+  return {
+    ...data,
+    rooms: data.rooms || {},
+  };
+}
+
+function isClosedOverride(override) {
+  if (!override || typeof override !== "object") return false;
+  return override.status === "closed" || override.closed === true || override.hidden === true;
+}
+
+function statusYears(room) {
+  return [
+    ...room.isApproved,
+    ...room.isNominee,
+    ...room.isFinalist,
+    ...room.isWinner,
+    ...room.isConfirmedOpen,
+    ...room.isIneligible,
+    ...room.isPermanentlyIneligible,
+  ].filter(Number.isFinite);
+}
+
+function isClosureReason(reason) {
+  return /\b(clos(?:ed|ure|ing)?|shut|ceased|retir(?:e|ed|ing)|no longer|not operating|temporary room)\b/i.test(
+    reason
+  );
+}
+
+function isSourceClosed(room, latestYear) {
+  return isClosureReason(room.ineligibilityReason) && !room.isConfirmedOpen.includes(latestYear);
+}
+
 const raw = JSON.parse(fs.readFileSync(inputPath, "utf8"));
-const rooms = raw.filter((item) => item.document).map(cleanDoc);
+const allRooms = raw.filter((item) => item.document).map(cleanDoc);
+const overrides = loadOverrides(overridesPath);
+const latestSourceYear = Math.max(...allRooms.flatMap(statusYears));
+const closedOverrideIds = new Set(
+  Object.entries(overrides.rooms)
+    .filter(([, override]) => isClosedOverride(override))
+    .map(([docId]) => docId)
+);
+const sourceClosedIds = new Set(
+  allRooms
+    .filter((room) => isSourceClosed(room, latestSourceYear))
+    .map((room) => room.docId)
+);
+const closedIds = new Set([...closedOverrideIds, ...sourceClosedIds]);
+const rooms = allRooms.filter((room) => !closedIds.has(room.docId));
+const excludedClosedRooms = allRooms
+  .filter((room) => closedIds.has(room.docId))
+  .map((room) => ({
+    docId: room.docId,
+    displayName: room.displayName,
+    company: room.company,
+    sourceCity: room.sourceCity,
+    ineligibilityReason: room.ineligibilityReason,
+    closureSource: closedOverrideIds.has(room.docId) ? "manual" : "source",
+  }))
+  .sort(sortByName);
+const unmatchedOverrideIds = Array.from(closedOverrideIds)
+  .filter((docId) => !allRooms.some((room) => room.docId === docId))
+  .sort();
 const grouped = new Map();
 const unresolvedLocations = new Set();
 
@@ -226,8 +300,13 @@ const output = {
     "Slash-separated city fields are split, so multi-location records appear under each city and retain sourceCity.",
     "One non-UK slash-separated location, Brisbane, Australia, is omitted from UK grouping while the original sourceCity remains on the record.",
     "The API's UK records include in-person rooms, company records, and online-room records; categoryLabel preserves that distinction.",
+    "Rooms with source closure/ineligibility reasons are excluded unless confirmed open in the latest source year.",
+    "Rooms marked closed in manual_room_overrides.json are also excluded from grouped counts and map data.",
   ],
-  totalSourceRecords: rooms.length,
+  totalSourceRecords: allRooms.length,
+  totalVisibleSourceRecords: rooms.length,
+  totalExcludedClosedRecords: excludedClosedRooms.length,
+  latestSourceYear,
   totalGroupedEntries: Array.from(grouped.values()).reduce(
     (sum, countyGroup) =>
       sum + Array.from(countyGroup.cities.values()).reduce((citySum, city) => citySum + city.rooms.length, 0),
@@ -237,6 +316,13 @@ const output = {
     counts[room.categoryLabel] = (counts[room.categoryLabel] || 0) + 1;
     return counts;
   }, {}),
+  manualOverrides: {
+    path: overridesPath,
+    closedRecordCount: allRooms.filter((room) => closedOverrideIds.has(room.docId)).length,
+    unmatchedClosedDocIds: unmatchedOverrideIds,
+  },
+  sourceClosedRecordCount: allRooms.filter((room) => sourceClosedIds.has(room.docId)).length,
+  excludedClosedRooms,
   unresolvedLocations: Array.from(unresolvedLocations).sort(),
   counties: Array.from(grouped.values())
     .map((countyGroup) => ({
@@ -264,8 +350,13 @@ writeCsv(csvOutputPath, output);
 console.log(`Wrote ${outputPath}`);
 console.log(`Wrote ${csvOutputPath}`);
 console.log(`Source records: ${output.totalSourceRecords}`);
+console.log(`Visible source records: ${output.totalVisibleSourceRecords}`);
+console.log(`Excluded closed records: ${output.totalExcludedClosedRecords}`);
 console.log(`Grouped entries: ${output.totalGroupedEntries}`);
 console.log(`Unresolved locations: ${output.unresolvedLocations.length}`);
+if (unmatchedOverrideIds.length) {
+  console.warn(`Closed override docIds not found in source: ${unmatchedOverrideIds.join(", ")}`);
+}
 
 function writeCsv(path, data) {
   const columns = [
@@ -286,6 +377,10 @@ function writeCsv(path, data) {
     "isNominee",
     "isFinalist",
     "isWinner",
+    "isConfirmedOpen",
+    "isIneligible",
+    "isPermanentlyIneligible",
+    "ineligibilityReason",
   ];
 
   const rows = [columns.join(",")];

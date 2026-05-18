@@ -1,0 +1,8 @@
+{
+  "notes": [
+    "Manual corrections for TERPECA Room Finder records.",
+    "Use room docId values from uk_rooms_by_location.json or uk_rooms_by_location.csv.",
+    "Rooms with status \"closed\" are excluded when scripts/build_uk_rooms_by_location.js runs."
+  ],
+  "rooms": {}
+}

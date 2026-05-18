@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-16T19:08:16.016Z",
+  "generatedAt": "2026-05-18T22:41:27.868Z",
   "source": {
     "app": "https://roomfinder.terpeca.com",
     "firestoreProject": "terpeca-voter-portal",
@@ -10,15 +10,316 @@
     "County is inferred from the city/place string because the API does not provide county or postcode.",
     "Slash-separated city fields are split, so multi-location records appear under each city and retain sourceCity.",
     "One non-UK slash-separated location, Brisbane, Australia, is omitted from UK grouping while the original sourceCity remains on the record.",
-    "The API's UK records include in-person rooms, company records, and online-room records; categoryLabel preserves that distinction."
+    "The API's UK records include in-person rooms, company records, and online-room records; categoryLabel preserves that distinction.",
+    "Rooms with source closure/ineligibility reasons are excluded unless confirmed open in the latest source year.",
+    "Rooms marked closed in manual_room_overrides.json are also excluded from grouped counts and map data."
   ],
   "totalSourceRecords": 247,
-  "totalGroupedEntries": 288,
+  "totalVisibleSourceRecords": 211,
+  "totalExcludedClosedRecords": 36,
+  "latestSourceYear": 2025,
+  "totalGroupedEntries": 252,
   "categoryCounts": {
-    "in-person room": 222,
+    "in-person room": 186,
     "company": 13,
     "online room": 12
   },
+  "manualOverrides": {
+    "path": "manual_room_overrides.json",
+    "closedRecordCount": 0,
+    "unmatchedClosedDocIds": []
+  },
+  "sourceClosedRecordCount": 36,
+  "excludedClosedRooms": [
+    {
+      "docId": "g3wtH00mOZFoHvlnwAiP",
+      "displayName": "Alien",
+      "company": "iLocked",
+      "sourceCity": "Nottingham",
+      "ineligibilityReason": "permanently closed since mid-2021",
+      "closureSource": "source"
+    },
+    {
+      "docId": "IsqEL4gslL6dHcf8UyUV",
+      "displayName": "Atlantis",
+      "company": "The Escapement (UK)",
+      "sourceCity": "Broadstairs",
+      "ineligibilityReason": "closed since October 2024",
+      "closureSource": "source"
+    },
+    {
+      "docId": "8XzV1riLXLLxe3nMQOKE",
+      "displayName": "Bad Clown",
+      "company": "Escape Quest",
+      "sourceCity": "Macclesfield",
+      "ineligibilityReason": "room permanently retired in 2016",
+      "closureSource": "source"
+    },
+    {
+      "docId": "QRE2axsTjSsI5JcZqamX",
+      "displayName": "Christmas Dream",
+      "company": "Locked In Glasgow",
+      "sourceCity": "Glasgow",
+      "ineligibilityReason": "temporary room, closed in January 2020",
+      "closureSource": "source"
+    },
+    {
+      "docId": "bTnQbFm883ZN9auQfKMc",
+      "displayName": "Dark Magik",
+      "company": "Access Escape",
+      "sourceCity": "London",
+      "ineligibilityReason": "permanently closed since 2020",
+      "closureSource": "source"
+    },
+    {
+      "docId": "OAcyHdg02riamPN6wyi6",
+      "displayName": "Director's Cut",
+      "company": "Get Lost",
+      "sourceCity": "Dover",
+      "ineligibilityReason": "permanently closed since November 2020",
+      "closureSource": "source"
+    },
+    {
+      "docId": "eZv405WXrTUketS3wC1i",
+      "displayName": "Dormant",
+      "company": "Housetrap Escape Rooms",
+      "sourceCity": "Bodmin",
+      "ineligibilityReason": "closed in January 2021",
+      "closureSource": "source"
+    },
+    {
+      "docId": "dzpifLG4VONJyEyWBoLA",
+      "displayName": "Heaven and Hell",
+      "company": "Cambridge Escape Rooms",
+      "sourceCity": "Cambridge",
+      "ineligibilityReason": "closed since May 2024",
+      "closureSource": "source"
+    },
+    {
+      "docId": "IuqFUWS1CuffTy2tpn2e",
+      "displayName": "Imaginarium 1863",
+      "company": "TimeTrap Escape Rooms",
+      "sourceCity": "Reading",
+      "ineligibilityReason": "closed since June 2021",
+      "closureSource": "source"
+    },
+    {
+      "docId": "ZSbgjfB4iVdcrL8Ke8se",
+      "displayName": "Inbound",
+      "company": "Escape Hub",
+      "sourceCity": "Maidstone",
+      "ineligibilityReason": "closed in January 2024",
+      "closureSource": "source"
+    },
+    {
+      "docId": "wqWtbB5SsxaXh2BZQxan",
+      "displayName": "Loop",
+      "company": "The Panic Room (formerly Clockwork Dog)",
+      "sourceCity": "Gravesend",
+      "ineligibilityReason": "closed since April 2024",
+      "closureSource": "source"
+    },
+    {
+      "docId": "ixPi2twlwdecobxO4ksl",
+      "displayName": "MAD",
+      "company": "Archimedes Inspiration",
+      "sourceCity": "London",
+      "ineligibilityReason": "closed in early 2023",
+      "closureSource": "source"
+    },
+    {
+      "docId": "gDZcre1BO088NvXxzSpV",
+      "displayName": "Madame Curio's Cirque Delirium",
+      "company": "Trapp'd",
+      "sourceCity": "Peterborough",
+      "ineligibilityReason": "closed in 2023",
+      "closureSource": "source"
+    },
+    {
+      "docId": "YKGMeRqFTSwhiEWpMyVa",
+      "displayName": "Most Wanted",
+      "company": "Breakout Manchester",
+      "sourceCity": "Manchester",
+      "ineligibilityReason": "closed in November 2022",
+      "closureSource": "source"
+    },
+    {
+      "docId": "1ILQVs6R1nNi6p3Baiih",
+      "displayName": "Old Father Time",
+      "company": "The Panic Room",
+      "sourceCity": "Gravesend",
+      "ineligibilityReason": "closed in October 2022",
+      "closureSource": "source"
+    },
+    {
+      "docId": "r03TEzA6uNkDVgkusv7v",
+      "displayName": "Professor Dunstan and the Search for the Ancient Statuette",
+      "company": "Co-Decode",
+      "sourceCity": "Swindon",
+      "ineligibilityReason": "closed in 2023 for relocation",
+      "closureSource": "source"
+    },
+    {
+      "docId": "iI2a3ywkahuSfKVNzah1",
+      "displayName": "Project Ðelta",
+      "company": "Archimedes Inspiration",
+      "sourceCity": "London",
+      "ineligibilityReason": "closed in early 2023",
+      "closureSource": "source"
+    },
+    {
+      "docId": "JedLOq7paGUSzl8hnGsr",
+      "displayName": "Revolution Ole",
+      "company": "The Panic Room",
+      "sourceCity": "Gravesend",
+      "ineligibilityReason": "Closed September 2019",
+      "closureSource": "source"
+    },
+    {
+      "docId": "rk0MafMWM2T7aRy1k5uF",
+      "displayName": "Safe House",
+      "company": "Lucardo",
+      "sourceCity": "Rawtenstall",
+      "ineligibilityReason": "closed in September 2023",
+      "closureSource": "source"
+    },
+    {
+      "docId": "dYRFvCP7hbkdH23120Kx",
+      "displayName": "Seance",
+      "company": "Housetrap Escape Rooms",
+      "sourceCity": "Bodmin",
+      "ineligibilityReason": "closed in November 2024",
+      "closureSource": "source"
+    },
+    {
+      "docId": "IctFcsGk3ymDbtdOCBP9",
+      "displayName": "Secret Santa",
+      "company": "Time 2 Escape",
+      "sourceCity": "Frittenden",
+      "ineligibilityReason": "closed since January 2024",
+      "closureSource": "source"
+    },
+    {
+      "docId": "RJtVBV7SBo2tmhNf8rDn",
+      "displayName": "Spacescape",
+      "company": "Ctrl Alt Esc",
+      "sourceCity": "Margate",
+      "ineligibilityReason": "closed in August 2022",
+      "closureSource": "source"
+    },
+    {
+      "docId": "KqHIwZhyT0yiYjVFWuSx",
+      "displayName": "Starpoint Alpha",
+      "company": "Clockwork Escapes",
+      "sourceCity": "Wolverhampton",
+      "ineligibilityReason": "closed in 2023",
+      "closureSource": "source"
+    },
+    {
+      "docId": "wNftvNtb4GK4lORBYc2O",
+      "displayName": "Station X 1942",
+      "company": "TimeTrap Escape Rooms",
+      "sourceCity": "Reading",
+      "ineligibilityReason": "closed in June 2023",
+      "closureSource": "source"
+    },
+    {
+      "docId": "RHb7cKovGOg8nCzRjoKs",
+      "displayName": "The 13th Element",
+      "company": "Escape Quest",
+      "sourceCity": "Macclesfield",
+      "ineligibilityReason": "closed in 2020",
+      "closureSource": "source"
+    },
+    {
+      "docId": "GE1gRcWZ235r2qlGxv5q",
+      "displayName": "The Celestial Chain",
+      "company": "Time Run",
+      "sourceCity": "London",
+      "ineligibilityReason": "permanently closed in April 2018",
+      "closureSource": "source"
+    },
+    {
+      "docId": "oUChRjRT2VDQb2KcxwPT",
+      "displayName": "The Curse of the Golden Lion",
+      "company": "Wirral Escape Rooms",
+      "sourceCity": "Liverpool",
+      "ineligibilityReason": "closed in October 2023",
+      "closureSource": "source"
+    },
+    {
+      "docId": "17N97OZrZEH3OfSPUBRo",
+      "displayName": "The Escapist",
+      "company": "Modern Fables",
+      "sourceCity": "London",
+      "ineligibilityReason": "closed in early 2022",
+      "closureSource": "source"
+    },
+    {
+      "docId": "2LhijC1PxqChFSxWklC0",
+      "displayName": "The Gateway",
+      "company": "Escapologic",
+      "sourceCity": "Leicester",
+      "ineligibilityReason": "closed in November 2022",
+      "closureSource": "source"
+    },
+    {
+      "docId": "DDzKAzOUeoDvgI6KdCQm",
+      "displayName": "The Krevokar Programme",
+      "company": "Get Lost",
+      "sourceCity": "Dover",
+      "ineligibilityReason": "closed in March 2020",
+      "closureSource": "source"
+    },
+    {
+      "docId": "qAHKczKYlMxdcYtrgWXD",
+      "displayName": "The Lance of Longinus",
+      "company": "Time Run",
+      "sourceCity": "London",
+      "ineligibilityReason": "permanently closed in April 2018",
+      "closureSource": "source"
+    },
+    {
+      "docId": "9ORW5STLsnlqQLV78lbh",
+      "displayName": "The Merchants' Vaults at the Museum of Norwich",
+      "company": "History Mystery",
+      "sourceCity": "Norwich",
+      "ineligibilityReason": "closed in 2020",
+      "closureSource": "source"
+    },
+    {
+      "docId": "ji3yPRmDlMIZXX4mA4my",
+      "displayName": "The Moonlit Wild",
+      "company": "Pressure Point Escape Rooms",
+      "sourceCity": "Ashford",
+      "ineligibilityReason": "closed in August 2023",
+      "closureSource": "source"
+    },
+    {
+      "docId": "p2hvbdEtU3Y7p9lI3VwM",
+      "displayName": "The Rig",
+      "company": "LetsXcape",
+      "sourceCity": "Newark",
+      "ineligibilityReason": "closed in mid 2022",
+      "closureSource": "source"
+    },
+    {
+      "docId": "2PxrsKBlWFSw89KnCMjr",
+      "displayName": "Victoria's Last Challenge",
+      "company": "11th Hour Escape Rooms",
+      "sourceCity": "Chippenham",
+      "ineligibilityReason": "closed in October 2024",
+      "closureSource": "source"
+    },
+    {
+      "docId": "PF09QEWB7BTwqnFTCF00",
+      "displayName": "Wunderwaffe Operation Quartz",
+      "company": "The Escapement (UK)",
+      "sourceCity": "Broadstairs",
+      "ineligibilityReason": "closed since October 2024",
+      "closureSource": "source"
+    }
+  ],
   "unresolvedLocations": [],
   "counties": [
     {
@@ -51,6 +352,12 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2025-10-20T23:53:42.863807Z",
               "updateTime": "2025-11-05T09:27:05.023519Z",
               "city": "Leighton Buzzard",
@@ -67,7 +374,7 @@
       "constituentCountry": "England",
       "county": "Berkshire",
       "state": "",
-      "roomCount": 12,
+      "roomCount": 10,
       "cities": [
         {
           "city": "Newbury",
@@ -98,6 +405,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-10-30T22:00:42.838944Z",
               "updateTime": "2025-09-07T12:01:32.161887Z",
               "city": "Newbury",
@@ -138,6 +455,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-11-01T02:58:59.998992Z",
               "updateTime": "2025-09-07T12:25:35.352559Z",
               "city": "Reading",
@@ -179,6 +506,16 @@
                 2023
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-10-26T06:07:09.727794Z",
               "updateTime": "2025-11-05T09:28:22.697039Z",
               "city": "Reading",
@@ -207,6 +544,13 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2024-10-31T21:59:54.946623Z",
               "updateTime": "2025-09-09T14:36:45.920879Z",
               "city": "Reading",
@@ -236,41 +580,15 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2024-10-02T21:19:03.328527Z",
               "updateTime": "2025-11-05T09:28:27.388591Z",
-              "city": "Reading",
-              "county": "Berkshire",
-              "constituentCountry": "England",
-              "multiLocation": false
-            },
-            {
-              "docId": "IuqFUWS1CuffTy2tpn2e",
-              "name": "Imaginarium 1863",
-              "englishName": "",
-              "displayName": "Imaginarium 1863",
-              "company": "TimeTrap Escape Rooms",
-              "link": "https://www.timetrapescaperooms.com/our-games/",
-              "sourceCity": "Reading",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 0,
-              "categoryLabel": "in-person room",
-              "isApproved": [
-                2019,
-                2020,
-                2021,
-                2018,
-                2022
-              ],
-              "isNominee": [
-                2019,
-                2021,
-                2018
-              ],
-              "isFinalist": [],
-              "isWinner": [],
-              "createTime": "2019-11-02T06:53:55.616897Z",
-              "updateTime": "2023-11-03T04:42:29.850383Z",
               "city": "Reading",
               "county": "Berkshire",
               "constituentCountry": "England",
@@ -296,6 +614,10 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2022-08-17T04:49:42.653015Z",
               "updateTime": "2022-09-01T01:39:06.983087Z",
               "city": "Reading",
@@ -337,44 +659,22 @@
                 2023
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-10-29T07:26:01.441177Z",
               "updateTime": "2025-11-05T09:28:13.203055Z",
               "city": "Reading",
               "county": "Berkshire",
               "constituentCountry": "England",
               "multiLocation": true
-            },
-            {
-              "docId": "wNftvNtb4GK4lORBYc2O",
-              "name": "Station X 1942",
-              "englishName": "",
-              "displayName": "Station X 1942",
-              "company": "TimeTrap Escape Rooms",
-              "link": "https://www.timetrapescaperooms.com/station-x/",
-              "sourceCity": "Reading",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 0,
-              "categoryLabel": "in-person room",
-              "isApproved": [
-                2019,
-                2020,
-                2021,
-                2022,
-                2023
-              ],
-              "isNominee": [
-                2019,
-                2021
-              ],
-              "isFinalist": [],
-              "isWinner": [],
-              "createTime": "2019-11-02T06:54:04.640085Z",
-              "updateTime": "2024-09-18T18:49:01.629311Z",
-              "city": "Reading",
-              "county": "Berkshire",
-              "constituentCountry": "England",
-              "multiLocation": false
             },
             {
               "docId": "ppzhFICrkZdiqaGLW0Ox",
@@ -408,6 +708,16 @@
                 2021
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-10-26T06:07:12.297084Z",
               "updateTime": "2025-11-05T09:28:25.281983Z",
               "city": "Reading",
@@ -437,6 +747,14 @@
                 2025
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2025
+              ],
+              "isIneligible": [
+                2024
+              ],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2024-10-20T17:10:10.639567Z",
               "updateTime": "2025-12-08T06:34:43.772575Z",
               "city": "Reading",
@@ -476,6 +794,16 @@
                 2021
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-10-29T07:24:30.185918Z",
               "updateTime": "2025-11-05T09:28:20.032879Z",
               "city": "Reading",
@@ -484,7 +812,7 @@
               "multiLocation": false
             }
           ],
-          "roomCount": 11
+          "roomCount": 9
         }
       ]
     },
@@ -525,6 +853,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-10-29T07:21:12.495412Z",
               "updateTime": "2025-11-05T09:25:49.034527Z",
               "city": "Bristol",
@@ -557,6 +895,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-10-29T22:02:08.664467Z",
               "updateTime": "2025-09-08T06:13:12.255263Z",
               "city": "Bristol",
@@ -591,6 +939,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-10-31T20:03:01.114397Z",
               "updateTime": "2025-09-03T15:12:16.418959Z",
               "city": "Bristol",
@@ -649,6 +1007,16 @@
                 2022
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:54:13.380383Z",
               "updateTime": "2025-09-03T15:48:06.858287Z",
               "city": "Milton Keynes",
@@ -676,6 +1044,12 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2025-11-01T06:13:53.858383Z",
               "updateTime": "2025-11-05T09:27:53.629807Z",
               "city": "Milton Keynes",
@@ -692,46 +1066,12 @@
       "constituentCountry": "England",
       "county": "Cambridgeshire",
       "state": "",
-      "roomCount": 8,
+      "roomCount": 6,
       "cities": [
         {
           "city": "Cambridge",
           "state": "",
           "rooms": [
-            {
-              "docId": "dzpifLG4VONJyEyWBoLA",
-              "name": "Heaven and Hell",
-              "englishName": "",
-              "displayName": "Heaven and Hell",
-              "company": "Cambridge Escape Rooms",
-              "link": "https://cambridgeescaperooms.co.uk/",
-              "sourceCity": "Cambridge",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 0,
-              "categoryLabel": "in-person room",
-              "isApproved": [
-                2020,
-                2021,
-                2022,
-                2023,
-                2024
-              ],
-              "isNominee": [
-                2020,
-                2021,
-                2022,
-                2023
-              ],
-              "isFinalist": [],
-              "isWinner": [],
-              "createTime": "2020-11-01T02:45:42.993337Z",
-              "updateTime": "2025-09-18T05:30:40.518863Z",
-              "city": "Cambridge",
-              "county": "Cambridgeshire",
-              "constituentCountry": "England",
-              "multiLocation": false
-            },
             {
               "docId": "qXr0kYnrsiE7F38iK0lW",
               "name": "Our Finest Hour",
@@ -757,6 +1097,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-10-29T22:02:08.664467Z",
               "updateTime": "2025-09-08T06:13:12.255263Z",
               "city": "Cambridge",
@@ -784,6 +1134,12 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2025-11-01T06:12:54.195839Z",
               "updateTime": "2025-11-05T09:26:00.107791Z",
               "city": "Cambridge",
@@ -811,6 +1167,12 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2025-11-01T06:11:45.626367Z",
               "updateTime": "2025-11-05T09:25:58.796111Z",
               "city": "Cambridge",
@@ -819,44 +1181,7 @@
               "multiLocation": false
             }
           ],
-          "roomCount": 4
-        },
-        {
-          "city": "Peterborough",
-          "state": "",
-          "rooms": [
-            {
-              "docId": "gDZcre1BO088NvXxzSpV",
-              "name": "Madame Curio's Cirque Delirium",
-              "englishName": "",
-              "displayName": "Madame Curio's Cirque Delirium",
-              "company": "Trapp'd",
-              "link": "https://trappd.com/rooms/",
-              "sourceCity": "Peterborough",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 0,
-              "categoryLabel": "in-person room",
-              "isApproved": [
-                2020,
-                2021,
-                2022,
-                2023
-              ],
-              "isNominee": [
-                2020
-              ],
-              "isFinalist": [],
-              "isWinner": [],
-              "createTime": "2020-10-26T06:06:09.662276Z",
-              "updateTime": "2024-09-18T18:47:56.393359Z",
-              "city": "Peterborough",
-              "county": "Cambridgeshire",
-              "constituentCountry": "England",
-              "multiLocation": false
-            }
-          ],
-          "roomCount": 1
+          "roomCount": 3
         },
         {
           "city": "Soham",
@@ -886,6 +1211,15 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2022-10-23T03:43:32.095386Z",
               "updateTime": "2025-09-09T14:43:27.254287Z",
               "city": "Soham",
@@ -922,6 +1256,13 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2024-10-31T22:06:11.528303Z",
               "updateTime": "2025-11-05T09:28:33.238399Z",
               "city": "St Neots",
@@ -960,6 +1301,15 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2022-10-23T03:44:51.341881Z",
               "updateTime": "2025-09-03T15:33:58.075839Z",
               "city": "Whittlesey",
@@ -976,7 +1326,7 @@
       "constituentCountry": "England",
       "county": "Cheshire",
       "state": "",
-      "roomCount": 12,
+      "roomCount": 10,
       "cities": [
         {
           "city": "Chester",
@@ -1018,6 +1368,16 @@
                 2022
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:54:13.380383Z",
               "updateTime": "2025-09-03T15:48:06.858287Z",
               "city": "Chester",
@@ -1068,6 +1428,16 @@
                 2022
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:54:13.380383Z",
               "updateTime": "2025-09-03T15:48:06.858287Z",
               "city": "Crewe",
@@ -1102,6 +1472,10 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2022-08-17T03:18:15.749285Z",
               "updateTime": "2022-09-01T01:38:51.252127Z",
               "city": "Disley",
@@ -1133,6 +1507,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2021-10-30T20:27:08.411878Z",
               "updateTime": "2025-09-03T15:36:19.219855Z",
               "city": "Disley",
@@ -1175,6 +1559,16 @@
                 2018
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:46:08.348892Z",
               "updateTime": "2025-09-03T15:36:05.102687Z",
               "city": "Disley",
@@ -1220,6 +1614,16 @@
                 2023
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:45:55.021297Z",
               "updateTime": "2025-11-05T09:26:35.912543Z",
               "city": "Disley",
@@ -1234,35 +1638,6 @@
           "city": "Macclesfield",
           "state": "",
           "rooms": [
-            {
-              "docId": "8XzV1riLXLLxe3nMQOKE",
-              "name": "Bad Clown",
-              "englishName": "",
-              "displayName": "Bad Clown",
-              "company": "Escape Quest",
-              "link": "https://www.escapequest.co.uk/",
-              "sourceCity": "Macclesfield",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 0,
-              "categoryLabel": "in-person room",
-              "isApproved": [
-                2018
-              ],
-              "isNominee": [
-                2018
-              ],
-              "isFinalist": [
-                2018
-              ],
-              "isWinner": [],
-              "createTime": "2022-09-01T02:33:51.438817Z",
-              "updateTime": "2022-10-03T05:25:03.235087Z",
-              "city": "Macclesfield",
-              "county": "Cheshire",
-              "constituentCountry": "England",
-              "multiLocation": false
-            },
             {
               "docId": "UjbsT8313ne7TPZImxTL",
               "name": "Henry Fortune's House of Illusion",
@@ -1296,6 +1671,17 @@
                 2024
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [
+                2021,
+                2022
+              ],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:51:31.476872Z",
               "updateTime": "2025-11-05T09:27:35.300559Z",
               "city": "Macclesfield",
@@ -1337,6 +1723,15 @@
                 2022,
                 2023
               ],
+              "isConfirmedOpen": [
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2022-10-05T21:06:48.815880Z",
               "updateTime": "2025-12-08T06:34:43.772575Z",
               "city": "Macclesfield",
@@ -1376,37 +1771,17 @@
               "isWinner": [
                 2023
               ],
+              "isConfirmedOpen": [
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2022-10-05T21:06:50.569386Z",
               "updateTime": "2025-12-08T06:34:43.772575Z",
-              "city": "Macclesfield",
-              "county": "Cheshire",
-              "constituentCountry": "England",
-              "multiLocation": false
-            },
-            {
-              "docId": "RHb7cKovGOg8nCzRjoKs",
-              "name": "The 13th Element",
-              "englishName": "",
-              "displayName": "The 13th Element",
-              "company": "Escape Quest",
-              "link": "https://www.escapequest.co.uk/13th-element.html",
-              "sourceCity": "Macclesfield",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 0,
-              "categoryLabel": "in-person room",
-              "isApproved": [
-                2019,
-                2020
-              ],
-              "isNominee": [
-                2019,
-                2020
-              ],
-              "isFinalist": [],
-              "isWinner": [],
-              "createTime": "2019-11-02T06:51:37.440467Z",
-              "updateTime": "2024-09-18T18:45:00.327919Z",
               "city": "Macclesfield",
               "county": "Cheshire",
               "constituentCountry": "England",
@@ -1436,6 +1811,13 @@
                 2024
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2024-10-01T21:55:21.619999Z",
               "updateTime": "2025-11-05T09:27:48.606735Z",
               "city": "Macclesfield",
@@ -1444,7 +1826,7 @@
               "multiLocation": false
             }
           ],
-          "roomCount": 6
+          "roomCount": 4
         }
       ]
     },
@@ -1452,73 +1834,8 @@
       "constituentCountry": "England",
       "county": "Cornwall",
       "state": "",
-      "roomCount": 3,
+      "roomCount": 1,
       "cities": [
-        {
-          "city": "Bodmin",
-          "state": "",
-          "rooms": [
-            {
-              "docId": "eZv405WXrTUketS3wC1i",
-              "name": "Dormant",
-              "englishName": "",
-              "displayName": "Dormant",
-              "company": "Housetrap Escape Rooms",
-              "link": "https://www.housetrapescaperooms.co.uk/dormant/",
-              "sourceCity": "Bodmin",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 0,
-              "categoryLabel": "in-person room",
-              "isApproved": [
-                2020,
-                2021
-              ],
-              "isNominee": [
-                2020
-              ],
-              "isFinalist": [],
-              "isWinner": [],
-              "createTime": "2020-11-01T02:44:32.453145Z",
-              "updateTime": "2024-09-30T21:48:17.864463Z",
-              "city": "Bodmin",
-              "county": "Cornwall",
-              "constituentCountry": "England",
-              "multiLocation": false
-            },
-            {
-              "docId": "dYRFvCP7hbkdH23120Kx",
-              "name": "Seance",
-              "englishName": "",
-              "displayName": "Seance",
-              "company": "Housetrap Escape Rooms",
-              "link": "https://www.housetrapescaperooms.co.uk/seance/",
-              "sourceCity": "Bodmin",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 0,
-              "categoryLabel": "in-person room",
-              "isApproved": [
-                2021,
-                2022,
-                2023,
-                2024
-              ],
-              "isNominee": [
-                2021
-              ],
-              "isFinalist": [],
-              "isWinner": [],
-              "createTime": "2021-10-11T05:11:58.902134Z",
-              "updateTime": "2025-09-18T09:39:28.359055Z",
-              "city": "Bodmin",
-              "county": "Cornwall",
-              "constituentCountry": "England",
-              "multiLocation": false
-            }
-          ],
-          "roomCount": 2
-        },
         {
           "city": "Truro",
           "state": "",
@@ -1543,6 +1860,12 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2025-10-29T07:59:38.649279Z",
               "updateTime": "2025-11-05T09:28:52.079951Z",
               "city": "Truro",
@@ -1590,6 +1913,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-10-30T00:55:59.574138Z",
               "updateTime": "2025-09-05T19:29:43.331103Z",
               "city": "Workington",
@@ -1624,6 +1957,15 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2021-10-25T20:23:14.102085Z",
               "updateTime": "2025-09-05T19:28:55.206575Z",
               "city": "Workington",
@@ -1671,6 +2013,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2021-10-20T01:04:37.340238Z",
               "updateTime": "2025-11-05T09:26:29.863599Z",
               "city": "Derby",
@@ -1704,6 +2056,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:45:29.715621Z",
               "updateTime": "2025-09-05T19:19:43.707407Z",
               "city": "Derby",
@@ -1735,6 +2097,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2021-10-25T20:17:36.665171Z",
               "updateTime": "2025-09-03T15:36:48.384751Z",
               "city": "Derby",
@@ -1768,6 +2140,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-10-30T17:22:10.314864Z",
               "updateTime": "2025-11-05T09:26:31.993599Z",
               "city": "Derby",
@@ -1808,6 +2190,16 @@
                 2021
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:45:38.574172Z",
               "updateTime": "2025-09-05T19:19:55.701567Z",
               "city": "Derby",
@@ -1864,6 +2256,16 @@
                 2023
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-10-29T07:26:01.441177Z",
               "updateTime": "2025-11-05T09:28:13.203055Z",
               "city": "Plymouth",
@@ -1891,6 +2293,12 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2025-10-29T07:58:48.533551Z",
               "updateTime": "2025-11-05T09:28:11.903199Z",
               "city": "Plymouth",
@@ -1950,6 +2358,16 @@
                 2018
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:44:06.606288Z",
               "updateTime": "2025-11-05T09:25:41.612511Z",
               "city": "Bournemouth",
@@ -1973,6 +2391,12 @@
               "isNominee": [],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [],
+              "isIneligible": [
+                2018
+              ],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "minimum 2 experiences required",
               "createTime": "2022-08-17T03:50:13.688206Z",
               "updateTime": "2022-09-02T00:47:05.190159Z",
               "city": "Bournemouth",
@@ -2021,6 +2445,15 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2022-10-23T03:39:21.293342Z",
               "updateTime": "2025-11-05T09:25:31.945263Z",
               "city": "Beverley",
@@ -2068,6 +2501,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-11-01T02:37:44.539321Z",
               "updateTime": "2025-09-03T15:21:58.843471Z",
               "city": "Brighton",
@@ -2106,6 +2549,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:44:25.110354Z",
               "updateTime": "2025-09-03T15:19:53.087935Z",
               "city": "Brighton",
@@ -2152,6 +2605,16 @@
                 2024
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:44:36.154094Z",
               "updateTime": "2025-11-12T17:39:43.373599Z",
               "city": "Brighton",
@@ -2187,6 +2650,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:44:42.066119Z",
               "updateTime": "2025-09-03T15:20:19.807487Z",
               "city": "Brighton",
@@ -2214,6 +2687,10 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2022-08-17T01:57:09.823953Z",
               "updateTime": "2022-09-01T01:38:44.633055Z",
               "city": "Brighton",
@@ -2244,6 +2721,15 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2022-11-01T07:41:59.317135Z",
               "updateTime": "2025-09-03T15:20:32.741791Z",
               "city": "Brighton",
@@ -2271,6 +2757,12 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2021-10-20T01:00:21.496251Z",
               "updateTime": "2021-11-02T04:23:07.435423Z",
               "city": "Brighton",
@@ -2316,6 +2808,16 @@
                 2022
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2021-10-11T05:13:10.345908Z",
               "updateTime": "2025-11-05T09:26:24.319311Z",
               "city": "Crowborough",
@@ -2349,6 +2851,15 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2022-10-05T21:09:01.561659Z",
               "updateTime": "2025-11-05T09:26:26.107295Z",
               "city": "Crowborough",
@@ -2380,6 +2891,15 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2022-10-31T03:54:08.607231Z",
               "updateTime": "2025-09-05T19:12:36.469503Z",
               "city": "Crowborough",
@@ -2428,6 +2948,15 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2022-10-24T22:32:31.133697Z",
               "updateTime": "2025-11-05T09:25:34.622367Z",
               "city": "Billericay",
@@ -2467,6 +2996,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2021-10-31T23:12:05.937914Z",
               "updateTime": "2025-11-05T09:26:09.484239Z",
               "city": "Colchester",
@@ -2514,6 +3053,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-10-29T22:02:08.664467Z",
               "updateTime": "2025-09-08T06:13:12.255263Z",
               "city": "Cheltenham",
@@ -2550,6 +3099,13 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2024-10-05T17:03:36.416287Z",
               "updateTime": "2025-11-05T09:28:49.882239Z",
               "city": "Tewkesbury",
@@ -2566,7 +3122,7 @@
       "constituentCountry": "England",
       "county": "Greater London",
       "state": "",
-      "roomCount": 41,
+      "roomCount": 35,
       "cities": [
         {
           "city": "Croydon",
@@ -2596,6 +3152,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2021-10-28T17:02:02.171938Z",
               "updateTime": "2025-09-05T19:19:14.279183Z",
               "city": "Croydon",
@@ -2633,6 +3199,15 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2022-10-31T19:07:54.197967Z",
               "updateTime": "2025-09-05T19:20:19.653375Z",
               "city": "Eltham",
@@ -2683,6 +3258,16 @@
                 2022
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:54:13.380383Z",
               "updateTime": "2025-09-03T15:48:06.858287Z",
               "city": "Greenwich",
@@ -2717,6 +3302,12 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2025-10-28T20:30:43.975343Z",
               "updateTime": "2025-11-05T09:27:02.921247Z",
               "city": "Kingston",
@@ -2756,6 +3347,12 @@
                 2021
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-09-30T23:30:43.539362Z",
               "updateTime": "2022-12-24T02:17:31.262111Z",
               "city": "London",
@@ -2790,6 +3387,12 @@
               "isWinner": [
                 2020
               ],
+              "isConfirmedOpen": [
+                2021
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-10-21T23:27:32.400599Z",
               "updateTime": "2022-12-24T02:17:31.262111Z",
               "city": "London",
@@ -2821,6 +3424,12 @@
                 2020
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-10-29T08:10:22.695267Z",
               "updateTime": "2022-12-04T02:49:42.349167Z",
               "city": "London",
@@ -2866,35 +3475,18 @@
                 2023
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:49:17.746334Z",
               "updateTime": "2025-11-05T09:27:12.697215Z",
-              "city": "London",
-              "county": "Greater London",
-              "constituentCountry": "England",
-              "multiLocation": false
-            },
-            {
-              "docId": "bTnQbFm883ZN9auQfKMc",
-              "name": "Dark Magik",
-              "englishName": "",
-              "displayName": "Dark Magik",
-              "company": "Access Escape",
-              "link": "https://www.accessescape.com/",
-              "sourceCity": "London",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 0,
-              "categoryLabel": "in-person room",
-              "isApproved": [
-                2020
-              ],
-              "isNominee": [
-                2020
-              ],
-              "isFinalist": [],
-              "isWinner": [],
-              "createTime": "2020-10-26T06:04:51.509532Z",
-              "updateTime": "2022-10-03T03:46:40.091391Z",
               "city": "London",
               "county": "Greater London",
               "constituentCountry": "England",
@@ -2920,6 +3512,12 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2021-10-06T00:08:06.332648Z",
               "updateTime": "2021-11-02T04:24:51.645679Z",
               "city": "London",
@@ -2947,42 +3545,14 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2025-09-03T02:08:59.949439Z",
               "updateTime": "2025-11-10T22:31:09.960463Z",
-              "city": "London",
-              "county": "Greater London",
-              "constituentCountry": "England",
-              "multiLocation": false
-            },
-            {
-              "docId": "ixPi2twlwdecobxO4ksl",
-              "name": "MAD",
-              "englishName": "",
-              "displayName": "MAD",
-              "company": "Archimedes Inspiration",
-              "link": "https://www.aiescape.com/",
-              "sourceCity": "London",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 0,
-              "categoryLabel": "in-person room",
-              "isApproved": [
-                2019,
-                2020,
-                2021,
-                2022,
-                2023
-              ],
-              "isNominee": [
-                2019,
-                2020,
-                2021,
-                2022
-              ],
-              "isFinalist": [],
-              "isWinner": [],
-              "createTime": "2019-11-02T06:48:13.632008Z",
-              "updateTime": "2024-09-18T18:43:44.808127Z",
               "city": "London",
               "county": "Greater London",
               "constituentCountry": "England",
@@ -3008,6 +3578,12 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2021-10-08T05:51:23.601900Z",
               "updateTime": "2021-11-02T04:24:37.241823Z",
               "city": "London",
@@ -3037,6 +3613,10 @@
                 2018
               ],
               "isWinner": [],
+              "isConfirmedOpen": [],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2022-08-17T01:55:09.543486Z",
               "updateTime": "2022-12-04T02:45:38.244847Z",
               "city": "London",
@@ -3066,6 +3646,10 @@
                 2018
               ],
               "isWinner": [],
+              "isConfirmedOpen": [],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2022-08-17T02:13:45.910862Z",
               "updateTime": "2022-09-16T05:59:34.011631Z",
               "city": "London",
@@ -3089,6 +3673,12 @@
               "isNominee": [],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [],
+              "isIneligible": [
+                2018
+              ],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "minimum 2 experiences required",
               "createTime": "2022-09-01T23:34:57.157731Z",
               "updateTime": "2022-09-01T23:42:44.338479Z",
               "city": "London",
@@ -3120,6 +3710,10 @@
               "isWinner": [
                 2018
               ],
+              "isConfirmedOpen": [],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2022-08-17T04:47:29.361142Z",
               "updateTime": "2022-12-04T02:45:38.244847Z",
               "city": "London",
@@ -3147,6 +3741,12 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2025-10-17T04:12:37.811615Z",
               "updateTime": "2025-11-05T09:27:30.767535Z",
               "city": "London",
@@ -3179,6 +3779,15 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2022-09-01T02:40:29.517721Z",
               "updateTime": "2025-09-05T21:13:53.623567Z",
               "city": "London",
@@ -3208,6 +3817,12 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-10-29T22:09:24.257970Z",
               "updateTime": "2021-11-02T04:25:21.984015Z",
               "city": "London",
@@ -3247,55 +3862,23 @@
                 2018
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [
+                2021
+              ],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:50:43.236692Z",
               "updateTime": "2025-09-07T12:12:44.830351Z",
               "city": "London",
               "county": "Greater London",
               "constituentCountry": "England",
               "multiLocation": true
-            },
-            {
-              "docId": "iI2a3ywkahuSfKVNzah1",
-              "name": "Project Ðelta",
-              "englishName": "",
-              "displayName": "Project Ðelta",
-              "company": "Archimedes Inspiration",
-              "link": "https://www.aiescape.com/",
-              "sourceCity": "London",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 0,
-              "categoryLabel": "in-person room",
-              "isApproved": [
-                2019,
-                2020,
-                2021,
-                2018,
-                2022,
-                2023
-              ],
-              "isNominee": [
-                2019,
-                2020,
-                2021,
-                2018,
-                2022,
-                2023
-              ],
-              "isFinalist": [
-                2019,
-                2020,
-                2021,
-                2018,
-                2022
-              ],
-              "isWinner": [],
-              "createTime": "2019-11-02T06:48:35.443128Z",
-              "updateTime": "2024-09-18T18:43:56.307311Z",
-              "city": "London",
-              "county": "Greater London",
-              "constituentCountry": "England",
-              "multiLocation": false
             },
             {
               "docId": "ye24ivwJfUGO81j7nxSx",
@@ -3319,6 +3902,13 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2024-10-18T18:45:46.427631Z",
               "updateTime": "2025-11-12T17:39:52.086895Z",
               "city": "London",
@@ -3363,6 +3953,16 @@
                 2018
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:49:30.378994Z",
               "updateTime": "2025-11-05T09:27:15.207839Z",
               "city": "London",
@@ -3397,6 +3997,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-10-30T22:00:13.777783Z",
               "updateTime": "2025-11-05T09:27:24.022031Z",
               "city": "London",
@@ -3439,6 +4049,16 @@
                 2022
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:50:30.737512Z",
               "updateTime": "2025-09-05T21:18:06.684095Z",
               "city": "London",
@@ -3480,6 +4100,16 @@
                 2022
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:50:52.228411Z",
               "updateTime": "2025-11-05T09:27:29.240159Z",
               "city": "London",
@@ -3508,6 +4138,13 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2024-10-02T21:17:49.715599Z",
               "updateTime": "2025-09-05T21:18:55.796399Z",
               "city": "London",
@@ -3555,37 +4192,18 @@
                 2025
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:49:48.163026Z",
               "updateTime": "2025-12-08T06:34:43.772575Z",
-              "city": "London",
-              "county": "Greater London",
-              "constituentCountry": "England",
-              "multiLocation": false
-            },
-            {
-              "docId": "GE1gRcWZ235r2qlGxv5q",
-              "name": "The Celestial Chain",
-              "englishName": "",
-              "displayName": "The Celestial Chain",
-              "company": "Time Run",
-              "link": "https://time-run.sketchanet.com/",
-              "sourceCity": "London",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 0,
-              "categoryLabel": "in-person room",
-              "isApproved": [
-                2018
-              ],
-              "isNominee": [
-                2018
-              ],
-              "isFinalist": [
-                2018
-              ],
-              "isWinner": [],
-              "createTime": "2022-09-01T02:43:11.146927Z",
-              "updateTime": "2022-12-04T02:45:24.600783Z",
               "city": "London",
               "county": "Greater London",
               "constituentCountry": "England",
@@ -3629,74 +4247,22 @@
                 2018
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:50:03.263485Z",
               "updateTime": "2025-11-05T09:27:32.320735Z",
               "city": "London",
               "county": "Greater London",
               "constituentCountry": "England",
               "multiLocation": true
-            },
-            {
-              "docId": "17N97OZrZEH3OfSPUBRo",
-              "name": "The Escapist",
-              "englishName": "",
-              "displayName": "The Escapist",
-              "company": "Modern Fables",
-              "link": "https://www.modern-fables.com/theescapist/",
-              "sourceCity": "London",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 0,
-              "categoryLabel": "in-person room",
-              "isApproved": [
-                2020,
-                2021,
-                2022
-              ],
-              "isNominee": [
-                2020,
-                2021,
-                2022
-              ],
-              "isFinalist": [],
-              "isWinner": [],
-              "createTime": "2020-10-23T20:10:03.652203Z",
-              "updateTime": "2024-09-18T18:44:27.740287Z",
-              "city": "London",
-              "county": "Greater London",
-              "constituentCountry": "England",
-              "multiLocation": false
-            },
-            {
-              "docId": "qAHKczKYlMxdcYtrgWXD",
-              "name": "The Lance of Longinus",
-              "englishName": "",
-              "displayName": "The Lance of Longinus",
-              "company": "Time Run",
-              "link": "https://time-run.sketchanet.com/",
-              "sourceCity": "London",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 0,
-              "categoryLabel": "in-person room",
-              "isApproved": [
-                2018
-              ],
-              "isNominee": [
-                2018
-              ],
-              "isFinalist": [
-                2018
-              ],
-              "isWinner": [
-                2018
-              ],
-              "createTime": "2022-09-01T02:45:15.607870Z",
-              "updateTime": "2022-09-27T04:24:35.150767Z",
-              "city": "London",
-              "county": "Greater London",
-              "constituentCountry": "England",
-              "multiLocation": false
             },
             {
               "docId": "0Rq0BDfUWSkN6vhzMXeH",
@@ -3725,6 +4291,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-11-01T02:55:55.395920Z",
               "updateTime": "2025-09-05T21:45:37.331215Z",
               "city": "London",
@@ -3758,6 +4334,15 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-10-26T06:05:03.352924Z",
               "updateTime": "2025-09-05T21:16:48.074079Z",
               "city": "London",
@@ -3792,6 +4377,12 @@
               "isWinner": [
                 2020
               ],
+              "isConfirmedOpen": [
+                2021
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-09-30T23:30:37.718205Z",
               "updateTime": "2022-12-24T02:17:31.262111Z",
               "city": "London",
@@ -3823,6 +4414,15 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2022-10-04T19:48:30.344277Z",
               "updateTime": "2025-09-05T21:13:11.879487Z",
               "city": "London",
@@ -3831,7 +4431,7 @@
               "multiLocation": false
             }
           ],
-          "roomCount": 33
+          "roomCount": 27
         },
         {
           "city": "Wallington",
@@ -3859,6 +4459,14 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2023-10-22T07:21:00.662975Z",
               "updateTime": "2025-09-05T20:57:18.797055Z",
               "city": "Wallington",
@@ -3897,6 +4505,17 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [
+                2021
+              ],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-11-01T02:57:52.572056Z",
               "updateTime": "2025-09-07T11:57:04.572703Z",
               "city": "West Wickham",
@@ -3930,6 +4549,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-11-01T02:45:45.405409Z",
               "updateTime": "2025-09-07T11:57:33.826623Z",
               "city": "West Wickham",
@@ -3961,6 +4590,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2021-10-24T23:55:23.049825Z",
               "updateTime": "2025-09-07T11:57:45.468719Z",
               "city": "West Wickham",
@@ -3977,7 +4616,7 @@
       "constituentCountry": "England",
       "county": "Greater Manchester",
       "state": "",
-      "roomCount": 13,
+      "roomCount": 12,
       "cities": [
         {
           "city": "Ashton-under-Lyne",
@@ -4011,6 +4650,12 @@
                 2020,
                 2021
               ],
+              "isConfirmedOpen": [
+                2021
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-09-30T23:30:32.627863Z",
               "updateTime": "2022-12-24T02:17:31.262111Z",
               "city": "Ashton-under-Lyne",
@@ -4046,6 +4691,12 @@
                 2020,
                 2021
               ],
+              "isConfirmedOpen": [
+                2021
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-10-01T20:13:23.050574Z",
               "updateTime": "2022-12-24T02:17:31.262111Z",
               "city": "Ashton-under-Lyne",
@@ -4081,6 +4732,13 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2024-10-31T21:59:54.946623Z",
               "updateTime": "2025-09-09T14:36:45.920879Z",
               "city": "Bury",
@@ -4108,6 +4766,12 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2025-10-20T23:52:25.980991Z",
               "updateTime": "2025-11-05T09:25:56.311407Z",
               "city": "Bury",
@@ -4135,6 +4799,12 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2025-10-20T23:51:24.314271Z",
               "updateTime": "2025-11-05T09:25:52.143519Z",
               "city": "Bury",
@@ -4175,6 +4845,16 @@
                 2023
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-10-29T21:58:54.444336Z",
               "updateTime": "2025-11-05T09:25:53.946927Z",
               "city": "Bury",
@@ -4208,6 +4888,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:44:48.556824Z",
               "updateTime": "2025-09-03T15:21:17.836991Z",
               "city": "Bury",
@@ -4258,42 +4948,22 @@
                 2022
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:54:13.380383Z",
               "updateTime": "2025-09-03T15:48:06.858287Z",
               "city": "Manchester",
               "county": "Greater Manchester",
               "constituentCountry": "England",
               "multiLocation": true
-            },
-            {
-              "docId": "YKGMeRqFTSwhiEWpMyVa",
-              "name": "Most Wanted",
-              "englishName": "",
-              "displayName": "Most Wanted",
-              "company": "Breakout Manchester",
-              "link": "https://breakoutmanchester.com/rooms",
-              "sourceCity": "Manchester",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 0,
-              "categoryLabel": "in-person room",
-              "isApproved": [
-                2020,
-                2021,
-                2022
-              ],
-              "isNominee": [
-                2020,
-                2021
-              ],
-              "isFinalist": [],
-              "isWinner": [],
-              "createTime": "2020-10-29T20:17:51.665026Z",
-              "updateTime": "2024-09-30T21:49:52.676447Z",
-              "city": "Manchester",
-              "county": "Greater Manchester",
-              "constituentCountry": "England",
-              "multiLocation": false
             },
             {
               "docId": "qqyQGeuwEgGNE6z4tPjE",
@@ -4333,6 +5003,16 @@
                 2018
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:50:03.263485Z",
               "updateTime": "2025-11-05T09:27:32.320735Z",
               "city": "Manchester",
@@ -4363,6 +5043,15 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2022-10-30T18:23:39.194287Z",
               "updateTime": "2025-09-07T11:58:27.241295Z",
               "city": "Manchester",
@@ -4396,6 +5085,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-10-26T06:05:10.365561Z",
               "updateTime": "2025-09-07T11:58:51.623695Z",
               "city": "Manchester",
@@ -4404,7 +5103,7 @@
               "multiLocation": false
             }
           ],
-          "roomCount": 5
+          "roomCount": 4
         },
         {
           "city": "Wigan",
@@ -4435,6 +5134,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2021-10-20T01:10:20.184554Z",
               "updateTime": "2025-09-05T20:56:01.287023Z",
               "city": "Wigan",
@@ -4482,6 +5191,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-10-29T22:02:08.664467Z",
               "updateTime": "2025-09-08T06:13:12.255263Z",
               "city": "Basingstoke",
@@ -4521,6 +5240,15 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-10-26T06:06:21.030946Z",
               "updateTime": "2025-09-07T12:19:47.753343Z",
               "city": "Portsmouth",
@@ -4550,6 +5278,14 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2023-10-31T23:19:18.642351Z",
               "updateTime": "2025-09-07T12:20:16.534719Z",
               "city": "Portsmouth",
@@ -4600,6 +5336,16 @@
                 2022
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:54:13.380383Z",
               "updateTime": "2025-09-03T15:48:06.858287Z",
               "city": "Southampton",
@@ -4639,6 +5385,16 @@
                 2021
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-10-29T07:27:47.723583Z",
               "updateTime": "2025-09-07T12:11:17.649375Z",
               "city": "Southampton",
@@ -4678,6 +5434,17 @@
                 2018
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [
+                2021
+              ],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:50:43.236692Z",
               "updateTime": "2025-09-07T12:12:44.830351Z",
               "city": "Southampton",
@@ -4709,6 +5476,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2021-10-11T05:15:17.595382Z",
               "updateTime": "2025-09-09T14:43:50.986287Z",
               "city": "Southampton",
@@ -4740,6 +5517,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2021-10-28T17:02:02.171938Z",
               "updateTime": "2025-09-05T19:19:14.279183Z",
               "city": "Southampton",
@@ -4784,6 +5571,13 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2024-10-01T21:52:47.936927Z",
               "updateTime": "2025-11-05T09:27:06.496591Z",
               "city": "Letchworth Garden City",
@@ -4823,6 +5617,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-10-29T22:02:08.664467Z",
               "updateTime": "2025-09-08T06:13:12.255263Z",
               "city": "Watford",
@@ -4839,7 +5643,7 @@
       "constituentCountry": "England",
       "county": "Kent",
       "state": "",
-      "roomCount": 36,
+      "roomCount": 25,
       "cities": [
         {
           "city": "Ashford",
@@ -4870,126 +5674,25 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-11-01T02:37:44.539321Z",
               "updateTime": "2025-09-03T15:21:58.843471Z",
               "city": "Ashford",
               "county": "Kent",
               "constituentCountry": "England",
               "multiLocation": true
-            },
-            {
-              "docId": "ji3yPRmDlMIZXX4mA4my",
-              "name": "The Moonlit Wild",
-              "englishName": "",
-              "displayName": "The Moonlit Wild",
-              "company": "Pressure Point Escape Rooms",
-              "link": "https://www.pressurepointescaperooms.co.uk/the-rooms",
-              "sourceCity": "Ashford",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 0,
-              "categoryLabel": "in-person room",
-              "isApproved": [
-                2019,
-                2020,
-                2021,
-                2022,
-                2023
-              ],
-              "isNominee": [
-                2019,
-                2021,
-                2022
-              ],
-              "isFinalist": [],
-              "isWinner": [],
-              "createTime": "2019-11-02T06:43:44.762154Z",
-              "updateTime": "2024-09-04T18:06:48.489359Z",
-              "city": "Ashford",
-              "county": "Kent",
-              "constituentCountry": "England",
-              "multiLocation": false
             }
           ],
-          "roomCount": 2
-        },
-        {
-          "city": "Broadstairs",
-          "state": "",
-          "rooms": [
-            {
-              "docId": "IsqEL4gslL6dHcf8UyUV",
-              "name": "Atlantis",
-              "englishName": "",
-              "displayName": "Atlantis",
-              "company": "The Escapement (UK)",
-              "link": "https://www.theescapement.co.uk/escape-rooms-broadstairs",
-              "sourceCity": "Broadstairs",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 0,
-              "categoryLabel": "in-person room",
-              "isApproved": [
-                2022,
-                2023,
-                2024
-              ],
-              "isNominee": [
-                2022,
-                2023,
-                2024
-              ],
-              "isFinalist": [
-                2022,
-                2023,
-                2024
-              ],
-              "isWinner": [
-                2022
-              ],
-              "createTime": "2022-10-23T03:40:13.594846Z",
-              "updateTime": "2025-09-18T09:50:30.819935Z",
-              "city": "Broadstairs",
-              "county": "Kent",
-              "constituentCountry": "England",
-              "multiLocation": false
-            },
-            {
-              "docId": "PF09QEWB7BTwqnFTCF00",
-              "name": "Wunderwaffe Operation Quartz",
-              "englishName": "",
-              "displayName": "Wunderwaffe Operation Quartz",
-              "company": "The Escapement (UK)",
-              "link": "https://www.theescapement.co.uk/escape-rooms-broadstairs",
-              "sourceCity": "Broadstairs",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 0,
-              "categoryLabel": "in-person room",
-              "isApproved": [
-                2022,
-                2023,
-                2024
-              ],
-              "isNominee": [
-                2022,
-                2023,
-                2024
-              ],
-              "isFinalist": [
-                2022,
-                2023
-              ],
-              "isWinner": [],
-              "createTime": "2022-10-23T03:40:16.692114Z",
-              "updateTime": "2025-09-18T09:50:37.044127Z",
-              "city": "Broadstairs",
-              "county": "Kent",
-              "constituentCountry": "England",
-              "multiLocation": false
-            }
-          ],
-          "roomCount": 2
+          "roomCount": 1
         },
         {
           "city": "Canterbury",
@@ -5018,6 +5721,15 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2022-10-31T19:04:00.447855Z",
               "updateTime": "2025-09-03T15:22:28.956831Z",
               "city": "Canterbury",
@@ -5048,6 +5760,15 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2022-10-31T03:53:17.209151Z",
               "updateTime": "2025-09-03T15:22:58.571519Z",
               "city": "Canterbury",
@@ -5091,6 +5812,16 @@
                 2022
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:44:56.511688Z",
               "updateTime": "2025-11-05T09:26:02.276159Z",
               "city": "Canterbury",
@@ -5129,6 +5860,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2021-10-30T20:26:52.986554Z",
               "updateTime": "2025-09-03T15:25:04.783343Z",
               "city": "Chatham",
@@ -5158,6 +5899,13 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2024-10-01T21:48:16.964559Z",
               "updateTime": "2025-11-05T09:26:05.211071Z",
               "city": "Chatham",
@@ -5191,6 +5939,15 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2022-10-30T19:01:56.907119Z",
               "updateTime": "2025-11-05T09:26:06.617535Z",
               "city": "Chatham",
@@ -5200,101 +5957,6 @@
             }
           ],
           "roomCount": 3
-        },
-        {
-          "city": "Dover",
-          "state": "",
-          "rooms": [
-            {
-              "docId": "OAcyHdg02riamPN6wyi6",
-              "name": "Director's Cut",
-              "englishName": "",
-              "displayName": "Director's Cut",
-              "company": "Get Lost",
-              "link": "https://www.getlostescaperooms.co.uk/",
-              "sourceCity": "Dover",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 0,
-              "categoryLabel": "in-person room",
-              "isApproved": [
-                2020
-              ],
-              "isNominee": [
-                2020
-              ],
-              "isFinalist": [],
-              "isWinner": [],
-              "createTime": "2020-11-01T02:50:15.196968Z",
-              "updateTime": "2022-10-03T03:46:16.230783Z",
-              "city": "Dover",
-              "county": "Kent",
-              "constituentCountry": "England",
-              "multiLocation": false
-            },
-            {
-              "docId": "DDzKAzOUeoDvgI6KdCQm",
-              "name": "The Krevokar Programme",
-              "englishName": "",
-              "displayName": "The Krevokar Programme",
-              "company": "Get Lost",
-              "link": "https://www.getlostescaperooms.co.uk/",
-              "sourceCity": "Dover",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 0,
-              "categoryLabel": "in-person room",
-              "isApproved": [
-                2020
-              ],
-              "isNominee": [
-                2020
-              ],
-              "isFinalist": [],
-              "isWinner": [],
-              "createTime": "2020-11-01T02:50:17.769698Z",
-              "updateTime": "2021-09-28T18:38:54.437119Z",
-              "city": "Dover",
-              "county": "Kent",
-              "constituentCountry": "England",
-              "multiLocation": false
-            }
-          ],
-          "roomCount": 2
-        },
-        {
-          "city": "Frittenden",
-          "state": "",
-          "rooms": [
-            {
-              "docId": "IctFcsGk3ymDbtdOCBP9",
-              "name": "Secret Santa",
-              "englishName": "",
-              "displayName": "Secret Santa",
-              "company": "Time 2 Escape",
-              "link": "https://www.facebook.com/Time2Escape.Kent",
-              "sourceCity": "Frittenden",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 0,
-              "categoryLabel": "in-person room",
-              "isApproved": [
-                2024
-              ],
-              "isNominee": [
-                2024
-              ],
-              "isFinalist": [],
-              "isWinner": [],
-              "createTime": "2024-10-29T20:57:54.819343Z",
-              "updateTime": "2025-10-04T00:38:18.844751Z",
-              "city": "Frittenden",
-              "county": "Kent",
-              "constituentCountry": "England",
-              "multiLocation": false
-            }
-          ],
-          "roomCount": 1
         },
         {
           "city": "Gillingham",
@@ -5320,6 +5982,12 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2025-10-05T08:58:09.696607Z",
               "updateTime": "2025-11-10T20:44:11.260735Z",
               "city": "Gillingham",
@@ -5334,47 +6002,6 @@
           "city": "Gravesend",
           "state": "",
           "rooms": [
-            {
-              "docId": "wqWtbB5SsxaXh2BZQxan",
-              "name": "Loop",
-              "englishName": "",
-              "displayName": "Loop",
-              "company": "The Panic Room (formerly Clockwork Dog)",
-              "link": "https://thepanicroom.net/loop",
-              "sourceCity": "Gravesend",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 0,
-              "categoryLabel": "in-person room",
-              "isApproved": [
-                2019,
-                2020,
-                2021,
-                2018,
-                2022,
-                2023,
-                2024
-              ],
-              "isNominee": [
-                2019,
-                2020,
-                2021,
-                2018,
-                2022
-              ],
-              "isFinalist": [
-                2019,
-                2021,
-                2018
-              ],
-              "isWinner": [],
-              "createTime": "2019-11-02T06:47:10.455240Z",
-              "updateTime": "2025-09-18T09:42:42.300751Z",
-              "city": "Gravesend",
-              "county": "Kent",
-              "constituentCountry": "England",
-              "multiLocation": false
-            },
             {
               "docId": "59HIn9TzYCEPidHmhTB4",
               "name": "n/a",
@@ -5395,64 +6022,12 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2022-08-17T04:45:58.270648Z",
               "updateTime": "2022-09-01T01:38:54.938255Z",
-              "city": "Gravesend",
-              "county": "Kent",
-              "constituentCountry": "England",
-              "multiLocation": false
-            },
-            {
-              "docId": "1ILQVs6R1nNi6p3Baiih",
-              "name": "Old Father Time",
-              "englishName": "",
-              "displayName": "Old Father Time",
-              "company": "The Panic Room",
-              "link": "https://thepanicroom.net/services/old-father-time/",
-              "sourceCity": "Gravesend",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 0,
-              "categoryLabel": "in-person room",
-              "isApproved": [
-                2018,
-                2022,
-                2023
-              ],
-              "isNominee": [
-                2018
-              ],
-              "isFinalist": [],
-              "isWinner": [],
-              "createTime": "2022-09-01T02:39:13.805482Z",
-              "updateTime": "2024-09-30T21:48:31.852591Z",
-              "city": "Gravesend",
-              "county": "Kent",
-              "constituentCountry": "England",
-              "multiLocation": false
-            },
-            {
-              "docId": "JedLOq7paGUSzl8hnGsr",
-              "name": "Revolution Ole",
-              "englishName": "",
-              "displayName": "Revolution Ole",
-              "company": "The Panic Room",
-              "link": "https://thepanicroom.net/",
-              "sourceCity": "Gravesend",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 0,
-              "categoryLabel": "in-person room",
-              "isApproved": [
-                2019
-              ],
-              "isNominee": [
-                2019
-              ],
-              "isFinalist": [],
-              "isWinner": [],
-              "createTime": "2019-11-02T06:47:43.395292Z",
-              "updateTime": "2020-10-10T01:09:24.557511Z",
               "city": "Gravesend",
               "county": "Kent",
               "constituentCountry": "England",
@@ -5483,6 +6058,17 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [
+                2021
+              ],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:47:18.965859Z",
               "updateTime": "2025-09-05T20:50:39.361807Z",
               "city": "Gravesend",
@@ -5516,6 +6102,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-10-29T22:01:03.791595Z",
               "updateTime": "2025-09-05T20:50:46.900271Z",
               "city": "Gravesend",
@@ -5524,7 +6120,7 @@
               "multiLocation": false
             }
           ],
-          "roomCount": 6
+          "roomCount": 3
         },
         {
           "city": "Maidstone",
@@ -5554,45 +6150,23 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [
+                2021
+              ],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-11-01T02:57:52.572056Z",
               "updateTime": "2025-09-07T11:57:04.572703Z",
               "city": "Maidstone",
               "county": "Kent",
               "constituentCountry": "England",
               "multiLocation": true
-            },
-            {
-              "docId": "ZSbgjfB4iVdcrL8Ke8se",
-              "name": "Inbound",
-              "englishName": "",
-              "displayName": "Inbound",
-              "company": "Escape Hub",
-              "link": "https://escapehub.co.uk/rooms/#inbound",
-              "sourceCity": "Maidstone",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 0,
-              "categoryLabel": "in-person room",
-              "isApproved": [
-                2020,
-                2021,
-                2022,
-                2023,
-                2024
-              ],
-              "isNominee": [
-                2020,
-                2021,
-                2022
-              ],
-              "isFinalist": [],
-              "isWinner": [],
-              "createTime": "2020-11-01T02:47:55.358777Z",
-              "updateTime": "2025-09-18T09:49:50.200671Z",
-              "city": "Maidstone",
-              "county": "Kent",
-              "constituentCountry": "England",
-              "multiLocation": false
             },
             {
               "docId": "F2kGt9leasKuOryYQ0rA",
@@ -5620,6 +6194,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-11-01T02:45:45.405409Z",
               "updateTime": "2025-09-07T11:57:33.826623Z",
               "city": "Maidstone",
@@ -5651,6 +6235,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2021-10-24T23:55:23.049825Z",
               "updateTime": "2025-09-07T11:57:45.468719Z",
               "city": "Maidstone",
@@ -5659,7 +6253,7 @@
               "multiLocation": true
             }
           ],
-          "roomCount": 4
+          "roomCount": 3
         },
         {
           "city": "Margate",
@@ -5694,6 +6288,16 @@
                 2020
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-10-26T06:05:21.827583Z",
               "updateTime": "2025-09-07T11:59:39.030815Z",
               "city": "Margate",
@@ -5721,6 +6325,10 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2022-08-17T04:41:33.485360Z",
               "updateTime": "2022-09-01T01:39:05.491375Z",
               "city": "Margate",
@@ -5761,39 +6369,18 @@
                 2021
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:52:01.718559Z",
               "updateTime": "2025-09-07T12:00:20.015839Z",
-              "city": "Margate",
-              "county": "Kent",
-              "constituentCountry": "England",
-              "multiLocation": false
-            },
-            {
-              "docId": "RJtVBV7SBo2tmhNf8rDn",
-              "name": "Spacescape",
-              "englishName": "",
-              "displayName": "Spacescape",
-              "company": "Ctrl Alt Esc",
-              "link": "https://ctrlaltesc.co.uk/index.php/en/",
-              "sourceCity": "Margate",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 0,
-              "categoryLabel": "in-person room",
-              "isApproved": [
-                2019,
-                2020,
-                2021,
-                2022
-              ],
-              "isNominee": [
-                2019,
-                2020
-              ],
-              "isFinalist": [],
-              "isWinner": [],
-              "createTime": "2019-11-02T06:51:45.539987Z",
-              "updateTime": "2024-09-18T18:46:33.761679Z",
               "city": "Margate",
               "county": "Kent",
               "constituentCountry": "England",
@@ -5840,6 +6427,16 @@
                 2024
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:52:12.550976Z",
               "updateTime": "2025-11-05T09:27:51.941071Z",
               "city": "Margate",
@@ -5848,7 +6445,7 @@
               "multiLocation": false
             }
           ],
-          "roomCount": 5
+          "roomCount": 4
         },
         {
           "city": "Paddock Wood",
@@ -5878,6 +6475,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2021-10-28T13:39:08.826677Z",
               "updateTime": "2025-09-07T12:13:27.403935Z",
               "city": "Paddock Wood",
@@ -5906,6 +6513,13 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2024-10-29T21:00:20.404559Z",
               "updateTime": "2025-09-07T12:14:00.705359Z",
               "city": "Paddock Wood",
@@ -5937,6 +6551,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2021-10-28T13:39:15.581338Z",
               "updateTime": "2025-09-07T12:15:23.721007Z",
               "city": "Paddock Wood",
@@ -5975,6 +6599,17 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [
+                2021
+              ],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-11-01T02:57:52.572056Z",
               "updateTime": "2025-09-07T11:57:04.572703Z",
               "city": "Ramsgate",
@@ -6013,6 +6648,14 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2023-10-05T07:24:49.454847Z",
               "updateTime": "2025-11-05T09:28:53.448351Z",
               "city": "Tunbridge Wells",
@@ -6050,6 +6693,16 @@
                 2022
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2021-10-11T05:15:32.691989Z",
               "updateTime": "2025-09-09T14:56:46.259983Z",
               "city": "Tunbridge Wells",
@@ -6090,6 +6743,16 @@
                 2023
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-10-29T07:32:28.312653Z",
               "updateTime": "2025-11-05T09:28:56.017119Z",
               "city": "Tunbridge Wells",
@@ -6106,41 +6769,12 @@
       "constituentCountry": "England",
       "county": "Lancashire",
       "state": "",
-      "roomCount": 2,
+      "roomCount": 1,
       "cities": [
         {
           "city": "Rawtenstall",
           "state": "",
           "rooms": [
-            {
-              "docId": "rk0MafMWM2T7aRy1k5uF",
-              "name": "Safe House",
-              "englishName": "",
-              "displayName": "Safe House",
-              "company": "Lucardo",
-              "link": "https://lucardo.com/rawtenstall",
-              "sourceCity": "Rawtenstall",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 0,
-              "categoryLabel": "in-person room",
-              "isApproved": [
-                2021,
-                2022,
-                2023
-              ],
-              "isNominee": [
-                2021
-              ],
-              "isFinalist": [],
-              "isWinner": [],
-              "createTime": "2021-10-25T20:21:23.511636Z",
-              "updateTime": "2024-09-18T18:48:19.445391Z",
-              "city": "Rawtenstall",
-              "county": "Lancashire",
-              "constituentCountry": "England",
-              "multiLocation": false
-            },
             {
               "docId": "GGnCmZqUzDn54W2Xncoe",
               "name": "University of Magic: Dragon's Heart",
@@ -6175,6 +6809,16 @@
                 2020
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:53:39.081452Z",
               "updateTime": "2025-10-28T15:31:33.359791Z",
               "city": "Rawtenstall",
@@ -6183,7 +6827,7 @@
               "multiLocation": false
             }
           ],
-          "roomCount": 2
+          "roomCount": 1
         }
       ]
     },
@@ -6191,7 +6835,7 @@
       "constituentCountry": "England",
       "county": "Leicestershire",
       "state": "",
-      "roomCount": 5,
+      "roomCount": 4,
       "cities": [
         {
           "city": "Coalville",
@@ -6221,6 +6865,15 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2022-10-23T03:44:51.341881Z",
               "updateTime": "2025-09-03T15:33:58.075839Z",
               "city": "Coalville",
@@ -6265,6 +6918,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:48:03.275634Z",
               "updateTime": "2025-09-09T14:40:24.871231Z",
               "city": "Leicester",
@@ -6294,46 +6957,19 @@
                 2018
               ],
               "isWinner": [],
+              "isConfirmedOpen": [],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2022-08-17T03:14:30.924312Z",
               "updateTime": "2022-09-16T05:59:34.011631Z",
               "city": "Leicester",
               "county": "Leicestershire",
               "constituentCountry": "England",
               "multiLocation": true
-            },
-            {
-              "docId": "2LhijC1PxqChFSxWklC0",
-              "name": "The Gateway",
-              "englishName": "",
-              "displayName": "The Gateway",
-              "company": "Escapologic",
-              "link": "https://www.escapologic.com/leicester-escape-rooms/the-gateway/",
-              "sourceCity": "Leicester",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 0,
-              "categoryLabel": "in-person room",
-              "isApproved": [
-                2020,
-                2021,
-                2022
-              ],
-              "isNominee": [
-                2020,
-                2021,
-                2022
-              ],
-              "isFinalist": [],
-              "isWinner": [],
-              "createTime": "2020-10-30T17:23:22.537661Z",
-              "updateTime": "2025-09-05T21:08:15.986815Z",
-              "city": "Leicester",
-              "county": "Leicestershire",
-              "constituentCountry": "England",
-              "multiLocation": false
             }
           ],
-          "roomCount": 3
+          "roomCount": 2
         },
         {
           "city": "Loughborough",
@@ -6370,6 +7006,16 @@
                 2021
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:51:23.254907Z",
               "updateTime": "2025-09-07T11:53:39.376239Z",
               "city": "Loughborough",
@@ -6412,6 +7058,12 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2025-10-21T22:25:20.739839Z",
               "updateTime": "2025-11-05T09:26:54.004367Z",
               "city": "Grimsby",
@@ -6428,7 +7080,7 @@
       "constituentCountry": "England",
       "county": "Merseyside",
       "state": "",
-      "roomCount": 4,
+      "roomCount": 3,
       "cities": [
         {
           "city": "Liverpool",
@@ -6459,42 +7111,22 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-11-01T02:43:03.787626Z",
               "updateTime": "2025-09-03T11:58:25.658943Z",
               "city": "Liverpool",
               "county": "Merseyside",
               "constituentCountry": "England",
               "multiLocation": true
-            },
-            {
-              "docId": "oUChRjRT2VDQb2KcxwPT",
-              "name": "The Curse of the Golden Lion",
-              "englishName": "",
-              "displayName": "The Curse of the Golden Lion",
-              "company": "Wirral Escape Rooms",
-              "link": "https://www.wirralescaperooms.co.uk/rooms",
-              "sourceCity": "Liverpool",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 0,
-              "categoryLabel": "in-person room",
-              "isApproved": [
-                2021,
-                2022,
-                2023
-              ],
-              "isNominee": [
-                2021,
-                2022
-              ],
-              "isFinalist": [],
-              "isWinner": [],
-              "createTime": "2021-10-31T23:12:16.551811Z",
-              "updateTime": "2024-09-30T21:49:10.111583Z",
-              "city": "Liverpool",
-              "county": "Merseyside",
-              "constituentCountry": "England",
-              "multiLocation": false
             },
             {
               "docId": "M5XLMWBOeZG3lIO6OYAE",
@@ -6516,6 +7148,12 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2025-10-20T23:54:39.345183Z",
               "updateTime": "2025-11-05T09:27:08.490223Z",
               "city": "Liverpool",
@@ -6524,7 +7162,7 @@
               "multiLocation": false
             }
           ],
-          "roomCount": 3
+          "roomCount": 2
         },
         {
           "city": "Wirral",
@@ -6550,6 +7188,12 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2025-10-25T17:03:05.514991Z",
               "updateTime": "2025-11-05T09:29:07.704127Z",
               "city": "Wirral",
@@ -6566,7 +7210,7 @@
       "constituentCountry": "England",
       "county": "Norfolk",
       "state": "",
-      "roomCount": 3,
+      "roomCount": 2,
       "cities": [
         {
           "city": "Norwich",
@@ -6597,6 +7241,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-10-29T22:02:08.664467Z",
               "updateTime": "2025-09-08T06:13:12.255263Z",
               "city": "Norwich",
@@ -6628,45 +7282,21 @@
               "isWinner": [
                 2021
               ],
+              "isConfirmedOpen": [
+                2021
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2021-09-29T08:47:08.053388Z",
               "updateTime": "2022-12-24T02:17:31.262111Z",
               "city": "Norwich",
               "county": "Norfolk",
               "constituentCountry": "England",
               "multiLocation": false
-            },
-            {
-              "docId": "9ORW5STLsnlqQLV78lbh",
-              "name": "The Merchants' Vaults at the Museum of Norwich",
-              "englishName": "",
-              "displayName": "The Merchants' Vaults at the Museum of Norwich",
-              "company": "History Mystery",
-              "link": "https://www.historymystery.games/",
-              "sourceCity": "Norwich",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 0,
-              "categoryLabel": "in-person room",
-              "isApproved": [
-                2019,
-                2020,
-                2018
-              ],
-              "isNominee": [
-                2019,
-                2018
-              ],
-              "isFinalist": [],
-              "isWinner": [],
-              "createTime": "2019-11-02T06:52:26.549991Z",
-              "updateTime": "2024-09-18T18:47:31.694895Z",
-              "city": "Norwich",
-              "county": "Norfolk",
-              "constituentCountry": "England",
-              "multiLocation": false
             }
           ],
-          "roomCount": 3
+          "roomCount": 2
         }
       ]
     },
@@ -6716,6 +7346,16 @@
                 2022
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:54:13.380383Z",
               "updateTime": "2025-09-03T15:48:06.858287Z",
               "city": "York",
@@ -6767,6 +7407,16 @@
                 2021
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-10-30T17:29:35.217251Z",
               "updateTime": "2025-09-09T14:42:22.099247Z",
               "city": "Rushden",
@@ -6783,74 +7433,12 @@
       "constituentCountry": "England",
       "county": "Nottinghamshire",
       "state": "",
-      "roomCount": 18,
+      "roomCount": 16,
       "cities": [
-        {
-          "city": "Newark",
-          "state": "",
-          "rooms": [
-            {
-              "docId": "p2hvbdEtU3Y7p9lI3VwM",
-              "name": "The Rig",
-              "englishName": "",
-              "displayName": "The Rig",
-              "company": "LetsXcape",
-              "link": "https://www.letsxcape.co.uk/the-rig-2/",
-              "sourceCity": "Newark",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 0,
-              "categoryLabel": "in-person room",
-              "isApproved": [
-                2021,
-                2022
-              ],
-              "isNominee": [
-                2021
-              ],
-              "isFinalist": [],
-              "isWinner": [],
-              "createTime": "2021-10-20T01:06:51.654185Z",
-              "updateTime": "2024-09-18T18:46:59.486367Z",
-              "city": "Newark",
-              "county": "Nottinghamshire",
-              "constituentCountry": "England",
-              "multiLocation": false
-            }
-          ],
-          "roomCount": 1
-        },
         {
           "city": "Nottingham",
           "state": "",
           "rooms": [
-            {
-              "docId": "g3wtH00mOZFoHvlnwAiP",
-              "name": "Alien",
-              "englishName": "",
-              "displayName": "Alien",
-              "company": "iLocked",
-              "link": "https://iamlocked.co.uk/rooms/alien",
-              "sourceCity": "Nottingham",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 0,
-              "categoryLabel": "in-person room",
-              "isApproved": [
-                2018
-              ],
-              "isNominee": [
-                2018
-              ],
-              "isFinalist": [],
-              "isWinner": [],
-              "createTime": "2022-09-01T02:32:57.650815Z",
-              "updateTime": "2022-10-03T04:59:12.735119Z",
-              "city": "Nottingham",
-              "county": "Nottinghamshire",
-              "constituentCountry": "England",
-              "multiLocation": false
-            },
             {
               "docId": "GZtt3zw1qlDwxTapL32T",
               "name": "Butcher",
@@ -6879,6 +7467,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:53:15.260069Z",
               "updateTime": "2025-11-05T09:28:03.266239Z",
               "city": "Nottingham",
@@ -6917,6 +7515,16 @@
                 2019
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:52:40.742489Z",
               "updateTime": "2025-09-07T12:07:28.072767Z",
               "city": "Nottingham",
@@ -6954,6 +7562,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:48:03.275634Z",
               "updateTime": "2025-09-09T14:40:24.871231Z",
               "city": "Nottingham",
@@ -7000,6 +7618,16 @@
                 2018
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:53:06.575388Z",
               "updateTime": "2025-11-05T09:28:04.784943Z",
               "city": "Nottingham",
@@ -7043,6 +7671,16 @@
                 2024
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-10-26T06:06:00.038135Z",
               "updateTime": "2025-11-05T09:28:00.768911Z",
               "city": "Nottingham",
@@ -7081,6 +7719,16 @@
                 2021
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:52:49.073302Z",
               "updateTime": "2025-09-09T14:37:31.749615Z",
               "city": "Nottingham",
@@ -7124,6 +7772,16 @@
                 2022
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:54:13.380383Z",
               "updateTime": "2025-09-03T15:48:06.858287Z",
               "city": "Nottingham",
@@ -7163,6 +7821,16 @@
                 2021
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-10-29T07:27:47.723583Z",
               "updateTime": "2025-09-07T12:11:17.649375Z",
               "city": "Nottingham",
@@ -7194,6 +7862,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2021-10-25T20:19:47.154024Z",
               "updateTime": "2025-09-09T14:39:36.768655Z",
               "city": "Nottingham",
@@ -7232,6 +7910,15 @@
                 2021
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:53:22.880688Z",
               "updateTime": "2025-09-09T14:39:47.313935Z",
               "city": "Nottingham",
@@ -7266,6 +7953,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-10-30T00:55:04.093656Z",
               "updateTime": "2025-11-05T09:28:07.866415Z",
               "city": "Nottingham",
@@ -7297,6 +7994,12 @@
               "isWinner": [
                 2021
               ],
+              "isConfirmedOpen": [
+                2021
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2021-09-29T08:47:28.661727Z",
               "updateTime": "2022-12-24T02:17:31.262111Z",
               "city": "Nottingham",
@@ -7338,6 +8041,16 @@
                 2023
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-10-30T00:51:08.352957Z",
               "updateTime": "2025-11-05T09:27:58.934591Z",
               "city": "Nottingham",
@@ -7367,6 +8080,10 @@
                 2018
               ],
               "isWinner": [],
+              "isConfirmedOpen": [],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2022-08-17T03:14:30.924312Z",
               "updateTime": "2022-09-16T05:59:34.011631Z",
               "city": "Nottingham",
@@ -7406,6 +8123,17 @@
                 2018
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [
+                2021
+              ],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:50:43.236692Z",
               "updateTime": "2025-09-07T12:12:44.830351Z",
               "city": "Nottingham",
@@ -7442,6 +8170,15 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-10-30T22:01:38.102289Z",
               "updateTime": "2025-09-09T14:40:09.462927Z",
               "city": "Nottingham",
@@ -7450,7 +8187,7 @@
               "multiLocation": false
             }
           ],
-          "roomCount": 17
+          "roomCount": 16
         }
       ]
     },
@@ -7484,6 +8221,12 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2025-10-20T23:58:36.623135Z",
               "updateTime": "2025-11-10T19:24:03.030015Z",
               "city": "Shrewsbury",
@@ -7518,6 +8261,12 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2025-10-20T23:44:41.208159Z",
               "updateTime": "2025-11-10T19:24:28.310287Z",
               "city": "Telford",
@@ -7549,6 +8298,14 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2023-10-22T07:20:15.096959Z",
               "updateTime": "2025-11-10T19:23:56.775951Z",
               "city": "Telford",
@@ -7578,6 +8335,13 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2024-10-02T11:17:30.217071Z",
               "updateTime": "2025-11-10T19:23:57.243519Z",
               "city": "Telford",
@@ -7607,6 +8371,13 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2024-10-02T11:17:32.507487Z",
               "updateTime": "2025-11-10T19:23:57.939759Z",
               "city": "Telford",
@@ -7638,6 +8409,14 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2023-11-01T06:44:07.126687Z",
               "updateTime": "2025-11-05T09:28:41.374095Z",
               "city": "Telford",
@@ -7668,6 +8447,15 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2022-10-28T22:23:28.483919Z",
               "updateTime": "2025-09-09T14:49:57.640655Z",
               "city": "Telford",
@@ -7715,6 +8503,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2021-10-20T01:00:41.803839Z",
               "updateTime": "2025-09-18T05:17:39.254015Z",
               "city": "Somerton",
@@ -7763,6 +8561,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2021-10-11T05:14:52.231336Z",
               "updateTime": "2025-09-09T14:42:38.424159Z",
               "city": "Sheffield",
@@ -7806,6 +8614,16 @@
                 2022
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:54:13.380383Z",
               "updateTime": "2025-09-03T15:48:06.858287Z",
               "city": "Sheffield",
@@ -7833,6 +8651,12 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2025-10-20T23:57:47.008703Z",
               "updateTime": "2025-11-05T09:28:29.732783Z",
               "city": "Sheffield",
@@ -7891,6 +8715,16 @@
                 2022
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:54:13.380383Z",
               "updateTime": "2025-09-03T15:48:06.858287Z",
               "city": "Stafford",
@@ -7921,6 +8755,14 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2023-10-31T01:11:02.090319Z",
               "updateTime": "2025-11-05T09:28:34.829855Z",
               "city": "Stafford",
@@ -7954,6 +8796,16 @@
                 2021
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2021-10-25T20:22:35.191347Z",
               "updateTime": "2025-09-09T14:45:34.485951Z",
               "city": "Stafford",
@@ -7998,6 +8850,13 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2024-10-01T21:49:07.434591Z",
               "updateTime": "2025-11-05T09:27:01.784207Z",
               "city": "Kenny Hill",
@@ -8033,6 +8892,13 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2024-10-02T11:18:39.578015Z",
               "updateTime": "2025-09-09T14:46:00.890367Z",
               "city": "Sudbury",
@@ -8063,6 +8929,15 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2022-10-05T21:10:01.756308Z",
               "updateTime": "2025-09-09T14:46:47.495231Z",
               "city": "Sudbury",
@@ -8093,6 +8968,14 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2023-10-31T19:21:31.510895Z",
               "updateTime": "2025-09-09T14:46:20.270767Z",
               "city": "Sudbury",
@@ -8122,6 +9005,13 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2024-10-01T23:35:12.580239Z",
               "updateTime": "2025-11-10T18:39:22.243855Z",
               "city": "Sudbury",
@@ -8167,6 +9057,15 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2022-10-23T03:42:05.297335Z",
               "updateTime": "2025-09-05T19:22:12.508063Z",
               "city": "Epsom",
@@ -8203,6 +9102,15 @@
                 2023
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2022-10-27T21:33:05.497343Z",
               "updateTime": "2025-11-05T09:26:44.177663Z",
               "city": "Epsom",
@@ -8243,6 +9151,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-10-29T07:23:06.093234Z",
               "updateTime": "2025-09-05T20:53:00.662255Z",
               "city": "Guildford",
@@ -8291,6 +9209,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-10-30T00:48:51.941215Z",
               "updateTime": "2025-09-07T12:04:09.745647Z",
               "city": "Newcastle upon Tyne",
@@ -8323,6 +9251,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-10-26T06:05:49.188138Z",
               "updateTime": "2025-09-07T12:03:05.589695Z",
               "city": "Newcastle upon Tyne",
@@ -8352,6 +9290,13 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2024-10-06T16:22:53.453919Z",
               "updateTime": "2025-11-05T09:27:56.555359Z",
               "city": "Newcastle upon Tyne",
@@ -8386,6 +9331,12 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2025-10-13T07:53:09.776767Z",
               "updateTime": "2025-11-05T09:28:38.847343Z",
               "city": "Sunderland",
@@ -8444,6 +9395,16 @@
                 2018
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:45:05.072478Z",
               "updateTime": "2025-09-05T19:11:46.772671Z",
               "city": "Hatton",
@@ -8460,7 +9421,7 @@
       "constituentCountry": "England",
       "county": "West Midlands",
       "state": "",
-      "roomCount": 9,
+      "roomCount": 8,
       "cities": [
         {
           "city": "Birmingham",
@@ -8491,6 +9452,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2021-10-20T01:00:41.803839Z",
               "updateTime": "2025-09-18T05:17:39.254015Z",
               "city": "Birmingham",
@@ -8534,6 +9505,16 @@
                 2022
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:54:13.380383Z",
               "updateTime": "2025-09-03T15:48:06.858287Z",
               "city": "Birmingham",
@@ -8565,6 +9546,14 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2023-10-22T07:19:27.848143Z",
               "updateTime": "2025-11-05T09:25:37.646735Z",
               "city": "Birmingham",
@@ -8597,6 +9586,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-10-29T22:02:08.664467Z",
               "updateTime": "2025-09-08T06:13:12.255263Z",
               "city": "Birmingham",
@@ -8629,6 +9628,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-11-01T02:43:03.787626Z",
               "updateTime": "2025-09-03T11:58:25.658943Z",
               "city": "Birmingham",
@@ -8662,6 +9671,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-10-29T21:57:42.522069Z",
               "updateTime": "2025-09-03T11:56:32.613951Z",
               "city": "Birmingham",
@@ -8698,6 +9717,16 @@
                 2021
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2021-10-20T01:00:46.363284Z",
               "updateTime": "2025-09-03T11:57:20.318799Z",
               "city": "Birmingham",
@@ -8748,48 +9777,22 @@
                 2022
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:54:13.380383Z",
               "updateTime": "2025-09-03T15:48:06.858287Z",
               "city": "Coventry",
               "county": "West Midlands",
               "constituentCountry": "England",
               "multiLocation": true
-            }
-          ],
-          "roomCount": 1
-        },
-        {
-          "city": "Wolverhampton",
-          "state": "",
-          "rooms": [
-            {
-              "docId": "KqHIwZhyT0yiYjVFWuSx",
-              "name": "Starpoint Alpha",
-              "englishName": "",
-              "displayName": "Starpoint Alpha",
-              "company": "Clockwork Escapes",
-              "link": "https://www.clockworkescapes.co.uk/rooms/starpoint-alpha/",
-              "sourceCity": "Wolverhampton",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 0,
-              "categoryLabel": "in-person room",
-              "isApproved": [
-                2021,
-                2022,
-                2023
-              ],
-              "isNominee": [
-                2021
-              ],
-              "isFinalist": [],
-              "isWinner": [],
-              "createTime": "2021-10-29T09:42:50.797792Z",
-              "updateTime": "2024-09-18T18:51:00.267951Z",
-              "city": "Wolverhampton",
-              "county": "West Midlands",
-              "constituentCountry": "England",
-              "multiLocation": false
             }
           ],
           "roomCount": 1
@@ -8842,6 +9845,16 @@
                 2022
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:45:23.448199Z",
               "updateTime": "2025-11-05T09:26:18.068927Z",
               "city": "Crawley",
@@ -8885,6 +9898,16 @@
                 2018
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:45:05.072478Z",
               "updateTime": "2025-09-05T19:11:46.772671Z",
               "city": "Crawley",
@@ -8914,6 +9937,10 @@
                 2018
               ],
               "isWinner": [],
+              "isConfirmedOpen": [],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2022-08-17T04:51:01.910740Z",
               "updateTime": "2022-09-16T05:59:34.011631Z",
               "city": "Crawley",
@@ -8959,6 +9986,16 @@
                 2023
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:45:16.064354Z",
               "updateTime": "2025-11-05T09:26:19.727807Z",
               "city": "Crawley",
@@ -8995,6 +10032,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-10-31T20:05:43.159661Z",
               "updateTime": "2025-11-05T09:26:10.910527Z",
               "city": "Crawley",
@@ -9033,6 +10080,16 @@
                 2023
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2021-10-31T21:09:26.045994Z",
               "updateTime": "2025-11-05T09:26:12.891295Z",
               "city": "Crawley",
@@ -9073,6 +10130,16 @@
                 2024
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2021-09-29T18:25:28.394446Z",
               "updateTime": "2025-11-05T09:26:21.097263Z",
               "city": "Crawley",
@@ -9100,6 +10167,12 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2025-10-17T04:11:14.990543Z",
               "updateTime": "2025-11-05T09:26:14.493039Z",
               "city": "Crawley",
@@ -9136,6 +10209,15 @@
                 2024
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2022-10-30T19:03:10.471903Z",
               "updateTime": "2025-11-05T09:26:16.142239Z",
               "city": "Crawley",
@@ -9174,6 +10256,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2021-10-28T13:39:25.468027Z",
               "updateTime": "2025-09-03T11:59:33.009567Z",
               "city": "Worthing",
@@ -9205,6 +10297,13 @@
                 2025
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2024-10-01T21:56:58.568143Z",
               "updateTime": "2025-12-08T06:34:43.772575Z",
               "city": "Worthing",
@@ -9257,6 +10356,16 @@
                 2019
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:44:15.022477Z",
               "updateTime": "2025-09-03T15:19:33.533855Z",
               "city": "Brighouse",
@@ -9298,6 +10407,14 @@
                 2024
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2023-10-04T18:06:15.240831Z",
               "updateTime": "2025-11-05T09:26:56.027455Z",
               "city": "Halifax",
@@ -9337,6 +10454,16 @@
                 2019
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:47:52.944446Z",
               "updateTime": "2025-09-05T19:25:07.146671Z",
               "city": "Halifax",
@@ -9371,6 +10498,12 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2025-10-02T02:27:35.986575Z",
               "updateTime": "2025-11-05T09:26:57.831487Z",
               "city": "Huddersfield",
@@ -9402,6 +10535,14 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2023-10-05T21:30:14.543087Z",
               "updateTime": "2025-11-05T09:26:59.579423Z",
               "city": "Huddersfield",
@@ -9452,6 +10593,16 @@
                 2022
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:54:13.380383Z",
               "updateTime": "2025-09-03T15:48:06.858287Z",
               "city": "Leeds",
@@ -9484,6 +10635,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2020-10-29T22:02:08.664467Z",
               "updateTime": "2025-09-08T06:13:12.255263Z",
               "city": "Leeds",
@@ -9518,6 +10679,12 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2025-10-25T17:00:39.197695Z",
               "updateTime": "2025-11-29T16:06:05.176047Z",
               "city": "Pontefract",
@@ -9552,6 +10719,12 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2025-10-04T10:35:05.608415Z",
               "updateTime": "2025-11-29T16:06:18.836767Z",
               "city": "Wakefield",
@@ -9585,6 +10758,15 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2022-10-30T18:17:44.163007Z",
               "updateTime": "2025-11-05T09:29:01.831247Z",
               "city": "Wakefield",
@@ -9612,6 +10794,12 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2025-10-13T07:53:53.186415Z",
               "updateTime": "2025-11-29T16:06:19.678223Z",
               "city": "Wakefield",
@@ -9647,6 +10835,14 @@
                 2025
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2023-10-04T18:03:45.823855Z",
               "updateTime": "2025-12-08T06:34:43.772575Z",
               "city": "Wakefield",
@@ -9673,6 +10869,13 @@
               "isNominee": [],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2024-09-11T15:04:20.520543Z",
               "updateTime": "2025-09-05T20:58:12.377759Z",
               "city": "Wakefield",
@@ -9715,6 +10918,16 @@
                 2019
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:43:52.412147Z",
               "updateTime": "2025-09-05T20:56:20.028079Z",
               "city": "Wetherby",
@@ -9731,46 +10944,8 @@
       "constituentCountry": "England",
       "county": "Wiltshire",
       "state": "",
-      "roomCount": 4,
+      "roomCount": 2,
       "cities": [
-        {
-          "city": "Chippenham",
-          "state": "",
-          "rooms": [
-            {
-              "docId": "2PxrsKBlWFSw89KnCMjr",
-              "name": "Victoria's Last Challenge",
-              "englishName": "",
-              "displayName": "Victoria's Last Challenge",
-              "company": "11th Hour Escape Rooms",
-              "link": "https://11thhourescaperooms.co.uk/",
-              "sourceCity": "Chippenham",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 0,
-              "categoryLabel": "in-person room",
-              "isApproved": [
-                2020,
-                2021,
-                2022,
-                2023,
-                2024
-              ],
-              "isNominee": [
-                2020
-              ],
-              "isFinalist": [],
-              "isWinner": [],
-              "createTime": "2020-10-26T06:04:07.589322Z",
-              "updateTime": "2025-09-18T05:19:23.354831Z",
-              "city": "Chippenham",
-              "county": "Wiltshire",
-              "constituentCountry": "England",
-              "multiLocation": false
-            }
-          ],
-          "roomCount": 1
-        },
         {
           "city": "Swindon",
           "state": "",
@@ -9811,52 +10986,22 @@
                 2022
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:54:13.380383Z",
               "updateTime": "2025-09-03T15:48:06.858287Z",
               "city": "Swindon",
               "county": "Wiltshire",
               "constituentCountry": "England",
               "multiLocation": true
-            },
-            {
-              "docId": "r03TEzA6uNkDVgkusv7v",
-              "name": "Professor Dunstan and the Search for the Ancient Statuette",
-              "englishName": "",
-              "displayName": "Professor Dunstan and the Search for the Ancient Statuette",
-              "company": "Co-Decode",
-              "link": "https://co-decode.co.uk/professor-dunstan/",
-              "sourceCity": "Swindon",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 0,
-              "categoryLabel": "in-person room",
-              "isApproved": [
-                2019,
-                2020,
-                2021,
-                2018,
-                2022,
-                2023
-              ],
-              "isNominee": [
-                2019,
-                2020,
-                2021,
-                2018,
-                2022
-              ],
-              "isFinalist": [
-                2019,
-                2021,
-                2018
-              ],
-              "isWinner": [],
-              "createTime": "2019-11-02T06:54:54.050434Z",
-              "updateTime": "2025-09-09T14:47:33.414239Z",
-              "city": "Swindon",
-              "county": "Wiltshire",
-              "constituentCountry": "England",
-              "multiLocation": false
             },
             {
               "docId": "YmOUoFEQgNpRRPuCdMuF",
@@ -9888,6 +11033,17 @@
                 2021
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2025
+              ],
+              "isIneligible": [
+                2024
+              ],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "closed in 2023 for relocation",
               "createTime": "2020-10-26T06:07:24.626808Z",
               "updateTime": "2025-09-09T14:49:06.249775Z",
               "city": "Swindon",
@@ -9896,7 +11052,7 @@
               "multiLocation": false
             }
           ],
-          "roomCount": 3
+          "roomCount": 2
         }
       ]
     },
@@ -9946,6 +11102,16 @@
                 2022
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:54:13.380383Z",
               "updateTime": "2025-09-03T15:48:06.858287Z",
               "city": "Worcester",
@@ -9989,6 +11155,13 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2024-11-01T00:01:35.420031Z",
               "updateTime": "2025-10-20T23:49:35.301663Z",
               "city": "Belfast",
@@ -10016,6 +11189,12 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2025-10-20T23:46:14.140495Z",
               "updateTime": "2025-11-05T09:25:30.521439Z",
               "city": "Belfast",
@@ -10059,6 +11238,13 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2024-10-31T21:58:11.927167Z",
               "updateTime": "2025-09-05T20:53:53.282287Z",
               "city": "Inveraray",
@@ -10103,6 +11289,10 @@
                 2018
               ],
               "isWinner": [],
+              "isConfirmedOpen": [],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2022-08-17T03:37:24.581981Z",
               "updateTime": "2022-09-16T05:59:34.011631Z",
               "city": "Edinburgh",
@@ -10136,6 +11326,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:46:20.894842Z",
               "updateTime": "2025-09-03T15:35:27.082879Z",
               "city": "Edinburgh",
@@ -10165,6 +11365,13 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2024-09-11T15:06:59.869023Z",
               "updateTime": "2025-11-05T09:26:38.098175Z",
               "city": "Edinburgh",
@@ -10208,6 +11415,16 @@
                 2018
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:46:40.354053Z",
               "updateTime": "2025-09-03T15:34:48.426655Z",
               "city": "Edinburgh",
@@ -10242,6 +11459,14 @@
                 2025
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2023-10-03T19:40:51.163327Z",
               "updateTime": "2025-12-08T06:34:43.772575Z",
               "city": "Edinburgh",
@@ -10289,6 +11514,16 @@
               "isWinner": [
                 2018
               ],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:46:31.242270Z",
               "updateTime": "2025-11-05T09:26:42.048031Z",
               "city": "Edinburgh",
@@ -10347,6 +11582,16 @@
                 2022
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:54:13.380383Z",
               "updateTime": "2025-09-03T15:48:06.858287Z",
               "city": "Dundee",
@@ -10363,7 +11608,7 @@
       "constituentCountry": "Scotland",
       "county": "Glasgow City",
       "state": "",
-      "roomCount": 6,
+      "roomCount": 5,
       "cities": [
         {
           "city": "Glasgow",
@@ -10395,35 +11640,17 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2022-10-19T00:17:23.206621Z",
               "updateTime": "2025-11-05T09:26:47.942223Z",
-              "city": "Glasgow",
-              "county": "Glasgow City",
-              "constituentCountry": "Scotland",
-              "multiLocation": false
-            },
-            {
-              "docId": "QRE2axsTjSsI5JcZqamX",
-              "name": "Christmas Dream",
-              "englishName": "",
-              "displayName": "Christmas Dream",
-              "company": "Locked In Glasgow",
-              "link": "https://escaperoomglasgow.com/",
-              "sourceCity": "Glasgow",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 0,
-              "categoryLabel": "in-person room",
-              "isApproved": [
-                2020
-              ],
-              "isNominee": [
-                2020
-              ],
-              "isFinalist": [],
-              "isWinner": [],
-              "createTime": "2020-10-30T00:45:10.962107Z",
-              "updateTime": "2021-09-28T18:39:43.505455Z",
               "city": "Glasgow",
               "county": "Glasgow City",
               "constituentCountry": "Scotland",
@@ -10458,6 +11685,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:46:47.321388Z",
               "updateTime": "2025-11-05T09:26:49.800527Z",
               "city": "Glasgow",
@@ -10487,6 +11724,14 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2023-10-31T01:09:35.479775Z",
               "updateTime": "2025-09-05T19:27:32.395983Z",
               "city": "Glasgow",
@@ -10515,6 +11760,13 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2024-09-11T15:07:27.318287Z",
               "updateTime": "2025-09-05T19:24:24.448815Z",
               "city": "Glasgow",
@@ -10552,6 +11804,16 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:46:53.225967Z",
               "updateTime": "2025-09-05T19:23:11.595871Z",
               "city": "Glasgow",
@@ -10560,7 +11822,7 @@
               "multiLocation": false
             }
           ],
-          "roomCount": 6
+          "roomCount": 5
         }
       ]
     },
@@ -10610,6 +11872,16 @@
                 2022
               ],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2019-11-02T06:54:13.380383Z",
               "updateTime": "2025-09-03T15:48:06.858287Z",
               "city": "Cardiff",
@@ -10638,6 +11910,13 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2024-10-31T21:54:55.279135Z",
               "updateTime": "2025-09-03T15:23:20.090527Z",
               "city": "Cardiff",
@@ -10666,6 +11945,13 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2024-10-30T19:29:01.178959Z",
               "updateTime": "2025-09-03T15:24:18.830431Z",
               "city": "Cardiff",
@@ -10710,6 +11996,13 @@
               ],
               "isFinalist": [],
               "isWinner": [],
+              "isConfirmedOpen": [
+                2024,
+                2025
+              ],
+              "isIneligible": [],
+              "isPermanentlyIneligible": [],
+              "ineligibilityReason": "",
               "createTime": "2024-10-29T21:04:11.653791Z",
               "updateTime": "2025-11-05T09:27:09.943167Z",
               "city": "Llanfyllin",

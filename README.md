@@ -33,17 +33,53 @@ The page loads `uk_rooms_map_data.js` from this repository and Leaflet/OpenStree
 
 ## Regenerating Map Data
 
-If `uk_rooms_by_location.json` changes, regenerate the map data with:
+If the raw Room Finder response changes, or if `manual_room_overrides.json` changes,
+regenerate the grouped data and then the map data:
 
 ```bash
+node scripts/build_uk_rooms_by_location.js
 node scripts/build_uk_rooms_map_data.js
 ```
 
-The generated file is:
+The first script reads `/tmp/uk_rooms_raw.json` by default and writes:
+
+```bash
+uk_rooms_by_location.json
+uk_rooms_by_location.csv
+```
+
+The second script reads `uk_rooms_by_location.json` and writes:
 
 ```text
 uk_rooms_map_data.js
 ```
+
+## Closed Rooms
+
+The Room Finder source includes status fields such as `isConfirmedOpen`,
+`isIneligible`, `isPermanentlyIneligible`, and `ineligibilityReason`. The build
+hides records whose source ineligibility reason indicates closure or retirement,
+unless the same record is confirmed open in the latest source year.
+
+For extra website-verified closures that are not reflected upstream, add entries
+to `manual_room_overrides.json` using the room `docId` from
+`uk_rooms_by_location.json` or `uk_rooms_by_location.csv`:
+
+```json
+{
+  "rooms": {
+    "abc123DocId": {
+      "status": "closed",
+      "note": "Venue page no longer lists this room",
+      "sourceUrl": "https://example.com/rooms"
+    }
+  }
+}
+```
+
+Rooms marked `closed` are excluded from `uk_rooms_by_location.json`,
+`uk_rooms_by_location.csv`, and `uk_rooms_map_data.js` the next time the data is
+regenerated.
 
 ## Publishing
 

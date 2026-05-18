@@ -13,7 +13,11 @@
         { "fieldPath": "isApproved" },
         { "fieldPath": "isNominee" },
         { "fieldPath": "isFinalist" },
-        { "fieldPath": "isWinner" }
+        { "fieldPath": "isWinner" },
+        { "fieldPath": "isConfirmedOpen" },
+        { "fieldPath": "isIneligible" },
+        { "fieldPath": "isPermanentlyIneligible" },
+        { "fieldPath": "ineligibilityReason" }
       ]
     },
     "from": [

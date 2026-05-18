@@ -1,6 +1,6 @@
 window.UK_ROOM_MAP_DATA = {
-  "generatedAt": "2026-05-16T21:05:21.745Z",
-  "sourceGeneratedAt": "2026-05-16T19:08:16.016Z",
+  "generatedAt": "2026-05-18T22:41:30.329Z",
+  "sourceGeneratedAt": "2026-05-18T22:41:27.868Z",
   "source": {
     "app": "https://roomfinder.terpeca.com",
     "firestoreProject": "terpeca-voter-portal",
@@ -11,8 +11,15 @@ window.UK_ROOM_MAP_DATA = {
     "Coordinates are approximate city/place centroids, intended for a visual overview rather than venue-level navigation.",
     "Markers are grouped at city/place level because the source data does not include venue addresses or postcodes."
   ],
-  "totalCities": 102,
-  "totalRooms": 288,
+  "totalCities": 94,
+  "totalRooms": 252,
+  "totalExcludedClosedRecords": 36,
+  "sourceClosedRecordCount": 36,
+  "manualOverrides": {
+    "path": "manual_room_overrides.json",
+    "closedRecordCount": 0,
+    "unmatchedClosedDocIds": []
+  },
   "cities": [
     {
       "id": "England:Greater London:London",
@@ -21,7 +28,7 @@ window.UK_ROOM_MAP_DATA = {
       "constituentCountry": "England",
       "lat": 51.5074,
       "lon": -0.1278,
-      "roomCount": 33,
+      "roomCount": 27,
       "rooms": [
         {
           "docId": "7nJozZMZSMi9hQRueoXl",
@@ -126,23 +133,6 @@ window.UK_ROOM_MAP_DATA = {
           "isWinner": []
         },
         {
-          "docId": "bTnQbFm883ZN9auQfKMc",
-          "displayName": "Dark Magik",
-          "company": "Access Escape",
-          "link": "https://www.accessescape.com/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "London",
-          "multiLocation": false,
-          "isApproved": [
-            2020
-          ],
-          "isNominee": [
-            2020
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        },
-        {
           "docId": "NvDv81LKQjomm7YqFDf0",
           "displayName": "Jacobe Castle",
           "company": "Castle Crusaders",
@@ -172,30 +162,6 @@ window.UK_ROOM_MAP_DATA = {
           ],
           "isNominee": [
             2025
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        },
-        {
-          "docId": "ixPi2twlwdecobxO4ksl",
-          "displayName": "MAD",
-          "company": "Archimedes Inspiration",
-          "link": "https://www.aiescape.com/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "London",
-          "multiLocation": false,
-          "isApproved": [
-            2019,
-            2020,
-            2021,
-            2022,
-            2023
-          ],
-          "isNominee": [
-            2019,
-            2020,
-            2021,
-            2022
           ],
           "isFinalist": [],
           "isWinner": []
@@ -373,39 +339,6 @@ window.UK_ROOM_MAP_DATA = {
           "isFinalist": [
             2020,
             2018
-          ],
-          "isWinner": []
-        },
-        {
-          "docId": "iI2a3ywkahuSfKVNzah1",
-          "displayName": "Project Ðelta",
-          "company": "Archimedes Inspiration",
-          "link": "https://www.aiescape.com/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "London",
-          "multiLocation": false,
-          "isApproved": [
-            2019,
-            2020,
-            2021,
-            2018,
-            2022,
-            2023
-          ],
-          "isNominee": [
-            2019,
-            2020,
-            2021,
-            2018,
-            2022,
-            2023
-          ],
-          "isFinalist": [
-            2019,
-            2020,
-            2021,
-            2018,
-            2022
           ],
           "isWinner": []
         },
@@ -605,25 +538,6 @@ window.UK_ROOM_MAP_DATA = {
           "isWinner": []
         },
         {
-          "docId": "GE1gRcWZ235r2qlGxv5q",
-          "displayName": "The Celestial Chain",
-          "company": "Time Run",
-          "link": "https://time-run.sketchanet.com/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "London",
-          "multiLocation": false,
-          "isApproved": [
-            2018
-          ],
-          "isNominee": [
-            2018
-          ],
-          "isFinalist": [
-            2018
-          ],
-          "isWinner": []
-        },
-        {
           "docId": "qqyQGeuwEgGNE6z4tPjE",
           "displayName": "The Crystal Maze",
           "company": "The Crystal Maze",
@@ -657,48 +571,6 @@ window.UK_ROOM_MAP_DATA = {
             2018
           ],
           "isWinner": []
-        },
-        {
-          "docId": "17N97OZrZEH3OfSPUBRo",
-          "displayName": "The Escapist",
-          "company": "Modern Fables",
-          "link": "https://www.modern-fables.com/theescapist/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "London",
-          "multiLocation": false,
-          "isApproved": [
-            2020,
-            2021,
-            2022
-          ],
-          "isNominee": [
-            2020,
-            2021,
-            2022
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        },
-        {
-          "docId": "qAHKczKYlMxdcYtrgWXD",
-          "displayName": "The Lance of Longinus",
-          "company": "Time Run",
-          "link": "https://time-run.sketchanet.com/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "London",
-          "multiLocation": false,
-          "isApproved": [
-            2018
-          ],
-          "isNominee": [
-            2018
-          ],
-          "isFinalist": [
-            2018
-          ],
-          "isWinner": [
-            2018
-          ]
         },
         {
           "docId": "0Rq0BDfUWSkN6vhzMXeH",
@@ -801,25 +673,8 @@ window.UK_ROOM_MAP_DATA = {
       "constituentCountry": "England",
       "lat": 52.9548,
       "lon": -1.1581,
-      "roomCount": 17,
+      "roomCount": 16,
       "rooms": [
-        {
-          "docId": "g3wtH00mOZFoHvlnwAiP",
-          "displayName": "Alien",
-          "company": "iLocked",
-          "link": "https://iamlocked.co.uk/rooms/alien",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Nottingham",
-          "multiLocation": false,
-          "isApproved": [
-            2018
-          ],
-          "isNominee": [
-            2018
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        },
         {
           "docId": "GZtt3zw1qlDwxTapL32T",
           "displayName": "Butcher",
@@ -1261,278 +1116,6 @@ window.UK_ROOM_MAP_DATA = {
       ]
     },
     {
-      "id": "England:Berkshire:Reading",
-      "city": "Reading",
-      "county": "Berkshire",
-      "constituentCountry": "England",
-      "lat": 51.4543,
-      "lon": -0.9781,
-      "roomCount": 11,
-      "rooms": [
-        {
-          "docId": "w3vm7S5wKQNoUQ6PRHwU",
-          "displayName": "9-to-5 Assassin",
-          "company": "Knockout Escape Rooms",
-          "link": "https://knockoutescaperooms.com/9-to-5-assassin/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Reading",
-          "multiLocation": false,
-          "isApproved": [
-            2020,
-            2021,
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "isNominee": [
-            2020,
-            2021
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        },
-        {
-          "docId": "kdwydPvCp1GGEnUUneYP",
-          "displayName": "Age of Magic",
-          "company": "Escape Reading",
-          "link": "https://escapereading.co.uk/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Reading",
-          "multiLocation": false,
-          "isApproved": [
-            2020,
-            2021,
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "isNominee": [
-            2020,
-            2021,
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "isFinalist": [
-            2020,
-            2021,
-            2023
-          ],
-          "isWinner": []
-        },
-        {
-          "docId": "LHSw6r2n0zGvMykIZbVj",
-          "displayName": "Curiouser and Curiouser",
-          "company": "Evadare / TimeTrap Escape Rooms",
-          "link": "https://evadare.co.uk/escape-rooms.html",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Bury / Reading",
-          "multiLocation": true,
-          "isApproved": [
-            2024,
-            2025
-          ],
-          "isNominee": [
-            2024
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        },
-        {
-          "docId": "M7Iym60afJoGNPgTfqPl",
-          "displayName": "Dirty Money",
-          "company": "Knockout Escape Rooms",
-          "link": "https://knockoutescaperooms.com/dirty-money/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Reading",
-          "multiLocation": false,
-          "isApproved": [
-            2024,
-            2025
-          ],
-          "isNominee": [
-            2024,
-            2025
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        },
-        {
-          "docId": "IuqFUWS1CuffTy2tpn2e",
-          "displayName": "Imaginarium 1863",
-          "company": "TimeTrap Escape Rooms",
-          "link": "https://www.timetrapescaperooms.com/our-games/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Reading",
-          "multiLocation": false,
-          "isApproved": [
-            2019,
-            2020,
-            2021,
-            2018,
-            2022
-          ],
-          "isNominee": [
-            2019,
-            2021,
-            2018
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        },
-        {
-          "docId": "28kkuPyETizFOLyngATS",
-          "displayName": "n/a",
-          "company": "TimeTrap Escape Rooms",
-          "link": "https://www.timetrapescaperooms.com/our-games/",
-          "categoryLabel": "company",
-          "sourceCity": "Reading",
-          "multiLocation": false,
-          "isApproved": [
-            2018
-          ],
-          "isNominee": [
-            2018
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        },
-        {
-          "docId": "7JtCzZSuI979AcGxyw3W",
-          "displayName": "Pudding Lane 1666",
-          "company": "Cronologic (UK) / TimeTrap Escape Rooms",
-          "link": "https://www.crono-logic.com/rooms/pudding-lane",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Plymouth / Reading",
-          "multiLocation": true,
-          "isApproved": [
-            2020,
-            2021,
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "isNominee": [
-            2020,
-            2021,
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "isFinalist": [
-            2020,
-            2021,
-            2023
-          ],
-          "isWinner": []
-        },
-        {
-          "docId": "wNftvNtb4GK4lORBYc2O",
-          "displayName": "Station X 1942",
-          "company": "TimeTrap Escape Rooms",
-          "link": "https://www.timetrapescaperooms.com/station-x/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Reading",
-          "multiLocation": false,
-          "isApproved": [
-            2019,
-            2020,
-            2021,
-            2022,
-            2023
-          ],
-          "isNominee": [
-            2019,
-            2021
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        },
-        {
-          "docId": "ppzhFICrkZdiqaGLW0Ox",
-          "displayName": "The Ram Raid",
-          "company": "Escape Reading",
-          "link": "https://escapereading.co.uk/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Reading",
-          "multiLocation": false,
-          "isApproved": [
-            2020,
-            2021,
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "isNominee": [
-            2020,
-            2021,
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "isFinalist": [
-            2021
-          ],
-          "isWinner": []
-        },
-        {
-          "docId": "tWhaZeVJrwNKbIbK9ntU",
-          "displayName": "The Reading Witch",
-          "company": "Deadlocked Escape Rooms",
-          "link": "https://deadlockedrooms.com/reading/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Reading",
-          "multiLocation": false,
-          "isApproved": [
-            2025
-          ],
-          "isNominee": [
-            2025
-          ],
-          "isFinalist": [
-            2025
-          ],
-          "isWinner": []
-        },
-        {
-          "docId": "YpxtToAzaIYB2yq9NX5L",
-          "displayName": "The Time Machine",
-          "company": "Deadlocked Escape Rooms",
-          "link": "https://deadlockedrooms.com/reading/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Reading",
-          "multiLocation": false,
-          "isApproved": [
-            2020,
-            2021,
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "isNominee": [
-            2020,
-            2021,
-            2022,
-            2023,
-            2025
-          ],
-          "isFinalist": [
-            2020,
-            2021
-          ],
-          "isWinner": []
-        }
-      ]
-    },
-    {
       "id": "England:West Sussex:Crawley",
       "city": "Crawley",
       "county": "West Sussex",
@@ -1785,6 +1368,233 @@ window.UK_ROOM_MAP_DATA = {
           "isFinalist": [
             2023,
             2024
+          ],
+          "isWinner": []
+        }
+      ]
+    },
+    {
+      "id": "England:Berkshire:Reading",
+      "city": "Reading",
+      "county": "Berkshire",
+      "constituentCountry": "England",
+      "lat": 51.4543,
+      "lon": -0.9781,
+      "roomCount": 9,
+      "rooms": [
+        {
+          "docId": "w3vm7S5wKQNoUQ6PRHwU",
+          "displayName": "9-to-5 Assassin",
+          "company": "Knockout Escape Rooms",
+          "link": "https://knockoutescaperooms.com/9-to-5-assassin/",
+          "categoryLabel": "in-person room",
+          "sourceCity": "Reading",
+          "multiLocation": false,
+          "isApproved": [
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "isNominee": [
+            2020,
+            2021
+          ],
+          "isFinalist": [],
+          "isWinner": []
+        },
+        {
+          "docId": "kdwydPvCp1GGEnUUneYP",
+          "displayName": "Age of Magic",
+          "company": "Escape Reading",
+          "link": "https://escapereading.co.uk/",
+          "categoryLabel": "in-person room",
+          "sourceCity": "Reading",
+          "multiLocation": false,
+          "isApproved": [
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "isNominee": [
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "isFinalist": [
+            2020,
+            2021,
+            2023
+          ],
+          "isWinner": []
+        },
+        {
+          "docId": "LHSw6r2n0zGvMykIZbVj",
+          "displayName": "Curiouser and Curiouser",
+          "company": "Evadare / TimeTrap Escape Rooms",
+          "link": "https://evadare.co.uk/escape-rooms.html",
+          "categoryLabel": "in-person room",
+          "sourceCity": "Bury / Reading",
+          "multiLocation": true,
+          "isApproved": [
+            2024,
+            2025
+          ],
+          "isNominee": [
+            2024
+          ],
+          "isFinalist": [],
+          "isWinner": []
+        },
+        {
+          "docId": "M7Iym60afJoGNPgTfqPl",
+          "displayName": "Dirty Money",
+          "company": "Knockout Escape Rooms",
+          "link": "https://knockoutescaperooms.com/dirty-money/",
+          "categoryLabel": "in-person room",
+          "sourceCity": "Reading",
+          "multiLocation": false,
+          "isApproved": [
+            2024,
+            2025
+          ],
+          "isNominee": [
+            2024,
+            2025
+          ],
+          "isFinalist": [],
+          "isWinner": []
+        },
+        {
+          "docId": "28kkuPyETizFOLyngATS",
+          "displayName": "n/a",
+          "company": "TimeTrap Escape Rooms",
+          "link": "https://www.timetrapescaperooms.com/our-games/",
+          "categoryLabel": "company",
+          "sourceCity": "Reading",
+          "multiLocation": false,
+          "isApproved": [
+            2018
+          ],
+          "isNominee": [
+            2018
+          ],
+          "isFinalist": [],
+          "isWinner": []
+        },
+        {
+          "docId": "7JtCzZSuI979AcGxyw3W",
+          "displayName": "Pudding Lane 1666",
+          "company": "Cronologic (UK) / TimeTrap Escape Rooms",
+          "link": "https://www.crono-logic.com/rooms/pudding-lane",
+          "categoryLabel": "in-person room",
+          "sourceCity": "Plymouth / Reading",
+          "multiLocation": true,
+          "isApproved": [
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "isNominee": [
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "isFinalist": [
+            2020,
+            2021,
+            2023
+          ],
+          "isWinner": []
+        },
+        {
+          "docId": "ppzhFICrkZdiqaGLW0Ox",
+          "displayName": "The Ram Raid",
+          "company": "Escape Reading",
+          "link": "https://escapereading.co.uk/",
+          "categoryLabel": "in-person room",
+          "sourceCity": "Reading",
+          "multiLocation": false,
+          "isApproved": [
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "isNominee": [
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "isFinalist": [
+            2021
+          ],
+          "isWinner": []
+        },
+        {
+          "docId": "tWhaZeVJrwNKbIbK9ntU",
+          "displayName": "The Reading Witch",
+          "company": "Deadlocked Escape Rooms",
+          "link": "https://deadlockedrooms.com/reading/",
+          "categoryLabel": "in-person room",
+          "sourceCity": "Reading",
+          "multiLocation": false,
+          "isApproved": [
+            2025
+          ],
+          "isNominee": [
+            2025
+          ],
+          "isFinalist": [
+            2025
+          ],
+          "isWinner": []
+        },
+        {
+          "docId": "YpxtToAzaIYB2yq9NX5L",
+          "displayName": "The Time Machine",
+          "company": "Deadlocked Escape Rooms",
+          "link": "https://deadlockedrooms.com/reading/",
+          "categoryLabel": "in-person room",
+          "sourceCity": "Reading",
+          "multiLocation": false,
+          "isApproved": [
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "isNominee": [
+            2020,
+            2021,
+            2022,
+            2023,
+            2025
+          ],
+          "isFinalist": [
+            2020,
+            2021
           ],
           "isWinner": []
         }
@@ -2313,447 +2123,6 @@ window.UK_ROOM_MAP_DATA = {
       ]
     },
     {
-      "id": "Scotland:Glasgow City:Glasgow",
-      "city": "Glasgow",
-      "county": "Glasgow City",
-      "constituentCountry": "Scotland",
-      "lat": 55.8642,
-      "lon": -4.2518,
-      "roomCount": 6,
-      "rooms": [
-        {
-          "docId": "ptMHsqUZBx96qatKCOTr",
-          "displayName": "Bloodline",
-          "company": "Locked In Glasgow",
-          "link": "https://escaperoomglasgow.com/room/bloodline/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Glasgow",
-          "multiLocation": false,
-          "isApproved": [
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "isNominee": [
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        },
-        {
-          "docId": "QRE2axsTjSsI5JcZqamX",
-          "displayName": "Christmas Dream",
-          "company": "Locked In Glasgow",
-          "link": "https://escaperoomglasgow.com/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Glasgow",
-          "multiLocation": false,
-          "isApproved": [
-            2020
-          ],
-          "isNominee": [
-            2020
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        },
-        {
-          "docId": "rcLzVLoOCaY6I3QO8Ido",
-          "displayName": "Glasgow School of Magic",
-          "company": "Locked In Glasgow",
-          "link": "https://escaperoomglasgow.com/room/glasgow-school-of-magic/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Glasgow",
-          "multiLocation": false,
-          "isApproved": [
-            2019,
-            2020,
-            2021,
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "isNominee": [
-            2019,
-            2020,
-            2021,
-            2025
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        },
-        {
-          "docId": "rE51XKQa15cyYUay38ej",
-          "displayName": "Magician's Heist",
-          "company": "Eeek! Escape Rooms",
-          "link": "https://www.eeekescaperooms.com/escape-games/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Glasgow",
-          "multiLocation": false,
-          "isApproved": [
-            2023,
-            2024,
-            2025
-          ],
-          "isNominee": [
-            2023
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        },
-        {
-          "docId": "AW0rL0CmRnr1eAT2TH1P",
-          "displayName": "Star Crew",
-          "company": "Escape Reality Glasgow",
-          "link": "https://www.escapereality.com/our-games/game-summary/starcrew/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Glasgow",
-          "multiLocation": false,
-          "isApproved": [
-            2024,
-            2025
-          ],
-          "isNominee": [
-            2024
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        },
-        {
-          "docId": "z9XPzZracsr0TigiDOKt",
-          "displayName": "The Surgery",
-          "company": "Locked In Glasgow",
-          "link": "https://escaperoomglasgow.com/room/the-surgery/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Glasgow",
-          "multiLocation": false,
-          "isApproved": [
-            2019,
-            2020,
-            2021,
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "isNominee": [
-            2019,
-            2020,
-            2021,
-            2022,
-            2023
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        }
-      ]
-    },
-    {
-      "id": "England:Kent:Gravesend",
-      "city": "Gravesend",
-      "county": "Kent",
-      "constituentCountry": "England",
-      "lat": 51.4419,
-      "lon": 0.3708,
-      "roomCount": 6,
-      "rooms": [
-        {
-          "docId": "wqWtbB5SsxaXh2BZQxan",
-          "displayName": "Loop",
-          "company": "The Panic Room (formerly Clockwork Dog)",
-          "link": "https://thepanicroom.net/loop",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Gravesend",
-          "multiLocation": false,
-          "isApproved": [
-            2019,
-            2020,
-            2021,
-            2018,
-            2022,
-            2023,
-            2024
-          ],
-          "isNominee": [
-            2019,
-            2020,
-            2021,
-            2018,
-            2022
-          ],
-          "isFinalist": [
-            2019,
-            2021,
-            2018
-          ],
-          "isWinner": []
-        },
-        {
-          "docId": "59HIn9TzYCEPidHmhTB4",
-          "displayName": "n/a",
-          "company": "The Panic Room",
-          "link": "https://thepanicroom.net/",
-          "categoryLabel": "company",
-          "sourceCity": "Gravesend",
-          "multiLocation": false,
-          "isApproved": [
-            2018
-          ],
-          "isNominee": [
-            2018
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        },
-        {
-          "docId": "1ILQVs6R1nNi6p3Baiih",
-          "displayName": "Old Father Time",
-          "company": "The Panic Room",
-          "link": "https://thepanicroom.net/services/old-father-time/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Gravesend",
-          "multiLocation": false,
-          "isApproved": [
-            2018,
-            2022,
-            2023
-          ],
-          "isNominee": [
-            2018
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        },
-        {
-          "docId": "JedLOq7paGUSzl8hnGsr",
-          "displayName": "Revolution Ole",
-          "company": "The Panic Room",
-          "link": "https://thepanicroom.net/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Gravesend",
-          "multiLocation": false,
-          "isApproved": [
-            2019
-          ],
-          "isNominee": [
-            2019
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        },
-        {
-          "docId": "4MlPvat3bT8hSQBgSSEH",
-          "displayName": "The Happy Institute",
-          "company": "The Panic Room",
-          "link": "https://thepanicroom.net/the-happy-institute",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Gravesend",
-          "multiLocation": false,
-          "isApproved": [
-            2019,
-            2020,
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "isNominee": [
-            2019
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        },
-        {
-          "docId": "obgjgk7BDa0nJSMA85cm",
-          "displayName": "Wizard of Oz",
-          "company": "The Panic Room",
-          "link": "https://thepanicroom.net/wizard-of-oz",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Gravesend",
-          "multiLocation": false,
-          "isApproved": [
-            2020,
-            2021,
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "isNominee": [
-            2020,
-            2021
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        }
-      ]
-    },
-    {
-      "id": "England:Cheshire:Macclesfield",
-      "city": "Macclesfield",
-      "county": "Cheshire",
-      "constituentCountry": "England",
-      "lat": 53.2587,
-      "lon": -2.1193,
-      "roomCount": 6,
-      "rooms": [
-        {
-          "docId": "8XzV1riLXLLxe3nMQOKE",
-          "displayName": "Bad Clown",
-          "company": "Escape Quest",
-          "link": "https://www.escapequest.co.uk/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Macclesfield",
-          "multiLocation": false,
-          "isApproved": [
-            2018
-          ],
-          "isNominee": [
-            2018
-          ],
-          "isFinalist": [
-            2018
-          ],
-          "isWinner": []
-        },
-        {
-          "docId": "UjbsT8313ne7TPZImxTL",
-          "displayName": "Henry Fortune's House of Illusion",
-          "company": "Escape Quest",
-          "link": "https://www.escapequest.co.uk/house-of-illusion.html",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Macclesfield",
-          "multiLocation": false,
-          "isApproved": [
-            2019,
-            2020,
-            2023,
-            2024,
-            2025
-          ],
-          "isNominee": [
-            2019,
-            2020,
-            2023,
-            2024,
-            2025
-          ],
-          "isFinalist": [
-            2019,
-            2020,
-            2023,
-            2024
-          ],
-          "isWinner": []
-        },
-        {
-          "docId": "QBlV1DIgjLC8RWdrMvcC",
-          "displayName": "Mr Copplestone's Curiosity Shoppe",
-          "company": "Escape Quest",
-          "link": "https://www.escapequest.co.uk/mr-copplestones-curiosity-shoppe.html",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Macclesfield",
-          "multiLocation": false,
-          "isApproved": [
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "isNominee": [
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "isFinalist": [
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "isWinner": [
-            2022,
-            2023
-          ]
-        },
-        {
-          "docId": "H6FQLDk2t17OWpNGlrza",
-          "displayName": "Percy Pendleton's Peculiar Predicament",
-          "company": "Escape Quest",
-          "link": "https://www.escapequest.co.uk/percy-pendletons-peculiar-predicament.html",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Macclesfield",
-          "multiLocation": false,
-          "isApproved": [
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "isNominee": [
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "isFinalist": [
-            2023,
-            2024,
-            2025
-          ],
-          "isWinner": [
-            2023
-          ]
-        },
-        {
-          "docId": "RHb7cKovGOg8nCzRjoKs",
-          "displayName": "The 13th Element",
-          "company": "Escape Quest",
-          "link": "https://www.escapequest.co.uk/13th-element.html",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Macclesfield",
-          "multiLocation": false,
-          "isApproved": [
-            2019,
-            2020
-          ],
-          "isNominee": [
-            2019,
-            2020
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        },
-        {
-          "docId": "Yzfj7ZYv0PvrOcqC08C2",
-          "displayName": "Titterton's Toffees",
-          "company": "Escape Quest",
-          "link": "https://www.escapequest.co.uk/tittertons-toffees.html",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Macclesfield",
-          "multiLocation": false,
-          "isApproved": [
-            2024,
-            2025
-          ],
-          "isNominee": [
-            2024,
-            2025
-          ],
-          "isFinalist": [
-            2024
-          ],
-          "isWinner": []
-        }
-      ]
-    },
-    {
       "id": "England:Shropshire:Telford",
       "city": "Telford",
       "county": "Shropshire",
@@ -3128,27 +2497,49 @@ window.UK_ROOM_MAP_DATA = {
       ]
     },
     {
-      "id": "England:Greater Manchester:Manchester",
-      "city": "Manchester",
-      "county": "Greater Manchester",
-      "constituentCountry": "England",
-      "lat": 53.4808,
-      "lon": -2.2426,
+      "id": "Scotland:Glasgow City:Glasgow",
+      "city": "Glasgow",
+      "county": "Glasgow City",
+      "constituentCountry": "Scotland",
+      "lat": 55.8642,
+      "lon": -4.2518,
       "roomCount": 5,
       "rooms": [
         {
-          "docId": "XJe6hh9EVQBYzA10bWtx",
-          "displayName": "Escape the R.M.S. Titanic",
-          "company": "Houdini's Escape Room Experience",
-          "link": "https://www.houdinisescape.co.uk/escape-from-titanic",
+          "docId": "ptMHsqUZBx96qatKCOTr",
+          "displayName": "Bloodline",
+          "company": "Locked In Glasgow",
+          "link": "https://escaperoomglasgow.com/room/bloodline/",
           "categoryLabel": "in-person room",
-          "sourceCity": "Birmingham / Cardiff / Chester / Coventry / Crewe / Dundee / Greenwich / Leeds / Manchester / Milton Keynes / Nottingham / Sheffield / Southampton / Stafford / Swindon / Worcester / York",
-          "multiLocation": true,
+          "sourceCity": "Glasgow",
+          "multiLocation": false,
+          "isApproved": [
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "isNominee": [
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "isFinalist": [],
+          "isWinner": []
+        },
+        {
+          "docId": "rcLzVLoOCaY6I3QO8Ido",
+          "displayName": "Glasgow School of Magic",
+          "company": "Locked In Glasgow",
+          "link": "https://escaperoomglasgow.com/room/glasgow-school-of-magic/",
+          "categoryLabel": "in-person room",
+          "sourceCity": "Glasgow",
+          "multiLocation": false,
           "isApproved": [
             2019,
             2020,
             2021,
-            2018,
             2022,
             2023,
             2024,
@@ -3158,256 +2549,73 @@ window.UK_ROOM_MAP_DATA = {
             2019,
             2020,
             2021,
-            2018,
+            2025
+          ],
+          "isFinalist": [],
+          "isWinner": []
+        },
+        {
+          "docId": "rE51XKQa15cyYUay38ej",
+          "displayName": "Magician's Heist",
+          "company": "Eeek! Escape Rooms",
+          "link": "https://www.eeekescaperooms.com/escape-games/",
+          "categoryLabel": "in-person room",
+          "sourceCity": "Glasgow",
+          "multiLocation": false,
+          "isApproved": [
+            2023,
+            2024,
+            2025
+          ],
+          "isNominee": [
+            2023
+          ],
+          "isFinalist": [],
+          "isWinner": []
+        },
+        {
+          "docId": "AW0rL0CmRnr1eAT2TH1P",
+          "displayName": "Star Crew",
+          "company": "Escape Reality Glasgow",
+          "link": "https://www.escapereality.com/our-games/game-summary/starcrew/",
+          "categoryLabel": "in-person room",
+          "sourceCity": "Glasgow",
+          "multiLocation": false,
+          "isApproved": [
+            2024,
+            2025
+          ],
+          "isNominee": [
+            2024
+          ],
+          "isFinalist": [],
+          "isWinner": []
+        },
+        {
+          "docId": "z9XPzZracsr0TigiDOKt",
+          "displayName": "The Surgery",
+          "company": "Locked In Glasgow",
+          "link": "https://escaperoomglasgow.com/room/the-surgery/",
+          "categoryLabel": "in-person room",
+          "sourceCity": "Glasgow",
+          "multiLocation": false,
+          "isApproved": [
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "isNominee": [
+            2019,
+            2020,
+            2021,
             2022,
             2023
           ],
-          "isFinalist": [
-            2020,
-            2021,
-            2022
-          ],
-          "isWinner": []
-        },
-        {
-          "docId": "YKGMeRqFTSwhiEWpMyVa",
-          "displayName": "Most Wanted",
-          "company": "Breakout Manchester",
-          "link": "https://breakoutmanchester.com/rooms",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Manchester",
-          "multiLocation": false,
-          "isApproved": [
-            2020,
-            2021,
-            2022
-          ],
-          "isNominee": [
-            2020,
-            2021
-          ],
           "isFinalist": [],
-          "isWinner": []
-        },
-        {
-          "docId": "qqyQGeuwEgGNE6z4tPjE",
-          "displayName": "The Crystal Maze",
-          "company": "The Crystal Maze",
-          "link": "https://the-crystal-maze.com/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "London / Manchester",
-          "multiLocation": true,
-          "isApproved": [
-            2019,
-            2020,
-            2021,
-            2018,
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "isNominee": [
-            2019,
-            2020,
-            2021,
-            2018,
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "isFinalist": [
-            2019,
-            2020,
-            2018
-          ],
-          "isWinner": []
-        },
-        {
-          "docId": "d8JBoglmxVGpzdtLMZwU",
-          "displayName": "The Orphanage",
-          "company": "Lucardo",
-          "link": "https://lucardo.com/manchester/bookings/the-orphanage",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Manchester",
-          "multiLocation": false,
-          "isApproved": [
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "isNominee": [
-            2022
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        },
-        {
-          "docId": "mPjq8YfXRTwZk5w3MM0G",
-          "displayName": "The Prison",
-          "company": "Lucardo",
-          "link": "https://lucardo.com/manchester/bookings/the-prison",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Manchester",
-          "multiLocation": false,
-          "isApproved": [
-            2020,
-            2021,
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "isNominee": [
-            2020,
-            2021
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        }
-      ]
-    },
-    {
-      "id": "England:Kent:Margate",
-      "city": "Margate",
-      "county": "Kent",
-      "constituentCountry": "England",
-      "lat": 51.3896,
-      "lon": 1.3862,
-      "roomCount": 5,
-      "rooms": [
-        {
-          "docId": "uhyfrv72o1qNt3maccNw",
-          "displayName": "Detention",
-          "company": "Ctrl Alt Esc",
-          "link": "https://www.ctrlaltesc.co.uk/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Margate",
-          "multiLocation": false,
-          "isApproved": [
-            2020,
-            2021,
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "isNominee": [
-            2020,
-            2021,
-            2022
-          ],
-          "isFinalist": [
-            2020
-          ],
-          "isWinner": []
-        },
-        {
-          "docId": "DX5zaE8lMepAjD3wdb71",
-          "displayName": "n/a",
-          "company": "The Escapement",
-          "link": "https://escapementmargate.co.uk/",
-          "categoryLabel": "company",
-          "sourceCity": "Margate",
-          "multiLocation": false,
-          "isApproved": [
-            2018
-          ],
-          "isNominee": [
-            2018
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        },
-        {
-          "docId": "dfRG9VF72U4hWrfBEb4F",
-          "displayName": "Pirates of Polaris",
-          "company": "The Escapement (UK)",
-          "link": "https://www.escapementmargate.co.uk/rooms-lists",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Margate",
-          "multiLocation": false,
-          "isApproved": [
-            2019,
-            2020,
-            2021,
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "isNominee": [
-            2019,
-            2020,
-            2021,
-            2022
-          ],
-          "isFinalist": [
-            2019,
-            2020,
-            2021
-          ],
-          "isWinner": []
-        },
-        {
-          "docId": "RJtVBV7SBo2tmhNf8rDn",
-          "displayName": "Spacescape",
-          "company": "Ctrl Alt Esc",
-          "link": "https://ctrlaltesc.co.uk/index.php/en/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Margate",
-          "multiLocation": false,
-          "isApproved": [
-            2019,
-            2020,
-            2021,
-            2022
-          ],
-          "isNominee": [
-            2019,
-            2020
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        },
-        {
-          "docId": "b8d9Jons3cJtTehmxG0l",
-          "displayName": "The Pit",
-          "company": "The Escapement (UK)",
-          "link": "https://www.escapementmargate.co.uk/rooms-lists",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Margate",
-          "multiLocation": false,
-          "isApproved": [
-            2019,
-            2020,
-            2021,
-            2018,
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "isNominee": [
-            2019,
-            2020,
-            2021,
-            2018,
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "isFinalist": [
-            2019,
-            2020,
-            2021,
-            2022,
-            2023,
-            2024
-          ],
           "isWinner": []
         }
       ]
@@ -3666,97 +2874,6 @@ window.UK_ROOM_MAP_DATA = {
       ]
     },
     {
-      "id": "England:Cambridgeshire:Cambridge",
-      "city": "Cambridge",
-      "county": "Cambridgeshire",
-      "constituentCountry": "England",
-      "lat": 52.2053,
-      "lon": 0.1218,
-      "roomCount": 4,
-      "rooms": [
-        {
-          "docId": "dzpifLG4VONJyEyWBoLA",
-          "displayName": "Heaven and Hell",
-          "company": "Cambridge Escape Rooms",
-          "link": "https://cambridgeescaperooms.co.uk/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Cambridge",
-          "multiLocation": false,
-          "isApproved": [
-            2020,
-            2021,
-            2022,
-            2023,
-            2024
-          ],
-          "isNominee": [
-            2020,
-            2021,
-            2022,
-            2023
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        },
-        {
-          "docId": "qXr0kYnrsiE7F38iK0lW",
-          "displayName": "Our Finest Hour",
-          "company": "Escape Hunt",
-          "link": "https://escapehunt.com/uk/leeds/games/our-finest-hour/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Brisbane, Australia / Basingstoke / Birmingham / Bristol / Cambridge / Cheltenham / Leeds / Norwich / Watford",
-          "multiLocation": true,
-          "isApproved": [
-            2020,
-            2021,
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "isNominee": [
-            2020
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        },
-        {
-          "docId": "W4lwGVwd1jzVgspfnih0",
-          "displayName": "The Mayan Temple",
-          "company": "Lockhouse Escape Games",
-          "link": "https://lockhouse.co.uk/mayan-temple/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Cambridge",
-          "multiLocation": false,
-          "isApproved": [
-            2025
-          ],
-          "isNominee": [
-            2025
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        },
-        {
-          "docId": "pt6Hlr5VWt8qWGNtfnqT",
-          "displayName": "Victoria's Christmas Challenge",
-          "company": "Exit Rooms",
-          "link": "https://exitrooms.co.uk/book/victorias-christmas-challenge/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Cambridge",
-          "multiLocation": false,
-          "isApproved": [
-            2025
-          ],
-          "isNominee": [
-            2025
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        }
-      ]
-    },
-    {
       "id": "England:Cheshire:Disley",
       "city": "Disley",
       "county": "Cheshire",
@@ -3873,66 +2990,232 @@ window.UK_ROOM_MAP_DATA = {
       ]
     },
     {
-      "id": "England:Kent:Maidstone",
-      "city": "Maidstone",
-      "county": "Kent",
+      "id": "England:Cheshire:Macclesfield",
+      "city": "Macclesfield",
+      "county": "Cheshire",
       "constituentCountry": "England",
-      "lat": 51.2704,
-      "lon": 0.5227,
+      "lat": 53.2587,
+      "lon": -2.1193,
       "roomCount": 4,
       "rooms": [
         {
-          "docId": "0HrWJcxlesyYOeDUYS0w",
-          "displayName": "Feline Fiasco",
-          "company": "Operation Escape (formerly Escape Hub / Real Life Games)",
-          "link": "https://www.operation-escape.co.uk/ourgames",
+          "docId": "UjbsT8313ne7TPZImxTL",
+          "displayName": "Henry Fortune's House of Illusion",
+          "company": "Escape Quest",
+          "link": "https://www.escapequest.co.uk/house-of-illusion.html",
           "categoryLabel": "in-person room",
-          "sourceCity": "West Wickham / Maidstone / Ramsgate",
-          "multiLocation": true,
+          "sourceCity": "Macclesfield",
+          "multiLocation": false,
           "isApproved": [
+            2019,
             2020,
+            2023,
+            2024,
+            2025
+          ],
+          "isNominee": [
+            2019,
+            2020,
+            2023,
+            2024,
+            2025
+          ],
+          "isFinalist": [
+            2019,
+            2020,
+            2023,
+            2024
+          ],
+          "isWinner": []
+        },
+        {
+          "docId": "QBlV1DIgjLC8RWdrMvcC",
+          "displayName": "Mr Copplestone's Curiosity Shoppe",
+          "company": "Escape Quest",
+          "link": "https://www.escapequest.co.uk/mr-copplestones-curiosity-shoppe.html",
+          "categoryLabel": "in-person room",
+          "sourceCity": "Macclesfield",
+          "multiLocation": false,
+          "isApproved": [
             2022,
             2023,
             2024,
             2025
           ],
           "isNominee": [
-            2020
+            2022,
+            2023,
+            2024,
+            2025
           ],
-          "isFinalist": [],
+          "isFinalist": [
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "isWinner": [
+            2022,
+            2023
+          ]
+        },
+        {
+          "docId": "H6FQLDk2t17OWpNGlrza",
+          "displayName": "Percy Pendleton's Peculiar Predicament",
+          "company": "Escape Quest",
+          "link": "https://www.escapequest.co.uk/percy-pendletons-peculiar-predicament.html",
+          "categoryLabel": "in-person room",
+          "sourceCity": "Macclesfield",
+          "multiLocation": false,
+          "isApproved": [
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "isNominee": [
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "isFinalist": [
+            2023,
+            2024,
+            2025
+          ],
+          "isWinner": [
+            2023
+          ]
+        },
+        {
+          "docId": "Yzfj7ZYv0PvrOcqC08C2",
+          "displayName": "Titterton's Toffees",
+          "company": "Escape Quest",
+          "link": "https://www.escapequest.co.uk/tittertons-toffees.html",
+          "categoryLabel": "in-person room",
+          "sourceCity": "Macclesfield",
+          "multiLocation": false,
+          "isApproved": [
+            2024,
+            2025
+          ],
+          "isNominee": [
+            2024,
+            2025
+          ],
+          "isFinalist": [
+            2024
+          ],
+          "isWinner": []
+        }
+      ]
+    },
+    {
+      "id": "England:Greater Manchester:Manchester",
+      "city": "Manchester",
+      "county": "Greater Manchester",
+      "constituentCountry": "England",
+      "lat": 53.4808,
+      "lon": -2.2426,
+      "roomCount": 4,
+      "rooms": [
+        {
+          "docId": "XJe6hh9EVQBYzA10bWtx",
+          "displayName": "Escape the R.M.S. Titanic",
+          "company": "Houdini's Escape Room Experience",
+          "link": "https://www.houdinisescape.co.uk/escape-from-titanic",
+          "categoryLabel": "in-person room",
+          "sourceCity": "Birmingham / Cardiff / Chester / Coventry / Crewe / Dundee / Greenwich / Leeds / Manchester / Milton Keynes / Nottingham / Sheffield / Southampton / Stafford / Swindon / Worcester / York",
+          "multiLocation": true,
+          "isApproved": [
+            2019,
+            2020,
+            2021,
+            2018,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "isNominee": [
+            2019,
+            2020,
+            2021,
+            2018,
+            2022,
+            2023
+          ],
+          "isFinalist": [
+            2020,
+            2021,
+            2022
+          ],
           "isWinner": []
         },
         {
-          "docId": "ZSbgjfB4iVdcrL8Ke8se",
-          "displayName": "Inbound",
-          "company": "Escape Hub",
-          "link": "https://escapehub.co.uk/rooms/#inbound",
+          "docId": "qqyQGeuwEgGNE6z4tPjE",
+          "displayName": "The Crystal Maze",
+          "company": "The Crystal Maze",
+          "link": "https://the-crystal-maze.com/",
           "categoryLabel": "in-person room",
-          "sourceCity": "Maidstone",
-          "multiLocation": false,
+          "sourceCity": "London / Manchester",
+          "multiLocation": true,
           "isApproved": [
+            2019,
             2020,
             2021,
+            2018,
             2022,
             2023,
-            2024
+            2024,
+            2025
           ],
           "isNominee": [
+            2019,
             2020,
             2021,
+            2018,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "isFinalist": [
+            2019,
+            2020,
+            2018
+          ],
+          "isWinner": []
+        },
+        {
+          "docId": "d8JBoglmxVGpzdtLMZwU",
+          "displayName": "The Orphanage",
+          "company": "Lucardo",
+          "link": "https://lucardo.com/manchester/bookings/the-orphanage",
+          "categoryLabel": "in-person room",
+          "sourceCity": "Manchester",
+          "multiLocation": false,
+          "isApproved": [
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "isNominee": [
             2022
           ],
           "isFinalist": [],
           "isWinner": []
         },
         {
-          "docId": "F2kGt9leasKuOryYQ0rA",
-          "displayName": "The Curse of Curawood's Garden",
-          "company": "Operation Escape (formerly Escape Hub)",
-          "link": "https://www.operation-escape.co.uk/ourgames",
+          "docId": "mPjq8YfXRTwZk5w3MM0G",
+          "displayName": "The Prison",
+          "company": "Lucardo",
+          "link": "https://lucardo.com/manchester/bookings/the-prison",
           "categoryLabel": "in-person room",
-          "sourceCity": "West Wickham / Maidstone",
-          "multiLocation": true,
+          "sourceCity": "Manchester",
+          "multiLocation": false,
           "isApproved": [
             2020,
             2021,
@@ -3947,16 +3230,28 @@ window.UK_ROOM_MAP_DATA = {
           ],
           "isFinalist": [],
           "isWinner": []
-        },
+        }
+      ]
+    },
+    {
+      "id": "England:Kent:Margate",
+      "city": "Margate",
+      "county": "Kent",
+      "constituentCountry": "England",
+      "lat": 51.3896,
+      "lon": 1.3862,
+      "roomCount": 4,
+      "rooms": [
         {
-          "docId": "Xgo1phhEgQ6e9cso4mAX",
-          "displayName": "The Peril of Sherwin Hones",
-          "company": "Operation Escape (formerly Escape Hub)",
-          "link": "https://www.operation-escape.co.uk/ourgames",
+          "docId": "uhyfrv72o1qNt3maccNw",
+          "displayName": "Detention",
+          "company": "Ctrl Alt Esc",
+          "link": "https://www.ctrlaltesc.co.uk/",
           "categoryLabel": "in-person room",
-          "sourceCity": "West Wickham / Maidstone",
-          "multiLocation": true,
+          "sourceCity": "Margate",
+          "multiLocation": false,
           "isApproved": [
+            2020,
             2021,
             2022,
             2023,
@@ -3964,9 +3259,98 @@ window.UK_ROOM_MAP_DATA = {
             2025
           ],
           "isNominee": [
-            2021
+            2020,
+            2021,
+            2022
+          ],
+          "isFinalist": [
+            2020
+          ],
+          "isWinner": []
+        },
+        {
+          "docId": "DX5zaE8lMepAjD3wdb71",
+          "displayName": "n/a",
+          "company": "The Escapement",
+          "link": "https://escapementmargate.co.uk/",
+          "categoryLabel": "company",
+          "sourceCity": "Margate",
+          "multiLocation": false,
+          "isApproved": [
+            2018
+          ],
+          "isNominee": [
+            2018
           ],
           "isFinalist": [],
+          "isWinner": []
+        },
+        {
+          "docId": "dfRG9VF72U4hWrfBEb4F",
+          "displayName": "Pirates of Polaris",
+          "company": "The Escapement (UK)",
+          "link": "https://www.escapementmargate.co.uk/rooms-lists",
+          "categoryLabel": "in-person room",
+          "sourceCity": "Margate",
+          "multiLocation": false,
+          "isApproved": [
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "isNominee": [
+            2019,
+            2020,
+            2021,
+            2022
+          ],
+          "isFinalist": [
+            2019,
+            2020,
+            2021
+          ],
+          "isWinner": []
+        },
+        {
+          "docId": "b8d9Jons3cJtTehmxG0l",
+          "displayName": "The Pit",
+          "company": "The Escapement (UK)",
+          "link": "https://www.escapementmargate.co.uk/rooms-lists",
+          "categoryLabel": "in-person room",
+          "sourceCity": "Margate",
+          "multiLocation": false,
+          "isApproved": [
+            2019,
+            2020,
+            2021,
+            2018,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "isNominee": [
+            2019,
+            2020,
+            2021,
+            2018,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "isFinalist": [
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024
+          ],
           "isWinner": []
         }
       ]
@@ -4134,6 +3518,73 @@ window.UK_ROOM_MAP_DATA = {
             2020,
             2021,
             2022
+          ],
+          "isFinalist": [],
+          "isWinner": []
+        }
+      ]
+    },
+    {
+      "id": "England:Cambridgeshire:Cambridge",
+      "city": "Cambridge",
+      "county": "Cambridgeshire",
+      "constituentCountry": "England",
+      "lat": 52.2053,
+      "lon": 0.1218,
+      "roomCount": 3,
+      "rooms": [
+        {
+          "docId": "qXr0kYnrsiE7F38iK0lW",
+          "displayName": "Our Finest Hour",
+          "company": "Escape Hunt",
+          "link": "https://escapehunt.com/uk/leeds/games/our-finest-hour/",
+          "categoryLabel": "in-person room",
+          "sourceCity": "Brisbane, Australia / Basingstoke / Birmingham / Bristol / Cambridge / Cheltenham / Leeds / Norwich / Watford",
+          "multiLocation": true,
+          "isApproved": [
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "isNominee": [
+            2020
+          ],
+          "isFinalist": [],
+          "isWinner": []
+        },
+        {
+          "docId": "W4lwGVwd1jzVgspfnih0",
+          "displayName": "The Mayan Temple",
+          "company": "Lockhouse Escape Games",
+          "link": "https://lockhouse.co.uk/mayan-temple/",
+          "categoryLabel": "in-person room",
+          "sourceCity": "Cambridge",
+          "multiLocation": false,
+          "isApproved": [
+            2025
+          ],
+          "isNominee": [
+            2025
+          ],
+          "isFinalist": [],
+          "isWinner": []
+        },
+        {
+          "docId": "pt6Hlr5VWt8qWGNtfnqT",
+          "displayName": "Victoria's Christmas Challenge",
+          "company": "Exit Rooms",
+          "link": "https://exitrooms.co.uk/book/victorias-christmas-challenge/",
+          "categoryLabel": "in-person room",
+          "sourceCity": "Cambridge",
+          "multiLocation": false,
+          "isApproved": [
+            2025
+          ],
+          "isNominee": [
+            2025
           ],
           "isFinalist": [],
           "isWinner": []
@@ -4462,24 +3913,62 @@ window.UK_ROOM_MAP_DATA = {
       ]
     },
     {
-      "id": "England:Leicestershire:Leicester",
-      "city": "Leicester",
-      "county": "Leicestershire",
+      "id": "England:Kent:Gravesend",
+      "city": "Gravesend",
+      "county": "Kent",
       "constituentCountry": "England",
-      "lat": 52.6369,
-      "lon": -1.1398,
+      "lat": 51.4419,
+      "lon": 0.3708,
       "roomCount": 3,
       "rooms": [
         {
-          "docId": "RrgI6IikV9fpwPULFyPO",
-          "displayName": "Chronos",
-          "company": "Escapologic",
-          "link": "https://www.escapologic.com/nottingham-escape-rooms/chronos/",
+          "docId": "59HIn9TzYCEPidHmhTB4",
+          "displayName": "n/a",
+          "company": "The Panic Room",
+          "link": "https://thepanicroom.net/",
+          "categoryLabel": "company",
+          "sourceCity": "Gravesend",
+          "multiLocation": false,
+          "isApproved": [
+            2018
+          ],
+          "isNominee": [
+            2018
+          ],
+          "isFinalist": [],
+          "isWinner": []
+        },
+        {
+          "docId": "4MlPvat3bT8hSQBgSSEH",
+          "displayName": "The Happy Institute",
+          "company": "The Panic Room",
+          "link": "https://thepanicroom.net/the-happy-institute",
           "categoryLabel": "in-person room",
-          "sourceCity": "Nottingham / Leicester",
-          "multiLocation": true,
+          "sourceCity": "Gravesend",
+          "multiLocation": false,
           "isApproved": [
             2019,
+            2020,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "isNominee": [
+            2019
+          ],
+          "isFinalist": [],
+          "isWinner": []
+        },
+        {
+          "docId": "obgjgk7BDa0nJSMA85cm",
+          "displayName": "Wizard of Oz",
+          "company": "The Panic Room",
+          "link": "https://thepanicroom.net/wizard-of-oz",
+          "categoryLabel": "in-person room",
+          "sourceCity": "Gravesend",
+          "multiLocation": false,
+          "isApproved": [
             2020,
             2021,
             2022,
@@ -4488,51 +3977,8 @@ window.UK_ROOM_MAP_DATA = {
             2025
           ],
           "isNominee": [
-            2019,
             2020,
-            2021,
-            2022,
-            2023
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        },
-        {
-          "docId": "SZzgawSJm9xhtr3CxIaX",
-          "displayName": "n/a",
-          "company": "Escapologic",
-          "link": "https://www.escapologic.com/",
-          "categoryLabel": "company",
-          "sourceCity": "Leicester / Nottingham",
-          "multiLocation": true,
-          "isApproved": [
-            2018
-          ],
-          "isNominee": [
-            2018
-          ],
-          "isFinalist": [
-            2018
-          ],
-          "isWinner": []
-        },
-        {
-          "docId": "2LhijC1PxqChFSxWklC0",
-          "displayName": "The Gateway",
-          "company": "Escapologic",
-          "link": "https://www.escapologic.com/leicester-escape-rooms/the-gateway/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Leicester",
-          "multiLocation": false,
-          "isApproved": [
-            2020,
-            2021,
-            2022
-          ],
-          "isNominee": [
-            2020,
-            2021,
-            2022
+            2021
           ],
           "isFinalist": [],
           "isWinner": []
@@ -4540,25 +3986,24 @@ window.UK_ROOM_MAP_DATA = {
       ]
     },
     {
-      "id": "England:Merseyside:Liverpool",
-      "city": "Liverpool",
-      "county": "Merseyside",
+      "id": "England:Kent:Maidstone",
+      "city": "Maidstone",
+      "county": "Kent",
       "constituentCountry": "England",
-      "lat": 53.4084,
-      "lon": -2.9916,
+      "lat": 51.2704,
+      "lon": 0.5227,
       "roomCount": 3,
       "rooms": [
         {
-          "docId": "9uVU2wGIFQdSzUZCkFXC",
-          "displayName": "Peaky Blinders: Double Cross",
-          "company": "Escape Live",
-          "link": "https://www.escapelive.co.uk/escape-room/peaky-blinders-double-cross/",
+          "docId": "0HrWJcxlesyYOeDUYS0w",
+          "displayName": "Feline Fiasco",
+          "company": "Operation Escape (formerly Escape Hub / Real Life Games)",
+          "link": "https://www.operation-escape.co.uk/ourgames",
           "categoryLabel": "in-person room",
-          "sourceCity": "Birmingham / Liverpool",
+          "sourceCity": "West Wickham / Maidstone / Ramsgate",
           "multiLocation": true,
           "isApproved": [
             2020,
-            2021,
             2022,
             2023,
             2024,
@@ -4571,38 +4016,45 @@ window.UK_ROOM_MAP_DATA = {
           "isWinner": []
         },
         {
-          "docId": "oUChRjRT2VDQb2KcxwPT",
-          "displayName": "The Curse of the Golden Lion",
-          "company": "Wirral Escape Rooms",
-          "link": "https://www.wirralescaperooms.co.uk/rooms",
+          "docId": "F2kGt9leasKuOryYQ0rA",
+          "displayName": "The Curse of Curawood's Garden",
+          "company": "Operation Escape (formerly Escape Hub)",
+          "link": "https://www.operation-escape.co.uk/ourgames",
           "categoryLabel": "in-person room",
-          "sourceCity": "Liverpool",
-          "multiLocation": false,
+          "sourceCity": "West Wickham / Maidstone",
+          "multiLocation": true,
           "isApproved": [
+            2020,
             2021,
             2022,
-            2023
+            2023,
+            2024,
+            2025
           ],
           "isNominee": [
-            2021,
-            2022
+            2020,
+            2021
           ],
           "isFinalist": [],
           "isWinner": []
         },
         {
-          "docId": "M5XLMWBOeZG3lIO6OYAE",
-          "displayName": "Wee W.I.L.L.I.E WinKey",
-          "company": "The Escaporium",
-          "link": "https://theescaporium.com/liverpool/wee-willie-winkey",
+          "docId": "Xgo1phhEgQ6e9cso4mAX",
+          "displayName": "The Peril of Sherwin Hones",
+          "company": "Operation Escape (formerly Escape Hub)",
+          "link": "https://www.operation-escape.co.uk/ourgames",
           "categoryLabel": "in-person room",
-          "sourceCity": "Liverpool",
-          "multiLocation": false,
+          "sourceCity": "West Wickham / Maidstone",
+          "multiLocation": true,
           "isApproved": [
+            2021,
+            2022,
+            2023,
+            2024,
             2025
           ],
           "isNominee": [
-            2025
+            2021
           ],
           "isFinalist": [],
           "isWinner": []
@@ -4678,80 +4130,6 @@ window.UK_ROOM_MAP_DATA = {
           "isNominee": [
             2024,
             2025
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        }
-      ]
-    },
-    {
-      "id": "England:Norfolk:Norwich",
-      "city": "Norwich",
-      "county": "Norfolk",
-      "constituentCountry": "England",
-      "lat": 52.6309,
-      "lon": 1.2974,
-      "roomCount": 3,
-      "rooms": [
-        {
-          "docId": "qXr0kYnrsiE7F38iK0lW",
-          "displayName": "Our Finest Hour",
-          "company": "Escape Hunt",
-          "link": "https://escapehunt.com/uk/leeds/games/our-finest-hour/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Brisbane, Australia / Basingstoke / Birmingham / Bristol / Cambridge / Cheltenham / Leeds / Norwich / Watford",
-          "multiLocation": true,
-          "isApproved": [
-            2020,
-            2021,
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "isNominee": [
-            2020
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        },
-        {
-          "docId": "6TrvSVXcIXL4JrFryNu7",
-          "displayName": "The Keeper and the Fungus Among Us",
-          "company": "Headlock Escape Rooms",
-          "link": "https://headlockescaperooms.co.uk/",
-          "categoryLabel": "online room",
-          "sourceCity": "Norwich",
-          "multiLocation": false,
-          "isApproved": [
-            2021
-          ],
-          "isNominee": [
-            2021
-          ],
-          "isFinalist": [
-            2021
-          ],
-          "isWinner": [
-            2021
-          ]
-        },
-        {
-          "docId": "9ORW5STLsnlqQLV78lbh",
-          "displayName": "The Merchants' Vaults at the Museum of Norwich",
-          "company": "History Mystery",
-          "link": "https://www.historymystery.games/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Norwich",
-          "multiLocation": false,
-          "isApproved": [
-            2019,
-            2020,
-            2018
-          ],
-          "isNominee": [
-            2019,
-            2018
           ],
           "isFinalist": [],
           "isWinner": []
@@ -5001,107 +4379,6 @@ window.UK_ROOM_MAP_DATA = {
       ]
     },
     {
-      "id": "England:Wiltshire:Swindon",
-      "city": "Swindon",
-      "county": "Wiltshire",
-      "constituentCountry": "England",
-      "lat": 51.5558,
-      "lon": -1.7797,
-      "roomCount": 3,
-      "rooms": [
-        {
-          "docId": "XJe6hh9EVQBYzA10bWtx",
-          "displayName": "Escape the R.M.S. Titanic",
-          "company": "Houdini's Escape Room Experience",
-          "link": "https://www.houdinisescape.co.uk/escape-from-titanic",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Birmingham / Cardiff / Chester / Coventry / Crewe / Dundee / Greenwich / Leeds / Manchester / Milton Keynes / Nottingham / Sheffield / Southampton / Stafford / Swindon / Worcester / York",
-          "multiLocation": true,
-          "isApproved": [
-            2019,
-            2020,
-            2021,
-            2018,
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "isNominee": [
-            2019,
-            2020,
-            2021,
-            2018,
-            2022,
-            2023
-          ],
-          "isFinalist": [
-            2020,
-            2021,
-            2022
-          ],
-          "isWinner": []
-        },
-        {
-          "docId": "r03TEzA6uNkDVgkusv7v",
-          "displayName": "Professor Dunstan and the Search for the Ancient Statuette",
-          "company": "Co-Decode",
-          "link": "https://co-decode.co.uk/professor-dunstan/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Swindon",
-          "multiLocation": false,
-          "isApproved": [
-            2019,
-            2020,
-            2021,
-            2018,
-            2022,
-            2023
-          ],
-          "isNominee": [
-            2019,
-            2020,
-            2021,
-            2018,
-            2022
-          ],
-          "isFinalist": [
-            2019,
-            2021,
-            2018
-          ],
-          "isWinner": []
-        },
-        {
-          "docId": "YmOUoFEQgNpRRPuCdMuF",
-          "displayName": "Sub Terra",
-          "company": "Co-Decode",
-          "link": "https://co-decode.co.uk/sub-terra/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Swindon",
-          "multiLocation": false,
-          "isApproved": [
-            2020,
-            2021,
-            2022,
-            2023,
-            2025
-          ],
-          "isNominee": [
-            2020,
-            2021,
-            2022,
-            2023
-          ],
-          "isFinalist": [
-            2020,
-            2021
-          ],
-          "isWinner": []
-        }
-      ]
-    },
-    {
       "id": "England:Kent:Tunbridge Wells",
       "city": "Tunbridge Wells",
       "county": "Kent",
@@ -5267,62 +4544,6 @@ window.UK_ROOM_MAP_DATA = {
       ]
     },
     {
-      "id": "England:Kent:Ashford",
-      "city": "Ashford",
-      "county": "Kent",
-      "constituentCountry": "England",
-      "lat": 51.1465,
-      "lon": 0.875,
-      "roomCount": 2,
-      "rooms": [
-        {
-          "docId": "RDyOq5tXfdI2olcg9GIl",
-          "displayName": "Broken",
-          "company": "Pier Pressure (formerly Pressure Point Escape Rooms)",
-          "link": "https://pierpressure.co.uk/escaperooms/broken/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Brighton / Ashford",
-          "multiLocation": true,
-          "isApproved": [
-            2020,
-            2021,
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "isNominee": [
-            2020
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        },
-        {
-          "docId": "ji3yPRmDlMIZXX4mA4my",
-          "displayName": "The Moonlit Wild",
-          "company": "Pressure Point Escape Rooms",
-          "link": "https://www.pressurepointescaperooms.co.uk/the-rooms",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Ashford",
-          "multiLocation": false,
-          "isApproved": [
-            2019,
-            2020,
-            2021,
-            2022,
-            2023
-          ],
-          "isNominee": [
-            2019,
-            2021,
-            2022
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        }
-      ]
-    },
-    {
       "id": "England:Greater Manchester:Ashton-under-Lyne",
       "city": "Ashton-under-Lyne",
       "county": "Greater Manchester",
@@ -5430,55 +4651,6 @@ window.UK_ROOM_MAP_DATA = {
       ]
     },
     {
-      "id": "England:Cornwall:Bodmin",
-      "city": "Bodmin",
-      "county": "Cornwall",
-      "constituentCountry": "England",
-      "lat": 50.4715,
-      "lon": -4.718,
-      "roomCount": 2,
-      "rooms": [
-        {
-          "docId": "eZv405WXrTUketS3wC1i",
-          "displayName": "Dormant",
-          "company": "Housetrap Escape Rooms",
-          "link": "https://www.housetrapescaperooms.co.uk/dormant/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Bodmin",
-          "multiLocation": false,
-          "isApproved": [
-            2020,
-            2021
-          ],
-          "isNominee": [
-            2020
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        },
-        {
-          "docId": "dYRFvCP7hbkdH23120Kx",
-          "displayName": "Seance",
-          "company": "Housetrap Escape Rooms",
-          "link": "https://www.housetrapescaperooms.co.uk/seance/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Bodmin",
-          "multiLocation": false,
-          "isApproved": [
-            2021,
-            2022,
-            2023,
-            2024
-          ],
-          "isNominee": [
-            2021
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        }
-      ]
-    },
-    {
       "id": "England:Dorset:Bournemouth",
       "city": "Bournemouth",
       "county": "Dorset",
@@ -5531,113 +4703,6 @@ window.UK_ROOM_MAP_DATA = {
           "multiLocation": false,
           "isApproved": [],
           "isNominee": [],
-          "isFinalist": [],
-          "isWinner": []
-        }
-      ]
-    },
-    {
-      "id": "England:Kent:Broadstairs",
-      "city": "Broadstairs",
-      "county": "Kent",
-      "constituentCountry": "England",
-      "lat": 51.3588,
-      "lon": 1.4394,
-      "roomCount": 2,
-      "rooms": [
-        {
-          "docId": "IsqEL4gslL6dHcf8UyUV",
-          "displayName": "Atlantis",
-          "company": "The Escapement (UK)",
-          "link": "https://www.theescapement.co.uk/escape-rooms-broadstairs",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Broadstairs",
-          "multiLocation": false,
-          "isApproved": [
-            2022,
-            2023,
-            2024
-          ],
-          "isNominee": [
-            2022,
-            2023,
-            2024
-          ],
-          "isFinalist": [
-            2022,
-            2023,
-            2024
-          ],
-          "isWinner": [
-            2022
-          ]
-        },
-        {
-          "docId": "PF09QEWB7BTwqnFTCF00",
-          "displayName": "Wunderwaffe Operation Quartz",
-          "company": "The Escapement (UK)",
-          "link": "https://www.theescapement.co.uk/escape-rooms-broadstairs",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Broadstairs",
-          "multiLocation": false,
-          "isApproved": [
-            2022,
-            2023,
-            2024
-          ],
-          "isNominee": [
-            2022,
-            2023,
-            2024
-          ],
-          "isFinalist": [
-            2022,
-            2023
-          ],
-          "isWinner": []
-        }
-      ]
-    },
-    {
-      "id": "England:Kent:Dover",
-      "city": "Dover",
-      "county": "Kent",
-      "constituentCountry": "England",
-      "lat": 51.1279,
-      "lon": 1.3134,
-      "roomCount": 2,
-      "rooms": [
-        {
-          "docId": "OAcyHdg02riamPN6wyi6",
-          "displayName": "Director's Cut",
-          "company": "Get Lost",
-          "link": "https://www.getlostescaperooms.co.uk/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Dover",
-          "multiLocation": false,
-          "isApproved": [
-            2020
-          ],
-          "isNominee": [
-            2020
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        },
-        {
-          "docId": "DDzKAzOUeoDvgI6KdCQm",
-          "displayName": "The Krevokar Programme",
-          "company": "Get Lost",
-          "link": "https://www.getlostescaperooms.co.uk/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Dover",
-          "multiLocation": false,
-          "isApproved": [
-            2020
-          ],
-          "isNominee": [
-            2020
-          ],
           "isFinalist": [],
           "isWinner": []
         }
@@ -5880,6 +4945,113 @@ window.UK_ROOM_MAP_DATA = {
       ]
     },
     {
+      "id": "England:Leicestershire:Leicester",
+      "city": "Leicester",
+      "county": "Leicestershire",
+      "constituentCountry": "England",
+      "lat": 52.6369,
+      "lon": -1.1398,
+      "roomCount": 2,
+      "rooms": [
+        {
+          "docId": "RrgI6IikV9fpwPULFyPO",
+          "displayName": "Chronos",
+          "company": "Escapologic",
+          "link": "https://www.escapologic.com/nottingham-escape-rooms/chronos/",
+          "categoryLabel": "in-person room",
+          "sourceCity": "Nottingham / Leicester",
+          "multiLocation": true,
+          "isApproved": [
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "isNominee": [
+            2019,
+            2020,
+            2021,
+            2022,
+            2023
+          ],
+          "isFinalist": [],
+          "isWinner": []
+        },
+        {
+          "docId": "SZzgawSJm9xhtr3CxIaX",
+          "displayName": "n/a",
+          "company": "Escapologic",
+          "link": "https://www.escapologic.com/",
+          "categoryLabel": "company",
+          "sourceCity": "Leicester / Nottingham",
+          "multiLocation": true,
+          "isApproved": [
+            2018
+          ],
+          "isNominee": [
+            2018
+          ],
+          "isFinalist": [
+            2018
+          ],
+          "isWinner": []
+        }
+      ]
+    },
+    {
+      "id": "England:Merseyside:Liverpool",
+      "city": "Liverpool",
+      "county": "Merseyside",
+      "constituentCountry": "England",
+      "lat": 53.4084,
+      "lon": -2.9916,
+      "roomCount": 2,
+      "rooms": [
+        {
+          "docId": "9uVU2wGIFQdSzUZCkFXC",
+          "displayName": "Peaky Blinders: Double Cross",
+          "company": "Escape Live",
+          "link": "https://www.escapelive.co.uk/escape-room/peaky-blinders-double-cross/",
+          "categoryLabel": "in-person room",
+          "sourceCity": "Birmingham / Liverpool",
+          "multiLocation": true,
+          "isApproved": [
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "isNominee": [
+            2020
+          ],
+          "isFinalist": [],
+          "isWinner": []
+        },
+        {
+          "docId": "M5XLMWBOeZG3lIO6OYAE",
+          "displayName": "Wee W.I.L.L.I.E WinKey",
+          "company": "The Escaporium",
+          "link": "https://theescaporium.com/liverpool/wee-willie-winkey",
+          "categoryLabel": "in-person room",
+          "sourceCity": "Liverpool",
+          "multiLocation": false,
+          "isApproved": [
+            2025
+          ],
+          "isNominee": [
+            2025
+          ],
+          "isFinalist": [],
+          "isWinner": []
+        }
+      ]
+    },
+    {
       "id": "England:Buckinghamshire:Milton Keynes",
       "city": "Milton Keynes",
       "county": "Buckinghamshire",
@@ -5937,6 +5109,60 @@ window.UK_ROOM_MAP_DATA = {
           ],
           "isFinalist": [],
           "isWinner": []
+        }
+      ]
+    },
+    {
+      "id": "England:Norfolk:Norwich",
+      "city": "Norwich",
+      "county": "Norfolk",
+      "constituentCountry": "England",
+      "lat": 52.6309,
+      "lon": 1.2974,
+      "roomCount": 2,
+      "rooms": [
+        {
+          "docId": "qXr0kYnrsiE7F38iK0lW",
+          "displayName": "Our Finest Hour",
+          "company": "Escape Hunt",
+          "link": "https://escapehunt.com/uk/leeds/games/our-finest-hour/",
+          "categoryLabel": "in-person room",
+          "sourceCity": "Brisbane, Australia / Basingstoke / Birmingham / Bristol / Cambridge / Cheltenham / Leeds / Norwich / Watford",
+          "multiLocation": true,
+          "isApproved": [
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "isNominee": [
+            2020
+          ],
+          "isFinalist": [],
+          "isWinner": []
+        },
+        {
+          "docId": "6TrvSVXcIXL4JrFryNu7",
+          "displayName": "The Keeper and the Fungus Among Us",
+          "company": "Headlock Escape Rooms",
+          "link": "https://headlockescaperooms.co.uk/",
+          "categoryLabel": "online room",
+          "sourceCity": "Norwich",
+          "multiLocation": false,
+          "isApproved": [
+            2021
+          ],
+          "isNominee": [
+            2021
+          ],
+          "isFinalist": [
+            2021
+          ],
+          "isWinner": [
+            2021
+          ]
         }
       ]
     },
@@ -6052,45 +5278,27 @@ window.UK_ROOM_MAP_DATA = {
       ]
     },
     {
-      "id": "England:Lancashire:Rawtenstall",
-      "city": "Rawtenstall",
-      "county": "Lancashire",
+      "id": "England:Wiltshire:Swindon",
+      "city": "Swindon",
+      "county": "Wiltshire",
       "constituentCountry": "England",
-      "lat": 53.7008,
-      "lon": -2.2875,
+      "lat": 51.5558,
+      "lon": -1.7797,
       "roomCount": 2,
       "rooms": [
         {
-          "docId": "rk0MafMWM2T7aRy1k5uF",
-          "displayName": "Safe House",
-          "company": "Lucardo",
-          "link": "https://lucardo.com/rawtenstall",
+          "docId": "XJe6hh9EVQBYzA10bWtx",
+          "displayName": "Escape the R.M.S. Titanic",
+          "company": "Houdini's Escape Room Experience",
+          "link": "https://www.houdinisescape.co.uk/escape-from-titanic",
           "categoryLabel": "in-person room",
-          "sourceCity": "Rawtenstall",
-          "multiLocation": false,
-          "isApproved": [
-            2021,
-            2022,
-            2023
-          ],
-          "isNominee": [
-            2021
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        },
-        {
-          "docId": "GGnCmZqUzDn54W2Xncoe",
-          "displayName": "University of Magic: Dragon's Heart",
-          "company": "Lucardo",
-          "link": "https://lucardo.com/rawtenstall/bookings/dragons-heart",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Rawtenstall",
-          "multiLocation": false,
+          "sourceCity": "Birmingham / Cardiff / Chester / Coventry / Crewe / Dundee / Greenwich / Leeds / Manchester / Milton Keynes / Nottingham / Sheffield / Southampton / Stafford / Swindon / Worcester / York",
+          "multiLocation": true,
           "isApproved": [
             2019,
             2020,
             2021,
+            2018,
             2022,
             2023,
             2024,
@@ -6100,13 +5308,41 @@ window.UK_ROOM_MAP_DATA = {
             2019,
             2020,
             2021,
+            2018,
             2022,
-            2023,
-            2024
+            2023
           ],
           "isFinalist": [
-            2019,
-            2020
+            2020,
+            2021,
+            2022
+          ],
+          "isWinner": []
+        },
+        {
+          "docId": "YmOUoFEQgNpRRPuCdMuF",
+          "displayName": "Sub Terra",
+          "company": "Co-Decode",
+          "link": "https://co-decode.co.uk/sub-terra/",
+          "categoryLabel": "in-person room",
+          "sourceCity": "Swindon",
+          "multiLocation": false,
+          "isApproved": [
+            2020,
+            2021,
+            2022,
+            2023,
+            2025
+          ],
+          "isNominee": [
+            2020,
+            2021,
+            2022,
+            2023
+          ],
+          "isFinalist": [
+            2020,
+            2021
           ],
           "isWinner": []
         }
@@ -6218,6 +5454,39 @@ window.UK_ROOM_MAP_DATA = {
           "isFinalist": [
             2025
           ],
+          "isWinner": []
+        }
+      ]
+    },
+    {
+      "id": "England:Kent:Ashford",
+      "city": "Ashford",
+      "county": "Kent",
+      "constituentCountry": "England",
+      "lat": 51.1465,
+      "lon": 0.875,
+      "roomCount": 1,
+      "rooms": [
+        {
+          "docId": "RDyOq5tXfdI2olcg9GIl",
+          "displayName": "Broken",
+          "company": "Pier Pressure (formerly Pressure Point Escape Rooms)",
+          "link": "https://pierpressure.co.uk/escaperooms/broken/",
+          "categoryLabel": "in-person room",
+          "sourceCity": "Brighton / Ashford",
+          "multiLocation": true,
+          "isApproved": [
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "isNominee": [
+            2020
+          ],
+          "isFinalist": [],
           "isWinner": []
         }
       ]
@@ -6434,38 +5703,6 @@ window.UK_ROOM_MAP_DATA = {
             2021,
             2022
           ],
-          "isWinner": []
-        }
-      ]
-    },
-    {
-      "id": "England:Wiltshire:Chippenham",
-      "city": "Chippenham",
-      "county": "Wiltshire",
-      "constituentCountry": "England",
-      "lat": 51.4615,
-      "lon": -2.1195,
-      "roomCount": 1,
-      "rooms": [
-        {
-          "docId": "2PxrsKBlWFSw89KnCMjr",
-          "displayName": "Victoria's Last Challenge",
-          "company": "11th Hour Escape Rooms",
-          "link": "https://11thhourescaperooms.co.uk/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Chippenham",
-          "multiLocation": false,
-          "isApproved": [
-            2020,
-            2021,
-            2022,
-            2023,
-            2024
-          ],
-          "isNominee": [
-            2020
-          ],
-          "isFinalist": [],
           "isWinner": []
         }
       ]
@@ -6724,34 +5961,6 @@ window.UK_ROOM_MAP_DATA = {
           ],
           "isNominee": [
             2022
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        }
-      ]
-    },
-    {
-      "id": "England:Kent:Frittenden",
-      "city": "Frittenden",
-      "county": "Kent",
-      "constituentCountry": "England",
-      "lat": 51.139,
-      "lon": 0.5908,
-      "roomCount": 1,
-      "rooms": [
-        {
-          "docId": "IctFcsGk3ymDbtdOCBP9",
-          "displayName": "Secret Santa",
-          "company": "Time 2 Escape",
-          "link": "https://www.facebook.com/Time2Escape.Kent",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Frittenden",
-          "multiLocation": false,
-          "isApproved": [
-            2024
-          ],
-          "isNominee": [
-            2024
           ],
           "isFinalist": [],
           "isWinner": []
@@ -7151,35 +6360,6 @@ window.UK_ROOM_MAP_DATA = {
       ]
     },
     {
-      "id": "England:Nottinghamshire:Newark",
-      "city": "Newark",
-      "county": "Nottinghamshire",
-      "constituentCountry": "England",
-      "lat": 53.076,
-      "lon": -0.809,
-      "roomCount": 1,
-      "rooms": [
-        {
-          "docId": "p2hvbdEtU3Y7p9lI3VwM",
-          "displayName": "The Rig",
-          "company": "LetsXcape",
-          "link": "https://www.letsxcape.co.uk/the-rig-2/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Newark",
-          "multiLocation": false,
-          "isApproved": [
-            2021,
-            2022
-          ],
-          "isNominee": [
-            2021
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        }
-      ]
-    },
-    {
       "id": "England:Berkshire:Newbury",
       "city": "Newbury",
       "county": "Berkshire",
@@ -7203,37 +6383,6 @@ window.UK_ROOM_MAP_DATA = {
             2023,
             2024,
             2025
-          ],
-          "isNominee": [
-            2020
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        }
-      ]
-    },
-    {
-      "id": "England:Cambridgeshire:Peterborough",
-      "city": "Peterborough",
-      "county": "Cambridgeshire",
-      "constituentCountry": "England",
-      "lat": 52.5695,
-      "lon": -0.2405,
-      "roomCount": 1,
-      "rooms": [
-        {
-          "docId": "gDZcre1BO088NvXxzSpV",
-          "displayName": "Madame Curio's Cirque Delirium",
-          "company": "Trapp'd",
-          "link": "https://trappd.com/rooms/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Peterborough",
-          "multiLocation": false,
-          "isApproved": [
-            2020,
-            2021,
-            2022,
-            2023
           ],
           "isNominee": [
             2020
@@ -7299,6 +6448,48 @@ window.UK_ROOM_MAP_DATA = {
             2020
           ],
           "isFinalist": [],
+          "isWinner": []
+        }
+      ]
+    },
+    {
+      "id": "England:Lancashire:Rawtenstall",
+      "city": "Rawtenstall",
+      "county": "Lancashire",
+      "constituentCountry": "England",
+      "lat": 53.7008,
+      "lon": -2.2875,
+      "roomCount": 1,
+      "rooms": [
+        {
+          "docId": "GGnCmZqUzDn54W2Xncoe",
+          "displayName": "University of Magic: Dragon's Heart",
+          "company": "Lucardo",
+          "link": "https://lucardo.com/rawtenstall/bookings/dragons-heart",
+          "categoryLabel": "in-person room",
+          "sourceCity": "Rawtenstall",
+          "multiLocation": false,
+          "isApproved": [
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "isNominee": [
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024
+          ],
+          "isFinalist": [
+            2019,
+            2020
+          ],
           "isWinner": []
         }
       ]
@@ -7735,36 +6926,6 @@ window.UK_ROOM_MAP_DATA = {
           ],
           "isNominee": [
             2025
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        }
-      ]
-    },
-    {
-      "id": "England:West Midlands:Wolverhampton",
-      "city": "Wolverhampton",
-      "county": "West Midlands",
-      "constituentCountry": "England",
-      "lat": 52.5862,
-      "lon": -2.1287,
-      "roomCount": 1,
-      "rooms": [
-        {
-          "docId": "KqHIwZhyT0yiYjVFWuSx",
-          "displayName": "Starpoint Alpha",
-          "company": "Clockwork Escapes",
-          "link": "https://www.clockworkescapes.co.uk/rooms/starpoint-alpha/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Wolverhampton",
-          "multiLocation": false,
-          "isApproved": [
-            2021,
-            2022,
-            2023
-          ],
-          "isNominee": [
-            2021
           ],
           "isFinalist": [],
           "isWinner": []

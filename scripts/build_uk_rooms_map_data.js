@@ -162,6 +162,9 @@ const mapData = {
   ],
   totalCities: cities.length,
   totalRooms: cities.reduce((sum, city) => sum + city.roomCount, 0),
+  totalExcludedClosedRecords: data.totalExcludedClosedRecords || 0,
+  sourceClosedRecordCount: data.sourceClosedRecordCount || 0,
+  manualOverrides: data.manualOverrides || { closedRecordCount: 0, unmatchedClosedDocIds: [] },
   cities: cities.sort((a, b) => b.roomCount - a.roomCount || a.city.localeCompare(b.city)),
 };
 
