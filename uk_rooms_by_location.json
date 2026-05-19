@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-18T22:41:27.868Z",
+  "generatedAt": "2026-05-18T23:44:39.392Z",
   "source": {
     "app": "https://roomfinder.terpeca.com",
     "firestoreProject": "terpeca-voter-portal",
@@ -15,22 +15,54 @@
     "Rooms marked closed in manual_room_overrides.json are also excluded from grouped counts and map data."
   ],
   "totalSourceRecords": 247,
-  "totalVisibleSourceRecords": 211,
-  "totalExcludedClosedRecords": 36,
+  "totalVisibleSourceRecords": 198,
+  "totalExcludedClosedRecords": 49,
   "latestSourceYear": 2025,
-  "totalGroupedEntries": 252,
+  "totalGroupedEntries": 239,
   "categoryCounts": {
-    "in-person room": 186,
-    "company": 13,
-    "online room": 12
+    "in-person room": 179,
+    "company": 12,
+    "online room": 7
   },
   "manualOverrides": {
     "path": "manual_room_overrides.json",
-    "closedRecordCount": 0,
+    "closedRecordCount": 13,
     "unmatchedClosedDocIds": []
   },
   "sourceClosedRecordCount": 36,
   "excludedClosedRooms": [
+    {
+      "docId": "w3vm7S5wKQNoUQ6PRHwU",
+      "displayName": "9-to-5 Assassin",
+      "company": "Knockout Escape Rooms",
+      "sourceCity": "Reading",
+      "ineligibilityReason": "",
+      "closureSource": "manual"
+    },
+    {
+      "docId": "7nJozZMZSMi9hQRueoXl",
+      "displayName": "Agent Venture Mission One: The Heist",
+      "company": "The Adventure Is Real",
+      "sourceCity": "London",
+      "ineligibilityReason": "",
+      "closureSource": "manual"
+    },
+    {
+      "docId": "VFwy187A8MuEeXBToDK4",
+      "displayName": "Agent Venture Mission Three: B.A.D Side of the Moon",
+      "company": "The Adventure Is Real",
+      "sourceCity": "London",
+      "ineligibilityReason": "",
+      "closureSource": "manual"
+    },
+    {
+      "docId": "EyfIsu2kRwWr0RaCuKgJ",
+      "displayName": "Agent Venture Mission Two: Cyborg Island",
+      "company": "The Adventure Is Real",
+      "sourceCity": "London",
+      "ineligibilityReason": "",
+      "closureSource": "manual"
+    },
     {
       "docId": "g3wtH00mOZFoHvlnwAiP",
       "displayName": "Alien",
@@ -70,6 +102,14 @@
       "sourceCity": "London",
       "ineligibilityReason": "permanently closed since 2020",
       "closureSource": "source"
+    },
+    {
+      "docId": "kW00RkeqVC0Ah4zdN6fs",
+      "displayName": "Diamond Mine",
+      "company": "Lakes Escapes",
+      "sourceCity": "Workington",
+      "ineligibilityReason": "",
+      "closureSource": "manual"
     },
     {
       "docId": "OAcyHdg02riamPN6wyi6",
@@ -112,6 +152,14 @@
       "closureSource": "source"
     },
     {
+      "docId": "NvDv81LKQjomm7YqFDf0",
+      "displayName": "Jacobe Castle",
+      "company": "Castle Crusaders",
+      "sourceCity": "London",
+      "ineligibilityReason": "",
+      "closureSource": "manual"
+    },
+    {
       "docId": "wqWtbB5SsxaXh2BZQxan",
       "displayName": "Loop",
       "company": "The Panic Room (formerly Clockwork Dog)",
@@ -144,12 +192,44 @@
       "closureSource": "source"
     },
     {
+      "docId": "oHqVtWPXzSuLVi9kIxCf",
+      "displayName": "n/a",
+      "company": "Time Run",
+      "sourceCity": "London",
+      "ineligibilityReason": "",
+      "closureSource": "manual"
+    },
+    {
       "docId": "1ILQVs6R1nNi6p3Baiih",
       "displayName": "Old Father Time",
       "company": "The Panic Room",
       "sourceCity": "Gravesend",
       "ineligibilityReason": "closed in October 2022",
       "closureSource": "source"
+    },
+    {
+      "docId": "hqGmI9BMcUDqplzkicqV",
+      "displayName": "Open House",
+      "company": "ScreamWorks",
+      "sourceCity": "London",
+      "ineligibilityReason": "",
+      "closureSource": "manual"
+    },
+    {
+      "docId": "DHOGOQDkXJRqhnd5FYdL",
+      "displayName": "Pathogen",
+      "company": "Doomsday Games",
+      "sourceCity": "Colchester",
+      "ineligibilityReason": "",
+      "closureSource": "manual"
+    },
+    {
+      "docId": "ySsoUNwmDmoeR3E1Rwfc",
+      "displayName": "Plymouth Point",
+      "company": "Swamp Motel",
+      "sourceCity": "London",
+      "ineligibilityReason": "",
+      "closureSource": "manual"
     },
     {
       "docId": "r03TEzA6uNkDVgkusv7v",
@@ -208,6 +288,14 @@
       "closureSource": "source"
     },
     {
+      "docId": "AW0rL0CmRnr1eAT2TH1P",
+      "displayName": "Star Crew",
+      "company": "Escape Reality Glasgow",
+      "sourceCity": "Glasgow",
+      "ineligibilityReason": "",
+      "closureSource": "manual"
+    },
+    {
       "docId": "KqHIwZhyT0yiYjVFWuSx",
       "displayName": "Starpoint Alpha",
       "company": "Clockwork Escapes",
@@ -246,6 +334,14 @@
       "sourceCity": "Liverpool",
       "ineligibilityReason": "closed in October 2023",
       "closureSource": "source"
+    },
+    {
+      "docId": "hmgIEzX0MbZ7wNKUuOzm",
+      "displayName": "The Diamond Dogs",
+      "company": "Clue Cracker",
+      "sourceCity": "Tunbridge Wells",
+      "ineligibilityReason": "",
+      "closureSource": "manual"
     },
     {
       "docId": "17N97OZrZEH3OfSPUBRo",
@@ -312,6 +408,14 @@
       "closureSource": "source"
     },
     {
+      "docId": "v7EUBXl8Gj8lAYjPWi22",
+      "displayName": "Wizarding School: Fang of the Serpent",
+      "company": "Breakin' Escape Rooms",
+      "sourceCity": "London",
+      "ineligibilityReason": "",
+      "closureSource": "manual"
+    },
+    {
       "docId": "PF09QEWB7BTwqnFTCF00",
       "displayName": "Wunderwaffe Operation Quartz",
       "company": "The Escapement (UK)",
@@ -374,7 +478,7 @@
       "constituentCountry": "England",
       "county": "Berkshire",
       "state": "",
-      "roomCount": 10,
+      "roomCount": 9,
       "cities": [
         {
           "city": "Newbury",
@@ -429,49 +533,6 @@
           "city": "Reading",
           "state": "",
           "rooms": [
-            {
-              "docId": "w3vm7S5wKQNoUQ6PRHwU",
-              "name": "9-to-5 Assassin",
-              "englishName": "",
-              "displayName": "9-to-5 Assassin",
-              "company": "Knockout Escape Rooms",
-              "link": "https://knockoutescaperooms.com/9-to-5-assassin/",
-              "sourceCity": "Reading",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 0,
-              "categoryLabel": "in-person room",
-              "isApproved": [
-                2020,
-                2021,
-                2022,
-                2023,
-                2024,
-                2025
-              ],
-              "isNominee": [
-                2020,
-                2021
-              ],
-              "isFinalist": [],
-              "isWinner": [],
-              "isConfirmedOpen": [
-                2021,
-                2022,
-                2023,
-                2024,
-                2025
-              ],
-              "isIneligible": [],
-              "isPermanentlyIneligible": [],
-              "ineligibilityReason": "",
-              "createTime": "2020-11-01T02:58:59.998992Z",
-              "updateTime": "2025-09-07T12:25:35.352559Z",
-              "city": "Reading",
-              "county": "Berkshire",
-              "constituentCountry": "England",
-              "multiLocation": false
-            },
             {
               "docId": "kdwydPvCp1GGEnUUneYP",
               "name": "Age of Magic",
@@ -812,7 +873,7 @@
               "multiLocation": false
             }
           ],
-          "roomCount": 9
+          "roomCount": 8
         }
       ]
     },
@@ -1882,7 +1943,7 @@
       "constituentCountry": "England",
       "county": "Cumbria",
       "state": "",
-      "roomCount": 2,
+      "roomCount": 1,
       "cities": [
         {
           "city": "Workington",
@@ -1929,52 +1990,9 @@
               "county": "Cumbria",
               "constituentCountry": "England",
               "multiLocation": false
-            },
-            {
-              "docId": "kW00RkeqVC0Ah4zdN6fs",
-              "name": "Diamond Mine",
-              "englishName": "",
-              "displayName": "Diamond Mine",
-              "company": "Lakes Escapes",
-              "link": "https://www.lakesescapes.co.uk/diamond-mine/",
-              "sourceCity": "Workington",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 0,
-              "categoryLabel": "in-person room",
-              "isApproved": [
-                2021,
-                2022,
-                2023,
-                2024,
-                2025
-              ],
-              "isNominee": [
-                2021,
-                2022,
-                2023,
-                2024
-              ],
-              "isFinalist": [],
-              "isWinner": [],
-              "isConfirmedOpen": [
-                2022,
-                2023,
-                2024,
-                2025
-              ],
-              "isIneligible": [],
-              "isPermanentlyIneligible": [],
-              "ineligibilityReason": "",
-              "createTime": "2021-10-25T20:23:14.102085Z",
-              "updateTime": "2025-09-05T19:28:55.206575Z",
-              "city": "Workington",
-              "county": "Cumbria",
-              "constituentCountry": "England",
-              "multiLocation": false
             }
           ],
-          "roomCount": 2
+          "roomCount": 1
         }
       ]
     },
@@ -2916,7 +2934,7 @@
       "constituentCountry": "England",
       "county": "Essex",
       "state": "",
-      "roomCount": 2,
+      "roomCount": 1,
       "cities": [
         {
           "city": "Billericay",
@@ -2960,55 +2978,6 @@
               "createTime": "2022-10-24T22:32:31.133697Z",
               "updateTime": "2025-11-05T09:25:34.622367Z",
               "city": "Billericay",
-              "county": "Essex",
-              "constituentCountry": "England",
-              "multiLocation": false
-            }
-          ],
-          "roomCount": 1
-        },
-        {
-          "city": "Colchester",
-          "state": "",
-          "rooms": [
-            {
-              "docId": "DHOGOQDkXJRqhnd5FYdL",
-              "name": "Pathogen",
-              "englishName": "",
-              "displayName": "Pathogen",
-              "company": "Doomsday Games",
-              "link": "https://www.doomsdayescapegame.co.uk/pathogen",
-              "sourceCity": "Colchester",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 0,
-              "categoryLabel": "in-person room",
-              "isApproved": [
-                2021,
-                2022,
-                2023,
-                2024,
-                2025
-              ],
-              "isNominee": [
-                2021,
-                2025
-              ],
-              "isFinalist": [],
-              "isWinner": [],
-              "isConfirmedOpen": [
-                2021,
-                2022,
-                2023,
-                2024,
-                2025
-              ],
-              "isIneligible": [],
-              "isPermanentlyIneligible": [],
-              "ineligibilityReason": "",
-              "createTime": "2021-10-31T23:12:05.937914Z",
-              "updateTime": "2025-11-05T09:26:09.484239Z",
-              "city": "Colchester",
               "county": "Essex",
               "constituentCountry": "England",
               "multiLocation": false
@@ -3122,7 +3091,7 @@
       "constituentCountry": "England",
       "county": "Greater London",
       "state": "",
-      "roomCount": 35,
+      "roomCount": 27,
       "cities": [
         {
           "city": "Croydon",
@@ -3323,121 +3292,6 @@
           "state": "",
           "rooms": [
             {
-              "docId": "7nJozZMZSMi9hQRueoXl",
-              "name": "Agent Venture Mission One: The Heist",
-              "englishName": "",
-              "displayName": "Agent Venture Mission One: The Heist",
-              "company": "The Adventure Is Real",
-              "link": "https://www.agentventure.com/mission-one-the-heist",
-              "sourceCity": "London",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 2,
-              "categoryLabel": "online room",
-              "isApproved": [
-                2020,
-                2021
-              ],
-              "isNominee": [
-                2020,
-                2021
-              ],
-              "isFinalist": [
-                2020,
-                2021
-              ],
-              "isWinner": [],
-              "isConfirmedOpen": [
-                2021
-              ],
-              "isIneligible": [],
-              "isPermanentlyIneligible": [],
-              "ineligibilityReason": "",
-              "createTime": "2020-09-30T23:30:43.539362Z",
-              "updateTime": "2022-12-24T02:17:31.262111Z",
-              "city": "London",
-              "county": "Greater London",
-              "constituentCountry": "England",
-              "multiLocation": false
-            },
-            {
-              "docId": "VFwy187A8MuEeXBToDK4",
-              "name": "Agent Venture Mission Three: B.A.D Side of the Moon",
-              "englishName": "",
-              "displayName": "Agent Venture Mission Three: B.A.D Side of the Moon",
-              "company": "The Adventure Is Real",
-              "link": "https://www.agentventure.com/mission-three-bad-side-of-the-moon",
-              "sourceCity": "London",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 2,
-              "categoryLabel": "online room",
-              "isApproved": [
-                2020,
-                2021
-              ],
-              "isNominee": [
-                2020,
-                2021
-              ],
-              "isFinalist": [
-                2020,
-                2021
-              ],
-              "isWinner": [
-                2020
-              ],
-              "isConfirmedOpen": [
-                2021
-              ],
-              "isIneligible": [],
-              "isPermanentlyIneligible": [],
-              "ineligibilityReason": "",
-              "createTime": "2020-10-21T23:27:32.400599Z",
-              "updateTime": "2022-12-24T02:17:31.262111Z",
-              "city": "London",
-              "county": "Greater London",
-              "constituentCountry": "England",
-              "multiLocation": false
-            },
-            {
-              "docId": "EyfIsu2kRwWr0RaCuKgJ",
-              "name": "Agent Venture Mission Two: Cyborg Island",
-              "englishName": "",
-              "displayName": "Agent Venture Mission Two: Cyborg Island",
-              "company": "The Adventure Is Real",
-              "link": "https://www.agentventure.com/mission-two-cyborg-island",
-              "sourceCity": "London",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 2,
-              "categoryLabel": "online room",
-              "isApproved": [
-                2020,
-                2021
-              ],
-              "isNominee": [
-                2020,
-                2021
-              ],
-              "isFinalist": [
-                2020
-              ],
-              "isWinner": [],
-              "isConfirmedOpen": [
-                2021
-              ],
-              "isIneligible": [],
-              "isPermanentlyIneligible": [],
-              "ineligibilityReason": "",
-              "createTime": "2020-10-29T08:10:22.695267Z",
-              "updateTime": "2022-12-04T02:49:42.349167Z",
-              "city": "London",
-              "county": "Greater London",
-              "constituentCountry": "England",
-              "multiLocation": false
-            },
-            {
               "docId": "AKYXv47yMX0nCtbsu2Yi",
               "name": "cQ ORIGENES",
               "englishName": "",
@@ -3487,39 +3341,6 @@
               "ineligibilityReason": "",
               "createTime": "2019-11-02T06:49:17.746334Z",
               "updateTime": "2025-11-05T09:27:12.697215Z",
-              "city": "London",
-              "county": "Greater London",
-              "constituentCountry": "England",
-              "multiLocation": false
-            },
-            {
-              "docId": "NvDv81LKQjomm7YqFDf0",
-              "name": "Jacobe Castle",
-              "englishName": "",
-              "displayName": "Jacobe Castle",
-              "company": "Castle Crusaders",
-              "link": "https://www.castlecrusaders.com/",
-              "sourceCity": "London",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 2,
-              "categoryLabel": "online room",
-              "isApproved": [
-                2021
-              ],
-              "isNominee": [
-                2021
-              ],
-              "isFinalist": [],
-              "isWinner": [],
-              "isConfirmedOpen": [
-                2021
-              ],
-              "isIneligible": [],
-              "isPermanentlyIneligible": [],
-              "ineligibilityReason": "",
-              "createTime": "2021-10-06T00:08:06.332648Z",
-              "updateTime": "2021-11-02T04:24:51.645679Z",
               "city": "London",
               "county": "Greater London",
               "constituentCountry": "England",
@@ -3687,74 +3508,6 @@
               "multiLocation": false
             },
             {
-              "docId": "oHqVtWPXzSuLVi9kIxCf",
-              "name": "n/a",
-              "englishName": "",
-              "displayName": "n/a",
-              "company": "Time Run",
-              "link": "https://time-run.sketchanet.com/",
-              "sourceCity": "London",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 1,
-              "categoryLabel": "company",
-              "isApproved": [
-                2018
-              ],
-              "isNominee": [
-                2018
-              ],
-              "isFinalist": [
-                2018
-              ],
-              "isWinner": [
-                2018
-              ],
-              "isConfirmedOpen": [],
-              "isIneligible": [],
-              "isPermanentlyIneligible": [],
-              "ineligibilityReason": "",
-              "createTime": "2022-08-17T04:47:29.361142Z",
-              "updateTime": "2022-12-04T02:45:38.244847Z",
-              "city": "London",
-              "county": "Greater London",
-              "constituentCountry": "England",
-              "multiLocation": false
-            },
-            {
-              "docId": "hqGmI9BMcUDqplzkicqV",
-              "name": "Open House",
-              "englishName": "",
-              "displayName": "Open House",
-              "company": "ScreamWorks",
-              "link": "https://www.screamworks.london/event-template/open-house/",
-              "sourceCity": "London",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 0,
-              "categoryLabel": "in-person room",
-              "isApproved": [
-                2025
-              ],
-              "isNominee": [
-                2025
-              ],
-              "isFinalist": [],
-              "isWinner": [],
-              "isConfirmedOpen": [
-                2025
-              ],
-              "isIneligible": [],
-              "isPermanentlyIneligible": [],
-              "ineligibilityReason": "",
-              "createTime": "2025-10-17T04:12:37.811615Z",
-              "updateTime": "2025-11-05T09:27:30.767535Z",
-              "city": "London",
-              "county": "Greater London",
-              "constituentCountry": "England",
-              "multiLocation": false
-            },
-            {
               "docId": "4NAMLuIQVmkqy8SqMNCr",
               "name": "Operation BlackSheep",
               "englishName": "",
@@ -3790,41 +3543,6 @@
               "ineligibilityReason": "",
               "createTime": "2022-09-01T02:40:29.517721Z",
               "updateTime": "2025-09-05T21:13:53.623567Z",
-              "city": "London",
-              "county": "Greater London",
-              "constituentCountry": "England",
-              "multiLocation": false
-            },
-            {
-              "docId": "ySsoUNwmDmoeR3E1Rwfc",
-              "name": "Plymouth Point",
-              "englishName": "",
-              "displayName": "Plymouth Point",
-              "company": "Swamp Motel",
-              "link": "https://swampmotel.co.uk/live/#plymouth-point",
-              "sourceCity": "London",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 2,
-              "categoryLabel": "online room",
-              "isApproved": [
-                2020,
-                2021
-              ],
-              "isNominee": [
-                2020,
-                2021
-              ],
-              "isFinalist": [],
-              "isWinner": [],
-              "isConfirmedOpen": [
-                2021
-              ],
-              "isIneligible": [],
-              "isPermanentlyIneligible": [],
-              "ineligibilityReason": "",
-              "createTime": "2020-10-29T22:09:24.257970Z",
-              "updateTime": "2021-11-02T04:25:21.984015Z",
               "city": "London",
               "county": "Greater London",
               "constituentCountry": "England",
@@ -4389,49 +4107,9 @@
               "county": "Greater London",
               "constituentCountry": "England",
               "multiLocation": false
-            },
-            {
-              "docId": "v7EUBXl8Gj8lAYjPWi22",
-              "name": "Wizarding School: Fang of the Serpent",
-              "englishName": "",
-              "displayName": "Wizarding School: Fang of the Serpent",
-              "company": "Breakin' Escape Rooms",
-              "link": "https://breakinescaperooms.co.uk/",
-              "sourceCity": "London",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 0,
-              "categoryLabel": "in-person room",
-              "isApproved": [
-                2022,
-                2023,
-                2024,
-                2025
-              ],
-              "isNominee": [
-                2022,
-                2023
-              ],
-              "isFinalist": [],
-              "isWinner": [],
-              "isConfirmedOpen": [
-                2022,
-                2023,
-                2024,
-                2025
-              ],
-              "isIneligible": [],
-              "isPermanentlyIneligible": [],
-              "ineligibilityReason": "",
-              "createTime": "2022-10-04T19:48:30.344277Z",
-              "updateTime": "2025-09-05T21:13:11.879487Z",
-              "city": "London",
-              "county": "Greater London",
-              "constituentCountry": "England",
-              "multiLocation": false
             }
           ],
-          "roomCount": 27
+          "roomCount": 19
         },
         {
           "city": "Wallington",
@@ -5643,7 +5321,7 @@
       "constituentCountry": "England",
       "county": "Kent",
       "state": "",
-      "roomCount": 25,
+      "roomCount": 24,
       "cities": [
         {
           "city": "Ashford",
@@ -6709,59 +6387,9 @@
               "county": "Kent",
               "constituentCountry": "England",
               "multiLocation": false
-            },
-            {
-              "docId": "hmgIEzX0MbZ7wNKUuOzm",
-              "name": "The Diamond Dogs",
-              "englishName": "",
-              "displayName": "The Diamond Dogs",
-              "company": "Clue Cracker",
-              "link": "https://cluecrackergames.co.uk/room/the-diamond-dogs/",
-              "sourceCity": "Tunbridge Wells",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 0,
-              "categoryLabel": "in-person room",
-              "isApproved": [
-                2020,
-                2021,
-                2022,
-                2023,
-                2024,
-                2025
-              ],
-              "isNominee": [
-                2020,
-                2021,
-                2022,
-                2023,
-                2024,
-                2025
-              ],
-              "isFinalist": [
-                2021,
-                2023
-              ],
-              "isWinner": [],
-              "isConfirmedOpen": [
-                2021,
-                2022,
-                2023,
-                2024,
-                2025
-              ],
-              "isIneligible": [],
-              "isPermanentlyIneligible": [],
-              "ineligibilityReason": "",
-              "createTime": "2020-10-29T07:32:28.312653Z",
-              "updateTime": "2025-11-05T09:28:56.017119Z",
-              "city": "Tunbridge Wells",
-              "county": "Kent",
-              "constituentCountry": "England",
-              "multiLocation": false
             }
           ],
-          "roomCount": 3
+          "roomCount": 2
         }
       ]
     },
@@ -11608,7 +11236,7 @@
       "constituentCountry": "Scotland",
       "county": "Glasgow City",
       "state": "",
-      "roomCount": 5,
+      "roomCount": 4,
       "cities": [
         {
           "city": "Glasgow",
@@ -11740,41 +11368,6 @@
               "multiLocation": false
             },
             {
-              "docId": "AW0rL0CmRnr1eAT2TH1P",
-              "name": "Star Crew",
-              "englishName": "",
-              "displayName": "Star Crew",
-              "company": "Escape Reality Glasgow",
-              "link": "https://www.escapereality.com/our-games/game-summary/starcrew/",
-              "sourceCity": "Glasgow",
-              "sourceState": "",
-              "country": "United Kingdom",
-              "category": 0,
-              "categoryLabel": "in-person room",
-              "isApproved": [
-                2024,
-                2025
-              ],
-              "isNominee": [
-                2024
-              ],
-              "isFinalist": [],
-              "isWinner": [],
-              "isConfirmedOpen": [
-                2024,
-                2025
-              ],
-              "isIneligible": [],
-              "isPermanentlyIneligible": [],
-              "ineligibilityReason": "",
-              "createTime": "2024-09-11T15:07:27.318287Z",
-              "updateTime": "2025-09-05T19:24:24.448815Z",
-              "city": "Glasgow",
-              "county": "Glasgow City",
-              "constituentCountry": "Scotland",
-              "multiLocation": false
-            },
-            {
               "docId": "z9XPzZracsr0TigiDOKt",
               "name": "The Surgery",
               "englishName": "",
@@ -11822,7 +11415,7 @@
               "multiLocation": false
             }
           ],
-          "roomCount": 5
+          "roomCount": 4
         }
       ]
     },

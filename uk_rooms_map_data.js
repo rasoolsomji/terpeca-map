@@ -1,6 +1,6 @@
 window.UK_ROOM_MAP_DATA = {
-  "generatedAt": "2026-05-18T22:41:30.329Z",
-  "sourceGeneratedAt": "2026-05-18T22:41:27.868Z",
+  "generatedAt": "2026-05-18T23:44:41.523Z",
+  "sourceGeneratedAt": "2026-05-18T23:44:39.392Z",
   "source": {
     "app": "https://roomfinder.terpeca.com",
     "firestoreProject": "terpeca-voter-portal",
@@ -11,13 +11,13 @@ window.UK_ROOM_MAP_DATA = {
     "Coordinates are approximate city/place centroids, intended for a visual overview rather than venue-level navigation.",
     "Markers are grouped at city/place level because the source data does not include venue addresses or postcodes."
   ],
-  "totalCities": 94,
-  "totalRooms": 252,
-  "totalExcludedClosedRecords": 36,
+  "totalCities": 93,
+  "totalRooms": 239,
+  "totalExcludedClosedRecords": 49,
   "sourceClosedRecordCount": 36,
   "manualOverrides": {
     "path": "manual_room_overrides.json",
-    "closedRecordCount": 0,
+    "closedRecordCount": 13,
     "unmatchedClosedDocIds": []
   },
   "cities": [
@@ -28,75 +28,8 @@ window.UK_ROOM_MAP_DATA = {
       "constituentCountry": "England",
       "lat": 51.5074,
       "lon": -0.1278,
-      "roomCount": 27,
+      "roomCount": 19,
       "rooms": [
-        {
-          "docId": "7nJozZMZSMi9hQRueoXl",
-          "displayName": "Agent Venture Mission One: The Heist",
-          "company": "The Adventure Is Real",
-          "link": "https://www.agentventure.com/mission-one-the-heist",
-          "categoryLabel": "online room",
-          "sourceCity": "London",
-          "multiLocation": false,
-          "isApproved": [
-            2020,
-            2021
-          ],
-          "isNominee": [
-            2020,
-            2021
-          ],
-          "isFinalist": [
-            2020,
-            2021
-          ],
-          "isWinner": []
-        },
-        {
-          "docId": "VFwy187A8MuEeXBToDK4",
-          "displayName": "Agent Venture Mission Three: B.A.D Side of the Moon",
-          "company": "The Adventure Is Real",
-          "link": "https://www.agentventure.com/mission-three-bad-side-of-the-moon",
-          "categoryLabel": "online room",
-          "sourceCity": "London",
-          "multiLocation": false,
-          "isApproved": [
-            2020,
-            2021
-          ],
-          "isNominee": [
-            2020,
-            2021
-          ],
-          "isFinalist": [
-            2020,
-            2021
-          ],
-          "isWinner": [
-            2020
-          ]
-        },
-        {
-          "docId": "EyfIsu2kRwWr0RaCuKgJ",
-          "displayName": "Agent Venture Mission Two: Cyborg Island",
-          "company": "The Adventure Is Real",
-          "link": "https://www.agentventure.com/mission-two-cyborg-island",
-          "categoryLabel": "online room",
-          "sourceCity": "London",
-          "multiLocation": false,
-          "isApproved": [
-            2020,
-            2021
-          ],
-          "isNominee": [
-            2020,
-            2021
-          ],
-          "isFinalist": [
-            2020
-          ],
-          "isWinner": []
-        },
         {
           "docId": "AKYXv47yMX0nCtbsu2Yi",
           "displayName": "cQ ORIGENES",
@@ -130,23 +63,6 @@ window.UK_ROOM_MAP_DATA = {
             2022,
             2023
           ],
-          "isWinner": []
-        },
-        {
-          "docId": "NvDv81LKQjomm7YqFDf0",
-          "displayName": "Jacobe Castle",
-          "company": "Castle Crusaders",
-          "link": "https://www.castlecrusaders.com/",
-          "categoryLabel": "online room",
-          "sourceCity": "London",
-          "multiLocation": false,
-          "isApproved": [
-            2021
-          ],
-          "isNominee": [
-            2021
-          ],
-          "isFinalist": [],
           "isWinner": []
         },
         {
@@ -235,44 +151,6 @@ window.UK_ROOM_MAP_DATA = {
           "isWinner": []
         },
         {
-          "docId": "oHqVtWPXzSuLVi9kIxCf",
-          "displayName": "n/a",
-          "company": "Time Run",
-          "link": "https://time-run.sketchanet.com/",
-          "categoryLabel": "company",
-          "sourceCity": "London",
-          "multiLocation": false,
-          "isApproved": [
-            2018
-          ],
-          "isNominee": [
-            2018
-          ],
-          "isFinalist": [
-            2018
-          ],
-          "isWinner": [
-            2018
-          ]
-        },
-        {
-          "docId": "hqGmI9BMcUDqplzkicqV",
-          "displayName": "Open House",
-          "company": "ScreamWorks",
-          "link": "https://www.screamworks.london/event-template/open-house/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "London",
-          "multiLocation": false,
-          "isApproved": [
-            2025
-          ],
-          "isNominee": [
-            2025
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        },
-        {
           "docId": "4NAMLuIQVmkqy8SqMNCr",
           "displayName": "Operation BlackSheep",
           "company": "clueQuest",
@@ -290,25 +168,6 @@ window.UK_ROOM_MAP_DATA = {
           "isNominee": [
             2018,
             2022
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        },
-        {
-          "docId": "ySsoUNwmDmoeR3E1Rwfc",
-          "displayName": "Plymouth Point",
-          "company": "Swamp Motel",
-          "link": "https://swampmotel.co.uk/live/#plymouth-point",
-          "categoryLabel": "online room",
-          "sourceCity": "London",
-          "multiLocation": false,
-          "isApproved": [
-            2020,
-            2021
-          ],
-          "isNominee": [
-            2020,
-            2021
           ],
           "isFinalist": [],
           "isWinner": []
@@ -642,27 +501,6 @@ window.UK_ROOM_MAP_DATA = {
           "isWinner": [
             2020
           ]
-        },
-        {
-          "docId": "v7EUBXl8Gj8lAYjPWi22",
-          "displayName": "Wizarding School: Fang of the Serpent",
-          "company": "Breakin' Escape Rooms",
-          "link": "https://breakinescaperooms.co.uk/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "London",
-          "multiLocation": false,
-          "isApproved": [
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "isNominee": [
-            2022,
-            2023
-          ],
-          "isFinalist": [],
-          "isWinner": []
         }
       ]
     },
@@ -1380,31 +1218,8 @@ window.UK_ROOM_MAP_DATA = {
       "constituentCountry": "England",
       "lat": 51.4543,
       "lon": -0.9781,
-      "roomCount": 9,
+      "roomCount": 8,
       "rooms": [
-        {
-          "docId": "w3vm7S5wKQNoUQ6PRHwU",
-          "displayName": "9-to-5 Assassin",
-          "company": "Knockout Escape Rooms",
-          "link": "https://knockoutescaperooms.com/9-to-5-assassin/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Reading",
-          "multiLocation": false,
-          "isApproved": [
-            2020,
-            2021,
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "isNominee": [
-            2020,
-            2021
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        },
         {
           "docId": "kdwydPvCp1GGEnUUneYP",
           "displayName": "Age of Magic",
@@ -2497,130 +2312,6 @@ window.UK_ROOM_MAP_DATA = {
       ]
     },
     {
-      "id": "Scotland:Glasgow City:Glasgow",
-      "city": "Glasgow",
-      "county": "Glasgow City",
-      "constituentCountry": "Scotland",
-      "lat": 55.8642,
-      "lon": -4.2518,
-      "roomCount": 5,
-      "rooms": [
-        {
-          "docId": "ptMHsqUZBx96qatKCOTr",
-          "displayName": "Bloodline",
-          "company": "Locked In Glasgow",
-          "link": "https://escaperoomglasgow.com/room/bloodline/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Glasgow",
-          "multiLocation": false,
-          "isApproved": [
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "isNominee": [
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        },
-        {
-          "docId": "rcLzVLoOCaY6I3QO8Ido",
-          "displayName": "Glasgow School of Magic",
-          "company": "Locked In Glasgow",
-          "link": "https://escaperoomglasgow.com/room/glasgow-school-of-magic/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Glasgow",
-          "multiLocation": false,
-          "isApproved": [
-            2019,
-            2020,
-            2021,
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "isNominee": [
-            2019,
-            2020,
-            2021,
-            2025
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        },
-        {
-          "docId": "rE51XKQa15cyYUay38ej",
-          "displayName": "Magician's Heist",
-          "company": "Eeek! Escape Rooms",
-          "link": "https://www.eeekescaperooms.com/escape-games/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Glasgow",
-          "multiLocation": false,
-          "isApproved": [
-            2023,
-            2024,
-            2025
-          ],
-          "isNominee": [
-            2023
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        },
-        {
-          "docId": "AW0rL0CmRnr1eAT2TH1P",
-          "displayName": "Star Crew",
-          "company": "Escape Reality Glasgow",
-          "link": "https://www.escapereality.com/our-games/game-summary/starcrew/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Glasgow",
-          "multiLocation": false,
-          "isApproved": [
-            2024,
-            2025
-          ],
-          "isNominee": [
-            2024
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        },
-        {
-          "docId": "z9XPzZracsr0TigiDOKt",
-          "displayName": "The Surgery",
-          "company": "Locked In Glasgow",
-          "link": "https://escaperoomglasgow.com/room/the-surgery/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Glasgow",
-          "multiLocation": false,
-          "isApproved": [
-            2019,
-            2020,
-            2021,
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "isNominee": [
-            2019,
-            2020,
-            2021,
-            2022,
-            2023
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        }
-      ]
-    },
-    {
       "id": "England:Hampshire:Southampton",
       "city": "Southampton",
       "county": "Hampshire",
@@ -2985,6 +2676,112 @@ window.UK_ROOM_MAP_DATA = {
             2022,
             2023
           ],
+          "isWinner": []
+        }
+      ]
+    },
+    {
+      "id": "Scotland:Glasgow City:Glasgow",
+      "city": "Glasgow",
+      "county": "Glasgow City",
+      "constituentCountry": "Scotland",
+      "lat": 55.8642,
+      "lon": -4.2518,
+      "roomCount": 4,
+      "rooms": [
+        {
+          "docId": "ptMHsqUZBx96qatKCOTr",
+          "displayName": "Bloodline",
+          "company": "Locked In Glasgow",
+          "link": "https://escaperoomglasgow.com/room/bloodline/",
+          "categoryLabel": "in-person room",
+          "sourceCity": "Glasgow",
+          "multiLocation": false,
+          "isApproved": [
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "isNominee": [
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "isFinalist": [],
+          "isWinner": []
+        },
+        {
+          "docId": "rcLzVLoOCaY6I3QO8Ido",
+          "displayName": "Glasgow School of Magic",
+          "company": "Locked In Glasgow",
+          "link": "https://escaperoomglasgow.com/room/glasgow-school-of-magic/",
+          "categoryLabel": "in-person room",
+          "sourceCity": "Glasgow",
+          "multiLocation": false,
+          "isApproved": [
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "isNominee": [
+            2019,
+            2020,
+            2021,
+            2025
+          ],
+          "isFinalist": [],
+          "isWinner": []
+        },
+        {
+          "docId": "rE51XKQa15cyYUay38ej",
+          "displayName": "Magician's Heist",
+          "company": "Eeek! Escape Rooms",
+          "link": "https://www.eeekescaperooms.com/escape-games/",
+          "categoryLabel": "in-person room",
+          "sourceCity": "Glasgow",
+          "multiLocation": false,
+          "isApproved": [
+            2023,
+            2024,
+            2025
+          ],
+          "isNominee": [
+            2023
+          ],
+          "isFinalist": [],
+          "isWinner": []
+        },
+        {
+          "docId": "z9XPzZracsr0TigiDOKt",
+          "displayName": "The Surgery",
+          "company": "Locked In Glasgow",
+          "link": "https://escaperoomglasgow.com/room/the-surgery/",
+          "categoryLabel": "in-person room",
+          "sourceCity": "Glasgow",
+          "multiLocation": false,
+          "isApproved": [
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "isNominee": [
+            2019,
+            2020,
+            2021,
+            2022,
+            2023
+          ],
+          "isFinalist": [],
           "isWinner": []
         }
       ]
@@ -4379,95 +4176,6 @@ window.UK_ROOM_MAP_DATA = {
       ]
     },
     {
-      "id": "England:Kent:Tunbridge Wells",
-      "city": "Tunbridge Wells",
-      "county": "Kent",
-      "constituentCountry": "England",
-      "lat": 51.1324,
-      "lon": 0.2637,
-      "roomCount": 3,
-      "rooms": [
-        {
-          "docId": "crCB6QFMwvWWITla45SS",
-          "displayName": "Mega Bite",
-          "company": "Clue Cracker",
-          "link": "https://cluecrackergames.co.uk/room/mega-bite/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Tunbridge Wells",
-          "multiLocation": false,
-          "isApproved": [
-            2023,
-            2024,
-            2025
-          ],
-          "isNominee": [
-            2023,
-            2024,
-            2025
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        },
-        {
-          "docId": "32h36IT34fPU7Q8hZG7d",
-          "displayName": "Temple Quest",
-          "company": "Clue Cracker",
-          "link": "https://cluecrackergames.co.uk/room/temple-quest/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Tunbridge Wells",
-          "multiLocation": false,
-          "isApproved": [
-            2021,
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "isNominee": [
-            2021,
-            2022,
-            2023,
-            2024
-          ],
-          "isFinalist": [
-            2021,
-            2022
-          ],
-          "isWinner": []
-        },
-        {
-          "docId": "hmgIEzX0MbZ7wNKUuOzm",
-          "displayName": "The Diamond Dogs",
-          "company": "Clue Cracker",
-          "link": "https://cluecrackergames.co.uk/room/the-diamond-dogs/",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Tunbridge Wells",
-          "multiLocation": false,
-          "isApproved": [
-            2020,
-            2021,
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "isNominee": [
-            2020,
-            2021,
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "isFinalist": [
-            2021,
-            2023
-          ],
-          "isWinner": []
-        }
-      ]
-    },
-    {
       "id": "England:Greater London:West Wickham",
       "city": "West Wickham",
       "county": "Greater London",
@@ -5349,43 +5057,42 @@ window.UK_ROOM_MAP_DATA = {
       ]
     },
     {
-      "id": "England:Cumbria:Workington",
-      "city": "Workington",
-      "county": "Cumbria",
+      "id": "England:Kent:Tunbridge Wells",
+      "city": "Tunbridge Wells",
+      "county": "Kent",
       "constituentCountry": "England",
-      "lat": 54.6436,
-      "lon": -3.5441,
+      "lat": 51.1324,
+      "lon": 0.2637,
       "roomCount": 2,
       "rooms": [
         {
-          "docId": "GpNwG4rs31NxzGVrqhRh",
-          "displayName": "Casino Heist",
-          "company": "Lakes Escapes",
-          "link": "https://www.lakesescapes.co.uk/rooms/casino-heist/",
+          "docId": "crCB6QFMwvWWITla45SS",
+          "displayName": "Mega Bite",
+          "company": "Clue Cracker",
+          "link": "https://cluecrackergames.co.uk/room/mega-bite/",
           "categoryLabel": "in-person room",
-          "sourceCity": "Workington",
+          "sourceCity": "Tunbridge Wells",
           "multiLocation": false,
           "isApproved": [
-            2020,
-            2021,
-            2022,
             2023,
             2024,
             2025
           ],
           "isNominee": [
-            2020
+            2023,
+            2024,
+            2025
           ],
           "isFinalist": [],
           "isWinner": []
         },
         {
-          "docId": "kW00RkeqVC0Ah4zdN6fs",
-          "displayName": "Diamond Mine",
-          "company": "Lakes Escapes",
-          "link": "https://www.lakesescapes.co.uk/diamond-mine/",
+          "docId": "32h36IT34fPU7Q8hZG7d",
+          "displayName": "Temple Quest",
+          "company": "Clue Cracker",
+          "link": "https://cluecrackergames.co.uk/room/temple-quest/",
           "categoryLabel": "in-person room",
-          "sourceCity": "Workington",
+          "sourceCity": "Tunbridge Wells",
           "multiLocation": false,
           "isApproved": [
             2021,
@@ -5400,7 +5107,10 @@ window.UK_ROOM_MAP_DATA = {
             2023,
             2024
           ],
-          "isFinalist": [],
+          "isFinalist": [
+            2021,
+            2022
+          ],
           "isWinner": []
         }
       ]
@@ -5733,39 +5443,6 @@ window.UK_ROOM_MAP_DATA = {
           "isNominee": [
             2022,
             2023
-          ],
-          "isFinalist": [],
-          "isWinner": []
-        }
-      ]
-    },
-    {
-      "id": "England:Essex:Colchester",
-      "city": "Colchester",
-      "county": "Essex",
-      "constituentCountry": "England",
-      "lat": 51.8959,
-      "lon": 0.8919,
-      "roomCount": 1,
-      "rooms": [
-        {
-          "docId": "DHOGOQDkXJRqhnd5FYdL",
-          "displayName": "Pathogen",
-          "company": "Doomsday Games",
-          "link": "https://www.doomsdayescapegame.co.uk/pathogen",
-          "categoryLabel": "in-person room",
-          "sourceCity": "Colchester",
-          "multiLocation": false,
-          "isApproved": [
-            2021,
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "isNominee": [
-            2021,
-            2025
           ],
           "isFinalist": [],
           "isWinner": []
@@ -6972,6 +6649,39 @@ window.UK_ROOM_MAP_DATA = {
             2021,
             2022
           ],
+          "isWinner": []
+        }
+      ]
+    },
+    {
+      "id": "England:Cumbria:Workington",
+      "city": "Workington",
+      "county": "Cumbria",
+      "constituentCountry": "England",
+      "lat": 54.6436,
+      "lon": -3.5441,
+      "roomCount": 1,
+      "rooms": [
+        {
+          "docId": "GpNwG4rs31NxzGVrqhRh",
+          "displayName": "Casino Heist",
+          "company": "Lakes Escapes",
+          "link": "https://www.lakesescapes.co.uk/rooms/casino-heist/",
+          "categoryLabel": "in-person room",
+          "sourceCity": "Workington",
+          "multiLocation": false,
+          "isApproved": [
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "isNominee": [
+            2020
+          ],
+          "isFinalist": [],
           "isWinner": []
         }
       ]

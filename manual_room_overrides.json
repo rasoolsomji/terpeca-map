@@ -4,5 +4,84 @@
     "Use room docId values from uk_rooms_by_location.json or uk_rooms_by_location.csv.",
     "Rooms with status \"closed\" are excluded when scripts/build_uk_rooms_by_location.js runs."
   ],
-  "rooms": {}
+  "rooms": {
+    "7nJozZMZSMi9hQRueoXl": {
+      "status": "closed",
+      "reason": "Agent Venture Mission One: The Heist / The Adventure Is Real is closed; source link now returns 404 and third-party status notes the company has closed its doors.",
+      "evidence": "https://www.escapetheroomers.com/post/the-adventure-is-real-agent-venture",
+      "checkedAt": "2026-05-19"
+    },
+    "EyfIsu2kRwWr0RaCuKgJ": {
+      "status": "closed",
+      "reason": "Agent Venture Mission Two: Cyborg Island / The Adventure Is Real is closed; source link now returns 404 and third-party status notes the company has closed its doors.",
+      "evidence": "https://www.escapetheroomers.com/post/the-adventure-is-real-agent-venture-mission-two-cyborg-island",
+      "checkedAt": "2026-05-19"
+    },
+    "VFwy187A8MuEeXBToDK4": {
+      "status": "closed",
+      "reason": "Agent Venture Mission Three: B.A.D Side of the Moon is closed.",
+      "evidence": "https://roomescapeartist.com/2020/12/31/agent-venture-mission-three-bad-side-moon-hivemind-review/",
+      "checkedAt": "2026-05-19"
+    },
+    "NvDv81LKQjomm7YqFDf0": {
+      "status": "closed",
+      "reason": "Jacobe Castle / Castle Crusaders is marked closed.",
+      "evidence": "https://morty.app/attraction/31223/jacobe-castle",
+      "checkedAt": "2026-05-19"
+    },
+    "v7EUBXl8Gj8lAYjPWi22": {
+      "status": "closed",
+      "reason": "Wizarding School: Fang of the Serpent / Breakin' Escape Rooms is marked closed, and Breakin' Escape Rooms has no open games listed.",
+      "evidence": "https://www.escapethereview.co.uk/company/10341/breakin-escape-rooms/",
+      "checkedAt": "2026-05-19"
+    },
+    "w3vm7S5wKQNoUQ6PRHwU": {
+      "status": "closed",
+      "reason": "9-to-5 Assassin / Knockout Escape Rooms was retired after its final day on December 31.",
+      "evidence": "https://whatsonreading.com/venues/knockout-escape-rooms/activities-classes/9-5-assassin",
+      "checkedAt": "2026-05-19"
+    },
+    "hmgIEzX0MbZ7wNKUuOzm": {
+      "status": "closed",
+      "reason": "The Diamond Dogs / Clue Cracker closed on February 1, 2026 according to Clue Cracker's FAQ.",
+      "evidence": "https://cluecrackergames.co.uk/faqs-2/",
+      "checkedAt": "2026-05-19"
+    },
+    "AW0rL0CmRnr1eAT2TH1P": {
+      "status": "closed",
+      "reason": "Star Crew / Escape Reality Glasgow is closed with the Glasgow branch closed.",
+      "evidence": "https://www.escapethereview.co.uk/company/10550/escape-reality-glasgow/",
+      "checkedAt": "2026-05-19"
+    },
+    "ySsoUNwmDmoeR3E1Rwfc": {
+      "status": "closed",
+      "reason": "Plymouth Point / Swamp Motel is not on sale and the Swamp Motel listing has no open games.",
+      "evidence": "https://escapethereview.co.uk/company/22175/swamp-motel/",
+      "checkedAt": "2026-05-19"
+    },
+    "hqGmI9BMcUDqplzkicqV": {
+      "status": "closed",
+      "reason": "Open House / ScreamWorks is no longer a current ScreamWorks show; old Open House link redirects to the current ScreamWorks programme and third-party listings mark it closed.",
+      "evidence": "https://escapethereview.co.uk/escape-room/69511/screamworks-open-house-60-min-version/",
+      "checkedAt": "2026-05-19"
+    },
+    "DHOGOQDkXJRqhnd5FYdL": {
+      "status": "closed",
+      "reason": "Pathogen / Doomsday Games is closed for refurbishment from January 6 with no reopening date found.",
+      "evidence": "https://www.doomsdaygames.co.uk/home",
+      "checkedAt": "2026-05-19"
+    },
+    "kW00RkeqVC0Ah4zdN6fs": {
+      "status": "closed",
+      "reason": "Diamond Mine / Lakes Escapes is marked closed in current escape-room listings; the original source room URL now returns 404.",
+      "evidence": "https://escapethereview.co.uk/company/10707/lakes-escapes/",
+      "checkedAt": "2026-05-19"
+    },
+    "oHqVtWPXzSuLVi9kIxCf": {
+      "status": "closed",
+      "reason": "Time Run company page states that Time Run is now closed.",
+      "evidence": "https://time-run.sketchanet.com/",
+      "checkedAt": "2026-05-19"
+    }
+  }
 }
